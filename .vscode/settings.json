@@ -1,0 +1,11 @@
+/*
+    Custom settings per user
+*/
+
+{
+    "files.exclude": {
+        "node_modules": true,
+        "Styles/**/*.css": true,
+        ".*": true
+    }
+}

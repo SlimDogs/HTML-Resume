@@ -1,0 +1,165 @@
+$default-font-size: 16px;
+$default-margin: 80px;
+$default-padding: 100px;
+
+$default-font-color: #5e5e5e;
+$border-color: rgba(0,0,0,.1);
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    font-family: "Open Sans";
+    font-size: $default-font-size;
+    color: $default-font-color;
+}
+
+h1 {
+    margin: 10px 0;
+    padding: 0;
+
+    font-family: "Open Sans";
+    font-size: 38px;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-style: normal;
+
+    color: $default-font-color;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.overlay-line-container {
+    position: relative;
+    .overlay-line {
+        position: absolute;
+        left: $default-padding;
+        right: $default-padding;
+        top: 50%;
+
+        margin-top: -1px;
+
+        border-bottom: 2px $border-color solid;
+
+        z-index: -1;
+    }
+}
+
+#wrapper {
+    position: relative;
+
+    margin: $default-margin auto;
+    max-width: 1100px;
+    padding: $default-padding $default-padding 0;
+    overflow: hidden;
+
+    border-color: $border-color;
+    border-style: solid;
+    border-width: 1px;
+
+    > header {
+        height: $default-margin * 3;
+        text-align: center;
+
+        .logo {
+            background-image: url("../Images/logo.png");
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: auto 100%;
+            height: $default-padding;
+        }
+
+        .sub-title {
+            h2 {
+                display: inline-block;
+                margin: 0 auto;
+                background-color: white;
+
+                padding: 0 10px;
+            }
+        }
+
+    }
+}
+
+$flag-size: 24px;
+$flag-icons: (
+    'uk',
+    'lt',
+    'pl',
+    'ru'
+);
+#language-selector {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+
+    li {
+        display: inline-block;
+        height: $flag-size;
+        width: $flag-size;
+        margin: 0 2px;
+        cursor: pointer;
+
+        background-repeat: no-repeat;
+        opacity: 0.4;
+
+        &:hover, &.active {
+            opacity: 1;
+        }
+
+        @each $icon in $flag-icons {
+            &.#{$icon} {
+                background-image: url("../Images/#{$icon}.png");
+            }
+        }
+    }
+}
+/*
+    Smaller screen
+*/
+
+@media only screen and (max-width: 1460px) {
+    #wrapper {
+        margin: $default-margin;
+    }
+}
+
+/*
+    Tablet
+*/
+
+@media only screen and (max-width: 1024px) {
+    #wrapper {
+        margin: 0px auto;
+        border-width: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #wrapper {
+        padding: $default-padding/2 10px 0;
+    }
+}

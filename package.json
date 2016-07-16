@@ -1,0 +1,19 @@
+{
+  "name": "html-cv",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "gulp"
+  },
+  "keywords": [
+    "personal resume",
+    "cv"
+  ],
+  "author": "Tautvydas Derzinskas",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-watch": "^4.3.8"
+  }
+}

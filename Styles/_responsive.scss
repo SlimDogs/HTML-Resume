@@ -1,0 +1,45 @@
+
+/*
+    Smaller screen
+*/
+
+@media only screen and (max-width: 1460px) {
+    #wrapper {
+        margin: $default-margin;
+    }
+
+    #warning-message {
+        left: $default-margin;
+        right: $default-margin;
+        margin-left: auto;
+        width: auto;
+    }
+
+}
+
+/*
+    Tablet
+*/
+
+@media only screen and (max-width: 1024px) {
+    #wrapper {
+        margin: 0px auto;
+        border-width: 0px !important;
+    }
+
+    #warning-message {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        margin-left: auto;
+        width: auto;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #wrapper {
+        padding: $default-padding/2 10px 0;
+    }
+}

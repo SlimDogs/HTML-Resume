@@ -1,0 +1,65 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    font-family: "Open Sans";
+    font-size: $default-font-size;
+    color: $default-font-color;
+
+    overflow: hidden;
+}
+
+h1 {
+    margin: 10px 0;
+    padding: 0;
+
+    font-family: "Open Sans";
+    font-size: 38px;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-style: normal;
+
+    color: $default-font-color;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.invisible-item {
+    display: none !important;
+}
+
+.overlay-line-container {
+    position: relative;
+    .overlay-line {
+        position: absolute;
+        left: $default-padding;
+        right: $default-padding;
+        top: 50%;
+
+        margin-top: -1px;
+
+        border-bottom: 2px $border-color solid;
+
+        z-index: -1;
+    }
+}

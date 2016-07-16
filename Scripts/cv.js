@@ -40,7 +40,7 @@
         // Removing "active" class
         var flagButtons = document.getElementById('language-selector').childNodes;
         for (var i = 0, b = flagButtons.length; i < b; i++) {
-            if (flagButtons[i].className && flagButtons[i].className.indexOf('active') >= 0) {
+            if (flagButtons[i].className && flagButtons[i].className.indexOf('active') >= 0 && flagButtons[i].className.indexOf(code) < 0) {
                 flagButtons[i].className = flagButtons[i].className.replace(' active', '');
             } else if (flagButtons[i].className === code) {
                 flagButtons[i].className += ' active';
@@ -73,9 +73,20 @@
         }
     };
 
-    // Setting initial language from file name
-    var url = location.href,
-        initialCode = url.substring(url.lastIndexOf('/') + 1, url.length).replace('.html', '').split('_')[1];
-    updateLanguage(initialCode || 'uk');
+    function bootstrap() {
+        // Removing warning message
+        var warningMessageElement = document.getElementById('warning-message');
+        warningMessageElement.parentNode.removeChild(warningMessageElement);
+
+        // Removing invisible classes
+        var languuageSelectorElement = document.getElementById('language-selector');
+        languuageSelectorElement.removeAttribute('class');
+
+        // Setting initial language from file name
+        var url = location.href,
+            initialCode = url.substring(url.lastIndexOf('/') + 1, url.length).replace('.html', '').split('_')[1];
+        updateLanguage(initialCode || 'uk');
+    }
+    bootstrap();
 
 })();

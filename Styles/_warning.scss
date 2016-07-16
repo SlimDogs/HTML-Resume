@@ -1,0 +1,21 @@
+#warning-message {
+    $warning-max-width: $wrapper-max-width + 2 * $default-padding;
+
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -($warning-max-width/2);
+    width: $warning-max-width;
+
+    height: 2em;
+    line-height: 2em;
+    padding: .5em 0;
+
+    font-size: 13px;
+    text-align: center;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: $deepLake;
+    color: $snowWhite;
+}

@@ -1,0 +1,16 @@
+#contacts {
+    div {
+        display: table;
+        width: 100%;
+
+        div {
+            display: table-row;
+            width: 100%;
+
+            span {
+                display: table-cell;
+                width: 50%;
+            }
+        }
+    }
+}

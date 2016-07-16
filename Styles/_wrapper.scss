@@ -1,0 +1,36 @@
+#wrapper {
+    position: relative;
+
+    margin: $default-margin auto;
+    max-width: 1100px;
+    padding: $default-padding $default-padding 0;
+    overflow: hidden;
+
+    border-color: $border-color;
+    border-style: solid;
+    border-width: 1px;
+
+    > header {
+        height: $default-margin * 3;
+        text-align: center;
+
+        .logo {
+            background-image: url("../Images/logo.png");
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: auto 100%;
+            height: $default-padding;
+        }
+
+        .sub-title {
+            h2 {
+                display: inline-block;
+                margin: 0 auto;
+                background-color: white;
+
+                padding: 0 10px;
+            }
+        }
+
+    }
+}

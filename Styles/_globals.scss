@@ -47,19 +47,3 @@ ul {
 .invisible-item {
     display: none !important;
 }
-
-.overlay-line-container {
-    position: relative;
-    .overlay-line {
-        position: absolute;
-        left: $default-padding;
-        right: $default-padding;
-        top: 50%;
-
-        margin-top: -1px;
-
-        border-bottom: 2px $border-color solid;
-
-        z-index: -1;
-    }
-}

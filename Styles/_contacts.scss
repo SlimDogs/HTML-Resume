@@ -1,16 +1,43 @@
+.table-block {
+    display: table;
+    width: 100%;
+}
+.table-block-row {
+    display: table-row;
+    width: 100%;
+}
+
+.table-block-cell {
+    display: table-cell;
+}
+
 #contacts {
-    div {
-        display: table;
-        width: 100%;
+    margin: 0 $default-padding;
 
-        div {
-            display: table-row;
-            width: 100%;
+    .table-block-cell {
+        width: 50%;
 
-            span {
-                display: table-cell;
-                width: 50%;
+        .contact-item {
+            display: block;
+            margin: 1em;
+            padding: 1em;
+            border: 1px $border-color solid;
+            overflow: hidden;
+
+            > span {
+                &:first-child {
+                    float: left;
+                    color: $cherryRed;
+                    width: 30%;
+                    font-weight: bold;
+                }
+                &:last-child {
+                    float: left;
+                    color: $deepLake;
+                    width: 70%;
+                }
             }
         }
+
     }
 }

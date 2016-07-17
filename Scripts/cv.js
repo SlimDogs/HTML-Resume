@@ -12,18 +12,53 @@
         'english': 'English',
         'lithuanian': 'Lithuanian',
         'polish': 'Polish',
-        'russian': 'Russian'
+        'russian': 'Russian',
+        'birthDateLabel': 'Birth date',
+        'birthDateValue': '12 / 10 / 1988',
+        'emailLabel': 'Email address',
+        'emailValue': 'tautvydasUk@gmail.com',
+        'webLabel': 'Personal web',
+        'webValue': 'http://tautvydas.info',
+        'phoneLabel': 'Phone number',
+        'phoneValue': '07442977197'
     }
 
-    // English language pack
+    // Lithuanian language pack
     CONST.LANG.lt = {
         'author': 'Tautvydas Deržinskas',
         'cv': 'Gyvenimo aprašymas',
         'english': 'Anglų',
         'lithuanian': 'Lietuvių',
         'polish': 'Lenkų',
-        'russian': 'Rusų'
+        'russian': 'Rusų',
+        'birthDateLabel': 'Gimimo metai',
+        'birthDateValue': '1988-10-12',
+        'emailLabel': 'El. pašto adresas',
+        'emailValue': 'tautvydasUk@gmail.com',
+        'webLabel': 'Asmeninis puslapis',
+        'webValue': 'http://tautvydas.info',
+        'phoneLabel': 'Telefono numeris',
+        'phoneValue': '07442977197'
     }
+
+    // Polish language pack
+    CONST.LANG.pl = {
+        'author': 'Tautvydas Derzinskas',
+        'cv': 'Curriculum Vitae',
+        'english': 'Angielski',
+        'lithuanian': 'Litewski',
+        'polish': 'Polski',
+        'russian': 'Rosyjski',
+        'birthDateLabel': 'Data urodzenia',
+        'birthDateValue': '12 / 10 / 1988',
+        'emailLabel': 'Adres email',
+        'emailValue': 'tautvydasUk@gmail.com',
+        'webLabel': 'Własna strona internetowa',
+        'webValue': 'http://tautvydas.info',
+        'phoneLabel': 'Numer telefonu',
+        'phoneValue': '07442977197'
+    }
+
 
     var languageButtons = document.getElementById('language-selector').childNodes;
     for (var i = 0, b = languageButtons.length; i < b; i++) {

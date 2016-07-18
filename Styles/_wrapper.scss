@@ -1,5 +1,6 @@
 #wrapper {
     position: relative;
+    background-color: $snowWhite;
 
     margin: $default-margin auto;
     max-width: 1100px;
@@ -18,7 +19,7 @@
             background-repeat: no-repeat;
             background-position: top center;
             background-size: auto 100%;
-            height: $default-padding;
+            height: $default-padding + 30;
         }
 
         h1 {
@@ -29,7 +30,7 @@
             h2 {
                 display: inline-block;
                 margin: 0 auto;
-                background-color: white;
+                background-color: $snowWhite;
 
                 padding: 0 10px;
             }
@@ -55,10 +56,11 @@
 
     .block-divider {
         height: 0px;
-        margin: 0px -100px;
+        margin: 1em 0;
         border-width: 1px;
         border-color: $cherryRed;
         border-style: dashed;
+        border-top: none;
     }
 
 }

@@ -19,20 +19,22 @@
 
         .contact-item {
             display: block;
-            margin: 1em;
+            margin: .5em;
             padding: 1em;
-            border: 1px $border-color solid;
+            border: 1px $border-color dashed;
             overflow: hidden;
 
             > span {
+                white-space: nowrap;
+                float: left;
+
                 &:first-child {
-                    float: left;
                     color: $cherryRed;
                     width: 30%;
                     font-weight: bold;
                 }
                 &:last-child {
-                    float: left;
+                    text-align: right;
                     color: $deepLake;
                     width: 70%;
                 }

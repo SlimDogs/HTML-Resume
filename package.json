@@ -1,19 +1,25 @@
 {
-  "name": "html-cv",
-  "version": "1.0.0",
-  "description": "",
+  "name": "tautvydas_derzinskas_cv",
+  "version": "1.0.0b",
+  "private": true,
   "scripts": {
-    "start": "gulp"
+    "prestart": "npm install",
+    "start": "tsc gulpfile.ts",
+    "poststart": "gulp",
+    "predev": "npm install",
+    "dev": "tsc gulpfile.ts",
+    "postdev": "gulp quick"
   },
-  "keywords": [
-    "personal resume",
-    "cv"
-  ],
-  "author": "Tautvydas Derzinskas",
-  "license": "ISC",
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-sass": "3.0.0",
+    "gulp-tslint": "7.0.1",
+    "gulp-typescript": "3.1.3",
+    "gulp-concat": "2.6.1",
+    "tslint": "4.2.0",
+    "typescript": "2.1.4"
+  },
   "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.2",
-    "gulp-watch": "^4.3.8"
+    "@types/jquery": "^2.0.34"
   }
 }

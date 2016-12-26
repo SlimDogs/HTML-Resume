@@ -12,6 +12,9 @@
         },
         "**/*.js.map": {
             "when": "$(basename)"
+        },
+        "**/*.css" : {
+            "when": "$(basename).scss"
         }
     }
 }

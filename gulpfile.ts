@@ -1,4 +1,4 @@
-declare let require: any;
+/// <reference types="node" />
 
 namespace Tasks {
 	"use strict";
@@ -7,6 +7,7 @@ namespace Tasks {
 		createTypesScriptLintTask: () => void;
 		createTypeScriptCompileTask: () => void;
 		createConcatLibs: () => void;
+		createIndexGenerationTask: () => void;
 		createSassCompileTask: () => void;
 		setupWatcher: () => void;
 		setupTaskChain: () => void;
@@ -18,13 +19,15 @@ namespace Tasks {
 			private ts,
 			private tslint,
 			private sass,
-			private concat
+			private concat,
+			private fileSystem
 		) {
 			// Work horses
 			this.createTypesScriptLintTask();
 			this.createTypeScriptCompileTask();
 
 			this.createConcatLibs();
+			this.createIndexGenerationTask();
 
 			this.createSassCompileTask();
 
@@ -71,9 +74,11 @@ namespace Tasks {
 			/*
 				Sync concating of app logic
 			*/
-			this.gulp.task("TASK: BUNDLE FEATURES", ["TASK: TypeScript"], () => {
-				let featuresFolder = "Source/Features/",
-					librariesFolder = "Source/Libraries/";
+			let featuresFolder = "Source/Features/",
+				librariesFolder = "Source/Libraries/";
+
+			this.gulp.task("TASK: BUNDLE FEATURES", ["TASK: TypeScript", "TASK: BUNDLE HTML"], () => {
+
 
 				return this.gulp
 					.src([
@@ -84,13 +89,52 @@ namespace Tasks {
 					.pipe(this.concat("Temp/app.js"))
 					.pipe(this.gulp.dest("."));
 			});
+
+			this.gulp.task("TASK: BUNDLE HTML", () => {
+				return this.gulp
+					.src([
+						`${featuresFolder}**/_*.html`
+					])
+					.pipe(this.concat("Temp/_html.html"))
+					.pipe(this.gulp.dest("."));
+			});
+		}
+
+		public createIndexGenerationTask() {
+			this.gulp.task("TASK: GENERATE INDEX", ["TASK: BUNDLE FEATURES"], (done: () => void) => {
+				let replacements = {
+					html: null,
+					js: null,
+					css: null
+				};
+				// Reading index file
+				this.fileSystem.readFile("Source/_index.html", "utf8", (error, htmlContent) => {
+					replacements.html = htmlContent;
+				});
+				// Reading css Javascript
+				this.fileSystem.readFile("Temp/index.css", "utf8", (error, cssContent) => {
+					replacements.css = cssContent;
+
+					// Reading Raw Javascript
+					this.fileSystem.readFile("Temp/app.js", "utf8", (error, jsContent) => {
+						replacements.js = jsContent;
+						replacements.html = replacements.html.replace("/*<css>*/", replacements.css);
+						replacements.html = replacements.html.replace("/*<js>*/", replacements.js);
+
+						// Creating file
+						this.fileSystem.writeFile("index.html", replacements.html, () => {
+							done();
+						});
+					});
+				});
+			});
 		}
 
 		public createSassCompileTask() {
 			this.gulp.task("TASK: Sass", () => {
 				return this.gulp
 					.src([
-						"Source/style.scss"
+						"Source/index.scss"
 					])
 					.pipe(this.sass())
 					.pipe(this.gulp.dest("Temp"));
@@ -106,17 +150,17 @@ namespace Tasks {
 				);
 				// Typescript files
 				this.gulp.watch(
-					["Source/**/*.ts"],
+					["Source/**/*.ts", "Source/**/_*.html"],
 					{ cwd: "." },
 					() => {
-						this.gulp.run("TASK: BUNDLE FEATURES");
+						this.gulp.run("TASK: GENERATE INDEX");
 					}
 				);
 			});
 		}
 		public setupTaskChain() {
 			this.gulp.task("default", [
-				"TASK: BUNDLE FEATURES",
+				"TASK: GENERATE INDEX",
 				"TASK: Sass",
 				"WATCHER"
 			]);
@@ -131,6 +175,14 @@ let gulp = require("gulp"),
 	ts = require("gulp-typescript"),
 	tslint = require("gulp-tslint"),
 	concat = require("gulp-concat"),
-	sass = require("gulp-sass");
+	sass = require("gulp-sass"),
+	fileSystem = require("fs");
 
-const TaskUtility = new Tasks.TaskUtility(gulp, ts, tslint, sass, concat);
+const TaskUtility = new Tasks.TaskUtility(
+	gulp,
+	ts,
+	tslint,
+	sass,
+	concat,
+	fileSystem
+);

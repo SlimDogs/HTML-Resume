@@ -105,7 +105,8 @@ namespace Tasks {
 				let replacements = {
 					html: null,
 					js: null,
-					css: null
+					css: null,
+					htmlBody: null
 				};
 				// Reading index file
 				this.fileSystem.readFile("Source/_index.html", "utf8", (error, htmlContent) => {
@@ -115,15 +116,21 @@ namespace Tasks {
 				this.fileSystem.readFile("Temp/index.css", "utf8", (error, cssContent) => {
 					replacements.css = cssContent;
 
-					// Reading Raw Javascript
-					this.fileSystem.readFile("Temp/app.js", "utf8", (error, jsContent) => {
-						replacements.js = jsContent;
-						replacements.html = replacements.html.replace("/*<css>*/", replacements.css);
-						replacements.html = replacements.html.replace("/*<js>*/", replacements.js);
+					// Reading css Javascript
+					this.fileSystem.readFile("Temp/_html.html", "utf8", (error, htmlBodyContent) => {
+						replacements.htmlBody = htmlBodyContent;
 
-						// Creating file
-						this.fileSystem.writeFile("index.html", replacements.html, () => {
-							done();
+						// Reading Raw Javascript
+						this.fileSystem.readFile("Temp/app.js", "utf8", (error, jsContent) => {
+							replacements.js = jsContent;
+							replacements.html = replacements.html.replace("/*<css>*/", replacements.css);
+							replacements.html = replacements.html.replace("/*<js>*/", replacements.js);
+							replacements.html = replacements.html.replace("<!--html-->", replacements.htmlBody);
+
+							// Creating file
+							this.fileSystem.writeFile("index.html", replacements.html, () => {
+								done();
+							});
 						});
 					});
 				});

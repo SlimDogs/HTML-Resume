@@ -82,7 +82,8 @@ var Tasks;
                 var replacements = {
                     html: null,
                     js: null,
-                    css: null
+                    css: null,
+                    htmlBody: null
                 };
                 // Reading index file
                 _this.fileSystem.readFile("Source/_index.html", "utf8", function (error, htmlContent) {
@@ -91,14 +92,19 @@ var Tasks;
                 // Reading css Javascript
                 _this.fileSystem.readFile("Temp/index.css", "utf8", function (error, cssContent) {
                     replacements.css = cssContent;
-                    // Reading Raw Javascript
-                    _this.fileSystem.readFile("Temp/app.js", "utf8", function (error, jsContent) {
-                        replacements.js = jsContent;
-                        replacements.html = replacements.html.replace("/*<css>*/", replacements.css);
-                        replacements.html = replacements.html.replace("/*<js>*/", replacements.js);
-                        // Creating file
-                        _this.fileSystem.writeFile("index.html", replacements.html, function () {
-                            done();
+                    // Reading css Javascript
+                    _this.fileSystem.readFile("Temp/_html.html", "utf8", function (error, htmlBodyContent) {
+                        replacements.htmlBody = htmlBodyContent;
+                        // Reading Raw Javascript
+                        _this.fileSystem.readFile("Temp/app.js", "utf8", function (error, jsContent) {
+                            replacements.js = jsContent;
+                            replacements.html = replacements.html.replace("/*<css>*/", replacements.css);
+                            replacements.html = replacements.html.replace("/*<js>*/", replacements.js);
+                            replacements.html = replacements.html.replace("<!--html-->", replacements.htmlBody);
+                            // Creating file
+                            _this.fileSystem.writeFile("index.html", replacements.html, function () {
+                                done();
+                            });
                         });
                     });
                 });

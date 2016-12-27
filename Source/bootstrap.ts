@@ -6,7 +6,7 @@ class Bootstrap implements Resume_Application.IBootstrap {
 	private AvailabilityStatusFeature: Resume_Application.IAvailabilityStatus;
 
 	public Parameters = {
-		"ResumeRootUrl": "http://tautvydas.info",
+		"ResumeRootUrl": "http://www.tautvydas.info",
 		"JavaScript": false,
 		"Internet": false,
 		"Language": null,

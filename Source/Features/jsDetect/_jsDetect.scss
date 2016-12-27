@@ -1,3 +1,64 @@
-a {
-	display: none;
+$no-js-logo-height: 80px;
+$no-js-gap-logo-message: 15px;
+
+$no-js-container-width: 300px;
+$no-js-container-height: 180px;
+$no-js-container-padding: 10px;
+
+$no-js-full-height: $no-js-container-height + $no-js-logo-height + ($no-js-container-padding * 2) + $no-js-gap-logo-message;
+
+body {
+	&.NO-JAVASCRIPT {
+		/*
+			Hidding everything if js support is not found
+		*/
+		* {
+			display: none !important;
+		}
+	}
 }
+
+#no-js-container {
+	display: none;
+	padding-top: $no-js-logo-height + $no-js-gap-logo-message;
+
+	position: fixed;
+	width: $no-js-container-width;
+	height: $no-js-full-height;
+
+	left: 50%;
+	top: 50%;
+	margin-left: -($no-js-container-width/2);
+	margin-top: -($no-js-full-height/2);
+
+	> span {
+		display: block;
+		position: absolute;
+
+		height: $no-js-logo-height;
+		width: $no-js-container-width;
+
+		top: 0;
+		left: 0;
+
+		@extend %no-js-image;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	> div {
+		height: $no-js-container-height;
+
+		background-color: $snowWhite;
+		border-radius: $default-border-radius;
+		padding: $no-js-container-padding;
+
+		@extend %default-box-shadow;
+	}
+
+	.NO-JAVASCRIPT & {
+		display: block !important;
+	}
+}
+
+// Mobile

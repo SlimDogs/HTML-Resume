@@ -57,7 +57,7 @@ var Tasks;
                 Sync concating of app logic
             */
             var featuresFolder = "Source/Features/", librariesFolder = "Source/Libraries/";
-            this.gulp.task("TASK: BUNDLE FEATURES", ["TASK: TypeScript", "TASK: BUNDLE HTML"], function () {
+            this.gulp.task("TASK: BUNDLE FEATURES", ["TASK: TypeScript", "TASK: SASS", "TASK: BUNDLE HTML"], function () {
                 return _this.gulp
                     .src([
                     librariesFolder + "**/*.js",
@@ -112,7 +112,7 @@ var Tasks;
         };
         TaskUtility.prototype.createSassCompileTask = function () {
             var _this = this;
-            this.gulp.task("TASK: Sass", function () {
+            this.gulp.task("TASK: SASS", function () {
                 return _this.gulp
                     .src([
                     "Source/index.scss"
@@ -124,10 +124,8 @@ var Tasks;
         TaskUtility.prototype.setupWatcher = function () {
             var _this = this;
             this.gulp.task("WATCHER", function () {
-                // Sass files
-                _this.gulp.watch(["Source/**/*.scss"], { cwd: "." }, ["TASK: Sass"]);
                 // Typescript files
-                _this.gulp.watch(["Source/**/*.ts", "Source/**/_*.html"], { cwd: "." }, function () {
+                _this.gulp.watch(["Source/**/*.ts", "Source/**/_*.html", "Source/**/*.scss"], { cwd: "." }, function () {
                     _this.gulp.run("TASK: GENERATE INDEX");
                 });
             });
@@ -135,7 +133,6 @@ var Tasks;
         TaskUtility.prototype.setupTaskChain = function () {
             this.gulp.task("default", [
                 "TASK: GENERATE INDEX",
-                "TASK: Sass",
                 "WATCHER"
             ]);
         };

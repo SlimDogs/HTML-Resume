@@ -1,7 +1,7 @@
 /*
 	Variables
 */
-$default-font-size: 16px;
+$default-font-size: 12px;
 $default-margin: 80px;
 $default-padding: 100px;
 $wrapper-max-width: 1100px;
@@ -9,6 +9,7 @@ $wrapper-max-width: 1100px;
 $default-font-family: "Open Sans", "Helvetica", "Arial";
 $default-font-color: #5e5e5e;
 $border-color: rgba(0,0,0,.1);
+$default-border-radius: 3px;
 
 // Colors
 $themeGray: $default-font-color;
@@ -17,6 +18,10 @@ $snowWhite: #ffffff;
 $cherryRed: #ca3a3c;
 $smoothMetal: #728da1;
 $woodBrown: #584640;
+
+%default-box-shadow {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+}
 
 /*
 	Global styles
@@ -73,4 +78,5 @@ ul {
 	Features
 */
 
+@import "images";
 @import "Features/jsDetect/jsDetect";

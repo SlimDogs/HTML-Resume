@@ -77,7 +77,7 @@ namespace Tasks {
 			let featuresFolder = "Source/Features/",
 				librariesFolder = "Source/Libraries/";
 
-			this.gulp.task("TASK: BUNDLE FEATURES", ["TASK: TypeScript", "TASK: BUNDLE HTML"], () => {
+			this.gulp.task("TASK: BUNDLE FEATURES", ["TASK: TypeScript", "TASK: SASS", "TASK: BUNDLE HTML"], () => {
 
 
 				return this.gulp
@@ -138,7 +138,7 @@ namespace Tasks {
 		}
 
 		public createSassCompileTask() {
-			this.gulp.task("TASK: Sass", () => {
+			this.gulp.task("TASK: SASS", () => {
 				return this.gulp
 					.src([
 						"Source/index.scss"
@@ -149,15 +149,9 @@ namespace Tasks {
 		}
 		public setupWatcher() {
 			this.gulp.task("WATCHER", () => {
-				// Sass files
-				this.gulp.watch(
-					["Source/**/*.scss"],
-					{ cwd: "." },
-					["TASK: Sass"]
-				);
 				// Typescript files
 				this.gulp.watch(
-					["Source/**/*.ts", "Source/**/_*.html"],
+					["Source/**/*.ts", "Source/**/_*.html", "Source/**/*.scss"],
 					{ cwd: "." },
 					() => {
 						this.gulp.run("TASK: GENERATE INDEX");
@@ -168,7 +162,6 @@ namespace Tasks {
 		public setupTaskChain() {
 			this.gulp.task("default", [
 				"TASK: GENERATE INDEX",
-				"TASK: Sass",
 				"WATCHER"
 			]);
 		}

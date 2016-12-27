@@ -18,11 +18,11 @@ class AvailabilityStatus implements Resume_Application.IAvailabilityStatus {
 	public updateAvailabilityStatus() {
 		if (this.Parameters.Internet) {
 			// If we have internet connection we try to get availability status from the github!
-			$.ajax((<any>{
-				crossOrigin: true,
+			$.ajax({
+				type: "GET",
+				dataType: "json",
 				url: `${this.Parameters.ResumeRootUrl}/CV.json`,
 				success: function (response: Resume_Application.IResponseCV) {
-					debugger;
 					$("body").removeClass("AVAILABILITY-NOT-CLEAR");
 
 					if (response.Resume.Availability) {
@@ -32,10 +32,7 @@ class AvailabilityStatus implements Resume_Application.IAvailabilityStatus {
 						$("body").addClass("AVAILABILITY-NOT-AVAILABLE");
 					}
 				}
-			}));
-		}
-		else {
-			$("body").addClass("AVAILABILITY-NOT-CLEAR");
+			});
 		}
 	}
 }

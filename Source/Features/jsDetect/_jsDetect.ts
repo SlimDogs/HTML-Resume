@@ -1,9 +1,11 @@
 class JavaScriptDetect implements Resume_Application.IJavaScriptDetect {
-	constructor() {}
+	constructor(
+		private Parameters: Resume_Application.IParameters
+	) {}
 
-	public initialize(Parameters: Resume_Application.IParameters) {
+	public initialize() {
 		$("body").removeClass("NO-JAVASCRIPT");
 
-		Parameters.JavaScript = true;
+		this.Parameters.JavaScript = true;
 	}
 }

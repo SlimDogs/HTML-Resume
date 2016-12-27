@@ -1,29 +1,35 @@
 class InternetDetect implements Resume_Application.IInternetDetect {
 	private subscriptions: Array<() => void> = [];
 
-	constructor() {}
+	constructor(
+		private Parameters: Resume_Application.IParameters
+	) {}
 
-	public initialize(Parameters: Resume_Application.IParameters) {
+	public initialize() {
 		if (navigator && navigator.onLine || !navigator) {
 			// Performing proper internet connection test with getting some life test image
 			let i = new Image();
 			i.onload = () => {
 				$("body").removeClass("NO-INTERNET");
-				Parameters.Internet = true;
+				this.Parameters.Internet = true;
 				this.parseSubscriptions();
 			};
 			i.onerror = () => {
-				Parameters.Internet = false;
-				this.parseSubscriptions();
+				this.Parameters.Internet = false;
+
+				// If we fail we do an instant retry to make sure it wasn't an mistake
+				setTimeout(() => {
+					this.initialize();
+				}, 1000);
 			};
 
 			let date = new Date(),
 				dateMs = date.getTime();
 
-			i.src = `${Parameters.ResumeRootUrl}/online.gif?d=${dateMs}`;
+			i.src = `${this.Parameters.ResumeRootUrl}/online.gif?d=${dateMs}`;
 		}
 		else {
-			Parameters.Internet = false;
+			this.Parameters.Internet = false;
 		}
 	}
 	private parseSubscriptions() {

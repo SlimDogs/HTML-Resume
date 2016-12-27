@@ -6,9 +6,11 @@ namespace Resume_Application {
 		"JavaScript": boolean;
 		"Internet": boolean;
 		"Language": string;
+		"Version": number;
+		"Availability": boolean;
 	}
 	interface IBaseFeature {
-		initialize: (Parameters?: IParameters) => void;
+		initialize?: () => void;
 	}
 
 	export interface IBootstrap extends IBaseFeature {
@@ -27,5 +29,17 @@ namespace Resume_Application {
 	}
 
 	export interface IQuickNavigation extends IBaseFeature {
+	}
+
+	export interface IAvailabilityStatus extends IBaseFeature {
+		updateAvailabilityStatus: () => void;
+	}
+
+	// Json Responses
+	export interface IResponseCV {
+		"Resume": {
+			"Version": number;
+			"Availability": boolean;
+		};
 	}
 }

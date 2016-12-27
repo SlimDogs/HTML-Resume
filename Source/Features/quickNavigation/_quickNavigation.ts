@@ -1,5 +1,9 @@
 class QuickNavigation implements Resume_Application.IQuickNavigation {
-	constructor() {}
+	constructor(
+		private Parameters: Resume_Application.IParameters
+	) {}
 
-	public initialize() {}
+	public initialize() {
+		console.log(this.Parameters);
+	}
 }

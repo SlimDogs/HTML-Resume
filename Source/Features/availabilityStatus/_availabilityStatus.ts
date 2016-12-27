@@ -22,14 +22,23 @@ class AvailabilityStatus implements Resume_Application.IAvailabilityStatus {
 				type: "GET",
 				dataType: "json",
 				url: `${this.Parameters.ResumeRootUrl}/CV.json`,
-				success: function (response: Resume_Application.IResponseCV) {
-					$("body").removeClass("AVAILABILITY-NOT-CLEAR");
+				success: (response: Resume_Application.IResponseCV) => {
+					if (response.Resume.Version === this.Parameters.Version) {
+						$("body").removeClass("AVAILABILITY-NOT-CLEAR");
 
-					if (response.Resume.Availability) {
-						$("body").addClass("AVAILABILITY-AVAILABLE");
+						if (response.Resume.Availability) {
+							$("body").addClass("AVAILABILITY-AVAILABLE");
+						}
+						else {
+							$("body").addClass("AVAILABILITY-NOT-AVAILABLE");
+						}
 					}
 					else {
-						$("body").addClass("AVAILABILITY-NOT-AVAILABLE");
+						/*
+							With this class on the body informational message above page content is displayed
+							which informs viewer about newer CV version.
+						*/
+						$("body").addClass("NOT-LATEST-VERSION");
 					}
 				}
 			});

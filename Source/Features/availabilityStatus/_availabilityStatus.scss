@@ -1,0 +1,15 @@
+$version-information-base-color: #052832;
+
+#version-information {
+	display: none;
+	background-color: lighten($version-information-base-color, 80%);
+	border: 1px lighten($version-information-base-color, 40%) dashed;
+	color: $version-information-base-color;
+
+	padding: 10px;
+	text-align: center;
+
+	.NOT-LATEST-VERSION & {
+		display: block;
+	}
+}

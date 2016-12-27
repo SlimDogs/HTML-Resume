@@ -74,9 +74,62 @@ ul {
     list-style: none;
 }
 
+#wrapper {
+    position: relative;
+    background-color: $snowWhite;
+
+    margin: $default-margin auto;
+    max-width: 1100px;
+    padding: $default-padding $default-padding 0;
+    overflow: hidden;
+
+    border-color: $border-color;
+    border-style: solid;
+    border-width: 1px;
+
+    > * {
+        margin-bottom: 10px;
+    }
+}
+
+a {
+    color: inherit;
+    border-bottom: 1px $cherryRed dotted;
+    text-decoration: none;
+}
+
+/*
+    Smaller screen
+*/
+
+@media only screen and (max-width: 1460px) {
+    #wrapper {
+        margin: $default-margin;
+    }
+}
+
+/*
+    Tablet
+*/
+
+@media only screen and (max-width: 1024px) {
+    #wrapper {
+        margin: 0px auto;
+        border-width: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #wrapper {
+        padding: $default-padding/2 10px 0;
+    }
+}
+
+
 /*
 	Features
 */
 
 @import "images";
+@import "Features/availabilityStatus/availabilityStatus";
 @import "Features/jsDetect/jsDetect";

@@ -1,11 +1,11 @@
+$default-font-family: "Open Sans", "Helvetica", "Arial";
+
+@import "Styles/normalize";
+@import "Styles/Skeleton";
+
 /*
 	Variables
 */
-$default-font-size: 12px;
-$default-margin: 80px;
-$default-padding: 100px;
-$wrapper-max-width: 1100px;
-
 $default-font-family: "Open Sans", "Helvetica", "Arial";
 $default-font-color: #5e5e5e;
 $border-color: rgba(0,0,0,.1);
@@ -13,6 +13,7 @@ $default-border-radius: 3px;
 
 // Colors
 $themeGray: $default-font-color;
+$nightBlack: #000;
 $deepLake: #263543;
 $snowWhite: #ffffff;
 $cherryRed: #ca3a3c;
@@ -26,110 +27,33 @@ $woodBrown: #584640;
 /*
 	Global styles
 */
-html, body {
-    background-color: darken($snowWhite, 85%);
-
+body {
     height: 100%;
-    margin: 0;
-    padding: 0;
-
-    font-family: $default-font-family;
-    font-size: $default-font-size;
-    color: $default-font-color;
-
-    overflow: hidden;
-}
-
-h1 {
-    margin: 10px 0;
-    padding: 0;
-
-    font-family: $default-font-family;
-    font-size: 38px;
-    line-height: 1.2em;
-    letter-spacing: 1px;
-    font-weight: 400;
-    font-style: normal;
-
     color: $default-font-color;
 }
 
-h2 {
-    margin: 0;
-    padding: 0;
+.Section {
+    margin-bottom: 10rem;
 
-    font-family: $default-font-family;
-    font-size: 14px;
-    line-height: 2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: 600;
-    font-style: normal;
-}
+    .container {
+		max-width: 100%;
+	}
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-#wrapper {
-    position: relative;
-    background-color: $snowWhite;
-
-    margin: $default-margin auto;
-    max-width: 1100px;
-    padding: $default-padding $default-padding 0;
-    overflow: hidden;
-
-    border-color: $border-color;
-    border-style: solid;
-    border-width: 1px;
-
-    > * {
-        margin-bottom: 10px;
+    h3 {
+        text-align: center;
     }
+
 }
-
-a {
-    color: inherit;
-    border-bottom: 1px $cherryRed dotted;
-    text-decoration: none;
-}
-
-/*
-    Smaller screen
-*/
-
-@media only screen and (max-width: 1460px) {
-    #wrapper {
-        margin: $default-margin;
-    }
-}
-
-/*
-    Tablet
-*/
-
-@media only screen and (max-width: 1024px) {
-    #wrapper {
-        margin: 0px auto;
-        border-width: 0px !important;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    #wrapper {
-        padding: $default-padding/2 10px 0;
-    }
-}
-
-
 /*
 	Features
 */
-
-@import "images";
+@import "Styles/images";
+// @import "Styles/wrapper";
 @import "Features/availabilityStatus/availabilityStatus";
 @import "Features/jsDetect/jsDetect";
+
+/*
+    Sections
+*/
+@import "Sections/Header/Header";
+@import "Sections/Summary/Summary";

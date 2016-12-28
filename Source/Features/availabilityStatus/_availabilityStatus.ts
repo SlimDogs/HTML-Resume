@@ -25,6 +25,7 @@ class AvailabilityStatus implements Resume_Application.IAvailabilityStatus {
 				success: (response: Resume_Application.IResponseCV) => {
 					if (response.Resume.Version === this.Parameters.Version) {
 						$("body").removeClass("AVAILABILITY-NOT-CLEAR");
+						this.Parameters.Availability = response.Resume.Availability;
 
 						if (response.Resume.Availability) {
 							$("body").addClass("AVAILABILITY-AVAILABLE");

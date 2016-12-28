@@ -50,8 +50,6 @@ class Bootstrap implements Resume_Application.IBootstrap {
 			resume sections
 		*/
 		this.QuickNavigationFeature.initialize();
-
-		$("body").addClass("NOT-LATEST-VERSION");
 	}
 }
 

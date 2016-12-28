@@ -1,0 +1,130 @@
+#Header {
+	$avatar-size: 100px;
+
+	background-color: $nightBlack;
+	background-image: url("Source/Sections/Header/_Header.jpg");
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+	position: relative;
+	padding: 8rem 0;
+
+	.avatar {
+		position: absolute;
+		left: 50%;
+		top: 100%;
+
+		background-image: url("Source/Sections/Header/_Avatar.jpg");
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+
+		border-radius: 360px;
+		margin: 0 auto;
+
+		height: $avatar-size;
+		width: $avatar-size;
+		margin-left: -($avatar-size/2);
+		margin-top: -($avatar-size/2);
+	}
+
+	.title {
+		text-align: center;
+
+		h1 {
+			font-family: "Arial Black";
+			color: $snowWhite;
+			text-shadow: 1px 1px 1px $nightBlack;
+
+			margin: 0;
+		}
+
+		h3 {
+			font-family: "Arial Black";
+			color: $nightBlack;
+			opacity: 0.5;
+			text-transform: uppercase;
+		}
+	}
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+	#Header {
+		$avatar-size: 125px;
+
+		padding: 10rem 0;
+
+		.avatar {
+			height: $avatar-size;
+			width: $avatar-size;
+			margin-left: -($avatar-size/2);
+			margin-top: -($avatar-size/2);
+		}
+	}
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+	#Header {
+		$avatar-size: 150px;
+
+		padding: 12rem 0;
+
+		.avatar {
+			height: $avatar-size;
+			width: $avatar-size;
+			margin-left: -($avatar-size/2);
+			margin-top: -($avatar-size/2);
+		}
+	}
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+	#Header {
+		$avatar-size: 175px;
+		background-size: 100% auto;
+		padding: 16rem 0;
+
+		.avatar {
+			height: $avatar-size;
+			width: $avatar-size;
+			margin-left: -($avatar-size/2);
+			margin-top: -($avatar-size/2);
+		}
+
+	}
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+	#Header {
+		$avatar-size: 200px;
+
+		padding: 20rem 0;
+
+		.avatar {
+			height: $avatar-size;
+			width: $avatar-size;
+			margin-left: -($avatar-size/2);
+			margin-top: -($avatar-size/2);
+		}
+	}
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+	#Header {
+		$avatar-size: 225px;
+
+		padding: 22rem 0;
+
+		.avatar {
+			height: $avatar-size;
+			width: $avatar-size;
+			margin-left: -($avatar-size/2);
+			margin-top: -($avatar-size/2);
+		}
+	}
+}

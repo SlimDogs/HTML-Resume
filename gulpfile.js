@@ -56,7 +56,7 @@ var Tasks;
             /*
                 Sync concating of app logic
             */
-            var featuresFolder = "Source/Features/", librariesFolder = "Source/Libraries/";
+            var featuresFolder = "Source/Features/", sectionsFolder = "Source/Sections/", librariesFolder = "Source/Libraries/";
             this.gulp.task("TASK: BUNDLE FEATURES", ["TASK: TypeScript", "TASK: SASS", "TASK: BUNDLE HTML"], function () {
                 return _this.gulp
                     .src([
@@ -70,7 +70,8 @@ var Tasks;
             this.gulp.task("TASK: BUNDLE HTML", function () {
                 return _this.gulp
                     .src([
-                    featuresFolder + "**/_*.html"
+                    featuresFolder + "**/_*.html",
+                    sectionsFolder + "**/_*.html"
                 ])
                     .pipe(_this.concat("Temp/_html.html"))
                     .pipe(_this.gulp.dest("."));

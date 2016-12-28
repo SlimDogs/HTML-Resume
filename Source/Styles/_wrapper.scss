@@ -1,0 +1,55 @@
+$default-mobile-padding: 10px;
+$default-mobile-margin: 5px;
+
+$default-padding: 100px;
+$default-margin: 80px;
+$wrapper-max-width: 1100px;
+
+#wrapper {
+	position: relative;
+	background-color: $snowWhite;
+
+	margin: $default-mobile-margin;
+	padding: $default-padding/2 $default-mobile-padding 0;
+	overflow: hidden;
+
+	> * {
+			margin-bottom: 10px;
+	}
+}
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+	#wrapper {
+
+	}
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+	#wrapper {
+		margin: $default-margin;
+		// padding: $default-padding/2 $default-mobile-padding $default-mobile-padding $default-mobile-padding;
+	}
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+	#wrapper {
+		max-width: 1100px;
+		margin: $default-margin auto;
+		padding: $default-padding/2;
+
+		border-color: $border-color;
+		border-style: solid;
+		border-width: 1px;
+	}
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+}

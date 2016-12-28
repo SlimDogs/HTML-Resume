@@ -75,6 +75,7 @@ namespace Tasks {
 				Sync concating of app logic
 			*/
 			let featuresFolder = "Source/Features/",
+				sectionsFolder = "Source/Sections/",
 				librariesFolder = "Source/Libraries/";
 
 			this.gulp.task("TASK: BUNDLE FEATURES", ["TASK: TypeScript", "TASK: SASS", "TASK: BUNDLE HTML"], () => {
@@ -93,7 +94,8 @@ namespace Tasks {
 			this.gulp.task("TASK: BUNDLE HTML", () => {
 				return this.gulp
 					.src([
-						`${featuresFolder}**/_*.html`
+						`${featuresFolder}**/_*.html`,
+						`${sectionsFolder}**/_*.html`
 					])
 					.pipe(this.concat("Temp/_html.html"))
 					.pipe(this.gulp.dest("."));

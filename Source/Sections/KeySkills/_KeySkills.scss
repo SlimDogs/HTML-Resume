@@ -1,0 +1,53 @@
+#KeySkills {
+	.skill-box {
+		margin-bottom: 3rem;
+
+		h5 {
+			margin-bottom: 0;
+		}
+
+		.progress-bar {
+			position: relative;
+			border-radius: 5px;
+			background-color: lighten($nightBlack, 75%);
+			height: 1rem;
+
+			overflow: hidden;
+
+			> div {
+				position: absolute;
+				left: 0;
+				top: 0;
+				bottom: 0;
+
+				background-color: $successGreen;
+			}
+
+			&.percents-100 {
+				> div {
+					width: 100%;
+				}
+			}
+			&.percents-95 {
+				> div {
+					width: 95%;
+				}
+			}
+			&.percents-90 {
+				> div {
+					width: 90%;
+				}
+			}
+			&.percents-85 {
+				> div {
+					width: 85%;
+				}
+			}
+			&.percents-75 {
+				> div {
+					width: 85%;
+				}
+			}
+		}
+	}
+}

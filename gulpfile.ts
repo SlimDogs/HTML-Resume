@@ -95,7 +95,11 @@ namespace Tasks {
 				return this.gulp
 					.src([
 						`${featuresFolder}**/_*.html`,
-						`${sectionsFolder}**/_*.html`
+						`${sectionsFolder}/Header/_*.html`,
+						`${sectionsFolder}/Summary/_*.html`,
+						`${sectionsFolder}/Employment/_*.html`,
+						`${sectionsFolder}/Education/_*.html`,
+						`${sectionsFolder}/KeySkills/_*.html`
 					])
 					.pipe(this.concat("Temp/_html.html"))
 					.pipe(this.gulp.dest("."));

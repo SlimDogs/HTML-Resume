@@ -1,4 +1,4 @@
-$default-font-family: "Open Sans", "Helvetica", "Arial";
+$default-font-family: "Raleway", "Helvetica", "Open Sans", "Arial";
 
 @import "Styles/normalize";
 @import "Styles/Skeleton";
@@ -19,6 +19,7 @@ $snowWhite: #ffffff;
 $cherryRed: #ca3a3c;
 $smoothMetal: #728da1;
 $woodBrown: #584640;
+$successGreen: #2eb267;
 
 %default-box-shadow {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
@@ -43,6 +44,10 @@ body {
     }
 
 }
+
+.bold-text {
+    font-weight: bold;
+}
 /*
 	Features
 */
@@ -56,3 +61,6 @@ body {
 */
 @import "Sections/Header/Header";
 @import "Sections/Summary/Summary";
+@import "Sections/Employment/Employment";
+@import "Sections/Education/Education";
+@import "Sections/KeySkills/KeySkills";

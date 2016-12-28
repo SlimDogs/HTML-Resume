@@ -4,15 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-
-    <!-- Mobile Specific Metas
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Tautvydas Derzinskas // Curriculum Vitae</title>
     <meta name="description" content="">
     <meta name="author" content="Tautvydas Derzinskas">
-
     <style>
 @charset "UTF-8";
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -25,7 +21,7 @@
 /* Document
    ========================================================================== */
 html {
-  font-family: "Open Sans", "Helvetica", "Arial";
+  font-family: "Raleway", "Helvetica", "Open Sans", "Arial";
   /* 1 */
   line-height: 1.15;
   /* 2 */
@@ -904,6 +900,9 @@ body {
   .Section h3 {
     text-align: center; }
 
+.bold-text {
+  font-weight: bold; }
+
 /*
 	Features
 */
@@ -984,15 +983,19 @@ body.NO-JAVASCRIPT {
   #Header .title {
     text-align: center; }
     #Header .title h1 {
-      font-family: "Arial Black";
+      font-weight: bold;
       color: #ffffff;
       text-shadow: 1px 1px 1px #000;
       margin: 0; }
+      .NO-INTERNET #Header .title h1 {
+        font-weight: normal;
+        font-family: "Arial Black"; }
     #Header .title h3 {
-      font-family: "Arial Black";
       color: #000;
       opacity: 0.5;
       text-transform: uppercase; }
+      .NO-INTERNET #Header .title h3 {
+        font-family: "Arial Black"; }
 
 /* Larger than mobile */
 @media (min-width: 400px) {
@@ -1045,8 +1048,42 @@ body.NO-JAVASCRIPT {
       margin-left: -112.5px;
       margin-top: -112.5px; } }
 
-#Summary .container {
-  max-width: 100%; }
+#Summary .contacts {
+  width: 100%; }
+  #Summary .contacts .row {
+    margin-bottom: 1.5rem; }
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  #Summary .contacts .row {
+    margin-bottom: 3rem; } }
+
+#KeySkills .skill-box {
+  margin-bottom: 3rem; }
+  #KeySkills .skill-box h5 {
+    margin-bottom: 0; }
+  #KeySkills .skill-box .progress-bar {
+    position: relative;
+    border-radius: 5px;
+    background-color: #bfbfbf;
+    height: 1rem;
+    overflow: hidden; }
+    #KeySkills .skill-box .progress-bar > div {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background-color: #2eb267; }
+    #KeySkills .skill-box .progress-bar.percents-100 > div {
+      width: 100%; }
+    #KeySkills .skill-box .progress-bar.percents-95 > div {
+      width: 95%; }
+    #KeySkills .skill-box .progress-bar.percents-90 > div {
+      width: 90%; }
+    #KeySkills .skill-box .progress-bar.percents-85 > div {
+      width: 85%; }
+    #KeySkills .skill-box .progress-bar.percents-75 > div {
+      width: 85%; }
 
     </style>
 </head>
@@ -1074,25 +1111,6 @@ body.NO-JAVASCRIPT {
 		<h3>Curriculum Vitae</h3>
 	</div>
 </div>
-<div id="KeySkills" class="Section">
-	<div class="container">
-		<div class="row">
-			<div class="one-half column">
-				<h3>Profile</h3>
-				<p>
-
-			I build responsive, scalable web sites and web applications using a variety of technologies that work on smartphones, tablets and desktop computers.<br /><br />
-
-			Starting with UI development, I became proficient in pure JavaScript as well as JavaScript frameworks like AngularJs. When I work my main goals always are to create beautiful and well performing frontend. Recent web applications I worked on was huge in size, so I have learned how important is to have well performing and fast frontend!
-
-				</p>
-			</div>
-			<div class="one-half column">
-				<h3>Contacts</h3>
-			</div>
-		</div>
-	</div>
-</div>
 <div id="Summary" class="Section">
 	<div class="container">
 		<div class="row">
@@ -1108,6 +1126,147 @@ body.NO-JAVASCRIPT {
 			</div>
 			<div class="one-half column">
 				<h3>Contacts</h3>
+
+				<div class="container contacts">
+					<div class="row">
+						<div class="one-half column bold-text">
+							Address:
+						</div>
+						<div class="one-half column">
+							Flat 4,<br />
+							16-17 Hanger Lane,<br />
+							London,<br />
+							W5 3HH
+
+						</div>
+					</div>
+					<div class="row">
+						<div class="one-half column bold-text">
+							Mobile number:
+						</div>
+						<div class="one-half column">
+							07442 977197
+						</div>
+					</div>
+					<div class="row">
+						<div class="one-half column bold-text">
+							Email:
+						</div>
+						<div class="one-half column">
+							tautvydasuk@gmail.com
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<div id="Employment" class="Section">
+	<h3>Employment</h3>
+	<div class="container">
+		<div class="row">
+			<div class="one-half column">
+
+			</div>
+			<div class="one-half column">
+
+			</div>
+		</div>
+	</div>
+</div>
+<div id="Education" class="Section">
+	<h3>Education</h3>
+	<div class="container">
+		<div class="row">
+			<div class="one-half column">
+
+			</div>
+			<div class="one-half column">
+
+			</div>
+		</div>
+	</div>
+</div>
+<div id="KeySkills" class="Section">
+	<h3>Skills</h3>
+	<div class="container">
+		<div class="row">
+			<div class="one-half column">
+
+				<div class="skill-box">
+					<h5>JavaScript</h5>
+					<div class="progress-bar percents-95">
+						<div></div>
+					</div>
+				</div>
+
+				<div class="skill-box">
+					<h5>TypeScript</h5>
+					<div class="progress-bar percents-95">
+						<div></div>
+					</div>
+				</div>
+
+				<div class="skill-box">
+					<h5>AngularJs</h5>
+					<div class="progress-bar percents-100">
+						<div></div>
+					</div>
+				</div>
+
+				<div class="skill-box">
+					<h5>HTML</h5>
+					<div class="progress-bar percents-100">
+						<div></div>
+					</div>
+				</div>
+
+				<div class="skill-box">
+					<h5>CSS</h5>
+					<div class="progress-bar percents-95">
+						<div></div>
+					</div>
+				</div>
+
+			</div>
+			<div class="one-half column">
+
+				<div class="skill-box">
+					<h5>Sass</h5>
+					<div class="progress-bar percents-90">
+						<div></div>
+					</div>
+				</div>
+
+				<div class="skill-box">
+					<h5>Gulp</h5>
+					<div class="progress-bar percents-90">
+						<div></div>
+					</div>
+				</div>
+
+				<div class="skill-box">
+					<h5>Scrum</h5>
+					<div class="progress-bar percents-85">
+						<div></div>
+					</div>
+				</div>
+
+				<div class="skill-box">
+					<h5>DevOps</h5>
+					<div class="progress-bar percents-90">
+						<div></div>
+					</div>
+				</div>
+
+				<div class="skill-box">
+					<h5>jQuery</h5>
+					<div class="progress-bar percents-95">
+						<div></div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -1169,6 +1328,7 @@ var InternetDetect = (function () {
             var i = new Image();
             i.onload = function () {
                 $("body").removeClass("NO-INTERNET");
+                $("head").append("<link href=\"https://fonts.googleapis.com/css?family=Raleway:400,300,600\" rel=\"stylesheet\" type=\"text/css\">");
                 _this.Parameters.Internet = true;
                 _this.parseSubscriptions();
             };

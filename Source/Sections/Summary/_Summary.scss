@@ -1,5 +1,20 @@
 #Summary {
-	.container {
-		max-width: 100%;
+	.contacts {
+		width: 100%;
+
+		.row {
+			margin-bottom: 1.5rem;
+		}
+	}
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+	#Summary {
+		.contacts {
+			.row {
+				margin-bottom: 3rem;
+			}
+		}
 	}
 }

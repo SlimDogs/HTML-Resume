@@ -71,7 +71,11 @@ var Tasks;
                 return _this.gulp
                     .src([
                     featuresFolder + "**/_*.html",
-                    sectionsFolder + "**/_*.html"
+                    sectionsFolder + "/Header/_*.html",
+                    sectionsFolder + "/Summary/_*.html",
+                    sectionsFolder + "/Employment/_*.html",
+                    sectionsFolder + "/Education/_*.html",
+                    sectionsFolder + "/KeySkills/_*.html"
                 ])
                     .pipe(_this.concat("Temp/_html.html"))
                     .pipe(_this.gulp.dest("."));

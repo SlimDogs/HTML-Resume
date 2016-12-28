@@ -11,6 +11,10 @@ class InternetDetect implements Resume_Application.IInternetDetect {
 			let i = new Image();
 			i.onload = () => {
 				$("body").removeClass("NO-INTERNET");
+
+				// Appending font file
+				$("head").append(`<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">`);
+
 				this.Parameters.Internet = true;
 				this.parseSubscriptions();
 			};

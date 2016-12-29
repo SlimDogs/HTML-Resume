@@ -34,7 +34,7 @@ body {
 }
 
 .Section {
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
 
     .container {
 		max-width: 100%;
@@ -49,6 +49,13 @@ body {
 .bold-text {
     font-weight: bold;
 }
+
+@media print {
+  .hidden-print {
+    display: none !important;
+  }
+}
+
 /*
 	Features
 */

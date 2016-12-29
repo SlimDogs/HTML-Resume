@@ -39,21 +39,12 @@
 			text-shadow: 1px 1px 1px $nightBlack;
 
 			margin: 0;
-
-			.NO-INTERNET & {
-				font-weight: normal;
-				font-family: "Arial Black";
-			}
 		}
 
 		h3 {
 			color: $nightBlack;
 			opacity: 0.5;
 			text-transform: uppercase;
-
-			.NO-INTERNET & {
-				font-family: "Arial Black";
-			}
 		}
 	}
 }

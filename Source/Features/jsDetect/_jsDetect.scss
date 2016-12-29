@@ -12,13 +12,8 @@ body {
 		/*
 			Hidding everything if js support is not found
 		*/
-		#wrapper {
-			background-color: transparent !important;
-			border: none !important;
-
-			> * {
-				display: none;
-			}
+		> .Section {
+			display: none;
 		}
 	}
 }

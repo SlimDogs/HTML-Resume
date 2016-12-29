@@ -122,7 +122,7 @@ var Tasks;
                     .src([
                     "Source/index.scss"
                 ])
-                    .pipe(_this.sass())
+                    .pipe(_this.sass({ outputStyle: "compressed" }))
                     .pipe(_this.gulp.dest("Temp"));
             });
         };

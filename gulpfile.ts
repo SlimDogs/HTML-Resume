@@ -149,7 +149,7 @@ namespace Tasks {
 					.src([
 						"Source/index.scss"
 					])
-					.pipe(this.sass())
+					.pipe(this.sass({ outputStyle: "compressed" }))
 					.pipe(this.gulp.dest("Temp"));
 			});
 		}

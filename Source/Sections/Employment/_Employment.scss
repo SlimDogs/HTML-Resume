@@ -1,5 +1,16 @@
 #Employment {
+
+	.separator {
+		height: 1px;
+		border-bottom: 1px $smoothMetal dashed;
+
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
 	.employment-box {
+		margin-top: 3rem;
+		margin-bottom: 3rem;
 
 		.job-summary {
 			h4, h5, h6 {
@@ -15,15 +26,14 @@
 
 		.tags-list {
 			list-style: none;
+			margin-bottom: 0;
 
 			> li {
 				display: inline-block;
-				background-color: $successGreen;
-				color: $snowWhite;
 				padding: 0.5rem;
 
 				border-radius: 3px;
-				border: 1px darken($successGreen, 10%) dashed;
+				border: 1px $border-color dotted;
 
 				@extend %default-box-shadow;
 			}

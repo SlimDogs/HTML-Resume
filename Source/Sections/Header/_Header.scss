@@ -2,7 +2,6 @@
 	$avatar-size: 100px;
 
 	background-color: $nightBlack;
-	background-image: url("Source/Sections/Header/_Header.jpg");
 	background-size: auto 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -10,12 +9,13 @@
 	position: relative;
 	padding: 8rem 0;
 
+	@extend %header-image;
+
 	.avatar {
 		position: absolute;
 		left: 50%;
 		top: 100%;
 
-		background-image: url("Source/Sections/Header/_Avatar.jpg");
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
 
@@ -26,6 +26,8 @@
 		width: $avatar-size;
 		margin-left: -($avatar-size/2);
 		margin-top: -($avatar-size/2);
+
+		@extend %avatar-image;
 	}
 
 	.title {

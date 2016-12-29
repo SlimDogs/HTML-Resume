@@ -1,3 +1,33 @@
 #Employment {
+	.employment-box {
 
+		.job-summary {
+			h4, h5, h6 {
+				margin-bottom: 0;
+			}
+		}
+
+		.responsibilities {
+			li {
+				margin-bottom: 0;
+			}
+		}
+
+		.tags-list {
+			list-style: none;
+
+			> li {
+				display: inline-block;
+				background-color: $successGreen;
+				color: $snowWhite;
+				padding: 0.5rem;
+
+				border-radius: 3px;
+				border: 1px darken($successGreen, 10%) dashed;
+
+				@extend %default-box-shadow;
+			}
+		}
+
+	}
 }

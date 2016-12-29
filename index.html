@@ -1026,6 +1026,7 @@ body.NO-JAVASCRIPT {
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
   #Header {
+    background-size: 100% auto;
     padding: 12rem 0; }
     #Header .avatar {
       height: 150px;
@@ -1036,7 +1037,6 @@ body.NO-JAVASCRIPT {
 /* Larger than tablet */
 @media (min-width: 750px) {
   #Header {
-    background-size: 100% auto;
     padding: 16rem 0; }
     #Header .avatar {
       height: 175px;
@@ -1446,6 +1446,17 @@ var InternetDetect = (function () {
     return InternetDetect;
 }());
 
+var JavaScriptDetect = (function () {
+    function JavaScriptDetect(Parameters) {
+        this.Parameters = Parameters;
+    }
+    JavaScriptDetect.prototype.initialize = function () {
+        $("body").removeClass("NO-JAVASCRIPT");
+        this.Parameters.JavaScript = true;
+    };
+    return JavaScriptDetect;
+}());
+
 var LanguageSwitch = (function () {
     function LanguageSwitch(Parameters) {
         this.Parameters = Parameters;
@@ -1475,17 +1486,6 @@ var LanguageSwitch = (function () {
         }
     };
     return LanguageSwitch;
-}());
-
-var JavaScriptDetect = (function () {
-    function JavaScriptDetect(Parameters) {
-        this.Parameters = Parameters;
-    }
-    JavaScriptDetect.prototype.initialize = function () {
-        $("body").removeClass("NO-JAVASCRIPT");
-        this.Parameters.JavaScript = true;
-    };
-    return JavaScriptDetect;
 }());
 
 var QuickNavigation = (function () {

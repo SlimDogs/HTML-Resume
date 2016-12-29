@@ -78,7 +78,7 @@
 @media (min-width: 550px) {
 	#Header {
 		$avatar-size: 150px;
-
+		background-size: 100% auto;
 		padding: 12rem 0;
 
 		.avatar {
@@ -94,7 +94,6 @@
 @media (min-width: 750px) {
 	#Header {
 		$avatar-size: 175px;
-		background-size: 100% auto;
 		padding: 16rem 0;
 
 		.avatar {

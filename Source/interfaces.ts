@@ -24,8 +24,14 @@ namespace Resume_Application {
 		subcsribe: (callback: () => void) => void;
 	}
 
+	interface ITranslations {
+		[key: string]: string;
+	}
 	export interface ILanguageSwitch extends IBaseFeature {
-		translations: Array<string>;
+		translations: {
+			[key: string]: ITranslations;
+		};
+		changeLanguage: (translation: string) => void;
 	}
 
 	export interface IQuickNavigation extends IBaseFeature {

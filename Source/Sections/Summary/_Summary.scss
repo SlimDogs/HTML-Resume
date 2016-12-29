@@ -5,7 +5,32 @@
 		.row {
 			margin-bottom: 1.5rem;
 		}
+
+		.phone-column {
+			.AVAILABILITY-NOT-AVAILABLE & {
+				filter: blur(2px);
+
+				@extend %no-select;
+			}
+		}
 	}
+
+	.status-available, .status-unavailable {
+		display: none;
+	}
+
+	.AVAILABILITY-AVAILABLE & {
+		.status-available {
+			display: block;
+		}
+	}
+
+	.AVAILABILITY-NOT-AVAILABLE & {
+		.status-unavailable {
+			display: block;
+		}
+	}
+
 }
 
 /* Larger than phablet (also point when grid becomes active) */

@@ -94,8 +94,10 @@ namespace Tasks {
 			this.gulp.task("TASK: BUNDLE HTML", () => {
 				return this.gulp
 					.src([
-						`${featuresFolder}**/_*.html`,
+						`${featuresFolder}/jsDetect/_*.html`,
+						`${featuresFolder}/availabilityStatus/_*.html`,
 						`${sectionsFolder}/Header/_*.html`,
+						`${featuresFolder}/languageSwitch/_*.html`,
 						`${sectionsFolder}/Summary/_*.html`,
 						`${sectionsFolder}/Employment/_*.html`,
 						`${sectionsFolder}/Education/_*.html`,

@@ -20,7 +20,14 @@
 				top: 0;
 				bottom: 0;
 
-				background-color: $successGreen;
+				background: $successGreen;
+				background: repeating-linear-gradient(
+					45deg,
+					$successGreen,
+					$successGreen 10px,
+					darken($successGreen, 5%) 10px,
+					darken($successGreen, 5%) 20px
+				);
 			}
 
 			&.percents-100 {

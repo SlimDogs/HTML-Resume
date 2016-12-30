@@ -95,7 +95,6 @@ namespace Tasks {
 				return this.gulp
 					.src([
 						`${featuresFolder}/jsDetect/_*.html`,
-						`${featuresFolder}/availabilityStatus/_*.html`,
 						`${sectionsFolder}/Header/_*.html`,
 						`${featuresFolder}/languageSwitch/_*.html`,
 						`${sectionsFolder}/Summary/_*.html`,

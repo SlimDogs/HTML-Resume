@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Tautvydas Derzinskas // Curriculum Vitae</title>
+    <title data-lang="pageTitle">Tautvydas Derzinskas > Curriculum Vitae</title>
     <meta name="description" content="">
     <meta name="author" content="Tautvydas Derzinskas">
     <style>
@@ -26,18 +26,15 @@
 		Thank you.
 	</div>
 </div>
-<div id="version-information" data-lang="newerVersionAvailable">
-	It appears that there is a version of this CV which is more up to date! If you want see it, please click <a href="http://www.tautvydas.info">here</a>.
-</div>
 <div id="Header" class="Section">
 	<div class="avatar" itemprop="image"></div>
 	<div class="title">
 		<h1 data-lang="authorName" itemprop="name">Tautvydas Derzinskas</h1>
 		<h3 data-lang="cv">Curriculum Vitae</h3>
 		<select id="language-selector">
-			<option value="en">English</option>
-			<option value="lt">Lithuanian</option>
-			<option value="pl">Polish</option>
+			<option data-lang="english" value="en">English</option>
+			<option data-lang="lithuanian" value="lt">Lithuanian</option>
+			<option data-lang="polish" value="pl">Polish</option>
 		</select>
 	</div>
 </div>
@@ -535,6 +532,10 @@ var LanguageSwitch = (function () {
         this.Parameters = Parameters;
         this.translations = {
             "en": {
+                "pageTitle": "Tautvydas Derzinskas > Curriculum Vitae",
+                "english": "English",
+                "lithuanian": "Lithuanian",
+                "polish": "Polish",
                 "authorName": "Tautvydas Derzinskas",
                 "cv": "Curriculum Vitae",
                 "profile": "Profile",
@@ -581,6 +582,10 @@ var LanguageSwitch = (function () {
                 "skills": "Skills"
             },
             "lt": {
+                "pageTitle": "Tautvydas Deržinskas > Gyvenimo aprašymas",
+                "english": "Angliškai",
+                "lithuanian": "Lietuviškai",
+                "polish": "Lenkiškai",
                 "authorName": "Tautvydas Deržinskas",
                 "cv": "Gyvenimo aprašymas",
                 "profile": "Santrumpa",
@@ -616,7 +621,7 @@ var LanguageSwitch = (function () {
                 "freeDates": "2008 Spalis – 2010 Vasaris",
                 "freeResp1": "Svetainės kūrimas nuo nulio",
                 "freeResp2": "Papildomų funkcijų diegimas į egzistuojančius projektus",
-                "freeDescrption": "\u0160iuo laikotarpiu teko dirbti prie \u012Fvairiausi\u0173 projekt\u0173, bei teigti \u012Fvairias paslauga: nuo svetaini\u0173 talpinimo paie\u0161kos iki pilno svetain\u0117s k\u016Brimo nuo nulio.\n\t\t\t\t\t<br><br>\n\t\t\t\t\tTeko sukurti ne vien\u0105 blog\u0105, naujien\u0173 puslap\u012F: turiniui valdyti pritaikydavau \u012Fvairias sistemas, tokias kaip WordPress, CuteNews ar PHP Nuke.\n\t\t\t\t\t<br><br>\n\t\t\t\t\tNeretai tobulindavau jau egzistuojan\u010Dius projektus: diegdavau diskusij\u0173 lentas, sve\u010Di\u0173 knygas, vartotoj\u0173 lankomumo skaitliukus.",
+                "freeDescrption": "\u0160iuo laikotarpiu teko dirbti prie \u012Fvairiausi\u0173 projekt\u0173, bei teigti \u012Fvairias paslaugas: nuo svetaini\u0173 talpinimo paie\u0161kos iki pilno svetain\u0117s k\u016Brimo nuo nulio.\n\t\t\t\t\t<br><br>\n\t\t\t\t\tTeko sukurti ne vien\u0105 blog\u0105, naujien\u0173 puslap\u012F: turiniui valdyti pritaikydavau \u012Fvairias sistemas, tokias kaip WordPress, CuteNews ar PHP Nuke.\n\t\t\t\t\t<br><br>\n\t\t\t\t\tNeretai tobulindavau jau egzistuojan\u010Dius projektus: diegdavau diskusij\u0173 lentas, sve\u010Di\u0173 knygas, vartotoj\u0173 lankomumo skaitliukus.",
                 "education": "Išsilavinimas",
                 "eduName1": "Šiaulių Universitetas, Lietuva",
                 "eduStudies1": "Informatikos bakalauro studijos",
@@ -625,6 +630,56 @@ var LanguageSwitch = (function () {
                 "eduName3": "Jovaro mokykla, Lietuva",
                 "eduStudies3": "Pradinis išsilavinimas",
                 "skills": "Įgūdžiai"
+            },
+            "pl": {
+                "pageTitle": "Tautvydas Derzinskas > Curriculum Vitae",
+                "english": "Angielski",
+                "lithuanian": "Litewski",
+                "polish": "Polski",
+                "authorName": "Tautvydas Derzinskas",
+                "cv": "Curriculum Vitae",
+                "profile": "Profil",
+                "profileDesc": "Buduj\u0119 elastyczne(tzw. responsive), rozbudowane i mo\u017Cliwe do rozbudowania strony internetowe i aplikacje sieciowe u\u017Cywaj\u0105c r\u00F3\u017Cnorodnych technologii, kt\u00F3re dzia\u0142aj\u0105 na smartfonach, tabletach oraz komputerach stacjonarnych.\n\t\t\t\t\t\t\t<br><br>\n\t\t\t\t\t\t\tRozpocz\u0105wszy programowanie z UI, sta\u0142em si\u0119 bieg\u0142y zar\u00F3wno w czystym JavaScript, jak r\u00F3wnie\u017C w strukturach JavaScript, takich jak AngularJs. Kiedy pracuj\u0119, zawsze d\u0105\u017C\u0119 do tego, by stworzy\u0107 pi\u0119kn\u0105, dobrze prezentuj\u0105c\u0105 si\u0119 wastw\u0119 front-end. Ostatni projekt nad kt\u00F3rym pracowa\u0142em by\u0142 z\u0142o\u017Cony i du\u017Cych rozmiar\u00F3w, co nauczy\u0142o mnie, jak wa\u017Cny jest sprawnie dzia\u0142aj\u0105cy i szybki front-end!",
+                "available": "Obecnie poszukuję pracy na pełen etat.",
+                "unavailable": "Obecnie nie szukam nowej pracy.",
+                "contacts": "Kontakty",
+                "address": "Adres:",
+                "mobile": "Telefon kontaktowy:",
+                "email": "Adres mailowy:",
+                "web": "Własna strona internetowa:",
+                "employment": "Historia zatrudnienia",
+                "senior": "Starszy programista",
+                "orbusDates": "Sierpień 2014 - Do chwili obecnej",
+                "orbusResp1": "Tworzenie aplikacji zarządzania przedsiębiorstw.",
+                "orbusResp2": "Tworzenie aplikacji SharePoint",
+                "orbusResp3": "Szkolenie nowych programistów",
+                "orbusResp4": "Zarządzanie operacjami programowania w warstwie front-end.",
+                "orbusDescription": "Moim g\u0142\u00F3wnym zadaniem by\u0142o programowanie warstwy front-end dla nowego produktu o nazwie 'Office Arcitect' (Nazwa nieoficjalna, poniewa\u017C produkt nie zosta\u0142 jeszcze wypuszczony na rynek). Jest to ogromna jednostronowa aplikacja przeznaczona do zarz\u0105dzania przedsi\u0119biorstw.\n\t\t\t\t\t<br /><br />\n\t\t\t\t\tBy\u0142 to naprawd\u0119 przyjemny projekt, poniewa\u017C jego podstaw\u0105 by\u0142 AngularJs, a aplikcja mia\u0142a wiele cech. Niekt\u00F3re z cech wymaga\u0142y wiele pracy na UI. To pozwoli\u0142o mi zapozna\u0107 si\u0119 z wszystkimi wadami I zaletami Angular. It was a very enjoyable project to work on because it's foundation was AngularJs framework and application had a lot of features. Some of the features were very UI heavy. Working with such features enabled me to get known with all Angular benefits and flaws.\n\t\t\t\t\tOne of the better examples of UI heavy feature was \"Matrix\" view. Users could create a matrix which axis contained hundred of thousands items and my task was to display these axis and all the intersections between them in one page having a seemless scrolling experience. I had to use lazy loading and virtual dom rendering approach to do this.\n\t\t\t\t\t<br /><br />\n\t\t\t\t\tI have personally worked practically on every aspect of UI - from setting up the routing logic to tiny bits like custom form dropdown elements. I have written hundreds of AgularJs factories, services, directives and their controllers... I am familliar with all the problems which occurs when developing using AngularJs and the ways how to overcome them. The importance of not using watchers and two way binding even though using it would make developers life so much easier (sadly in cost of perormance).\n\t\t\t\t\t<br /><br />\n\t\t\t\t\tAs our main product was very tied with Microsoft products such as Visio, SharePoint I had oppurtunity to do some work related to them. To be specific I was responsibile of SharePoint application development. SharePoint applications - it's parts of \"Office Architect\" which can be integrated into SharePoint pages. I learned a lot about SharePoint and cross domain communication while working on these apps. I used such techniques as jSONp for cross domain data transfering and PostMessage API for communication between apps which were located in different iframes / tabs. A very unique and valuable experience!\n\t\t\t\t\t<br /><br />\n\t\t\t\t\tAs the main frontend developer I had to take responsibility and care about the frontend devOps. Our development operations were such as SASS compilation, Babel/TypeScript compilation, file bundling and minification, unit test running and many others. Initially we used Grunt as a devOps task runner, but after some time I had oppurtunity to replace it with Gulp which is much more flexible.\n\t\t\t\t\t<br /><br />\n\t\t\t\t\tBesides all the development work I have done I did a lot of mentoring too. I was responsible for new developers integration into our development process.",
+                "techUsed": "Skills developed / Technologies used",
+                "webDev": "Web Developer",
+                "wersportsDates": "Marzec 2013 - Marzec 2014",
+                "wersportsResp1": "Ecommerce and email campaigns development",
+                "wersportsResp2": "Ebay store and listings development",
+                "wersportsResp3": "Realizacja SEO",
+                "wersportsDescription": "At that time a small ecommerce based family business in which I took part as a main frontend developer.\n\t\t\t\t\t<br /><br />\n\t\t\t\t\tWhile working in co-operation with backend developer my main responsibility was development of We R Sports ecommerce page. Even though it was not a single page application I have used quite a lot of JavaScript to implement it as there were a lot of features which required some heavier coding. I have used various jQuery plugins and vanilla javascript to implement such features as slideshows, 360 product previews and many others. As our backend was based on Symfony (PHP framework) which used TWIG as it's default templating system I had to adapt and learn it to support my backend collegue as much as possible.\n\t\t\t\t\t<br /><br />\n\t\t\t\t\tAs we finished with the main web site my task was to transfer it to an eBay store. Ebay provides posibility to use custom html / javascript code to enhance sellers stores and we decided to use this feature and transfer a copy of the whole We R Sports eccommerce web site there. At that time I did not had much experience with JavaScript frameworks such as Angular I went with a decision to create own custom core which would drive the whole single page application. This core was made using plain JavaScript and jQuery. We were the first ones who introduced constantly updating data to the eBay listings, which enabled us to use unusual, our own features in eBay store and listings. All our enhanced eBay listings had various unusual for eBay UI heavy features such as product reviews, recommended/similar products lists and so on - I was behind all ui work.\n\t\t\t\t\t<br /><br />\n\t\t\t\t\tWhile not working with main ecommerce platform and eBay store I was responsible of implementing Schema.org schemas in companies public projects to improve SEO. Also I was implementing email templates for We R Sports marketing campaigns and news letters.",
+                "developer": "Developer",
+                "gvcDates": "Listopad 2012 - Marzec 2013",
+                "gvcResp1": "Tworzenie strony sklepu internetowego",
+                "gvcResp2": "Sklepy Ebay i Ebay stores and listing development",
+                "gvcDescription": "In this small re-selling ecommerce based company I stayed for a short period of time and as a single developer in the whole company I was responsible for every IT related thing.\n\t\t\t\t\t<br /><br />\n\t\t\t\t\tI was maintaining and developing two ecommerce platforms (DigiSpot.co.uk, GoodsStal.co.uk). As both platforms has ten of thousands products on sale the biggest responsibility and trouble was to make sure all the data (prices, stock) was always up to date as the company was just re-selling the items while actually not having them in own warehouses. I have implemented a small application which daily collected all the data from product providers and converted it to tabbed documents which later could be imported into our ecommerce platforms to refresh all the data.\n\t\t\t\t\t<br /><br />\n\t\t\t\t\tEvery once a while I was also updating ebay listings in multiple stores owned by the company. Ths involved me into using eBays restful API to update the listings automatically and html template creation from scratch.\n\t\t\t\t\t<br /><br />\n\t\t\t\t\tI was also the one man marketing operation: creating email news letters.\n\t\t\t\t\t<br /><br />\n\t\t\t\t\tBardzo si\u0119 ciesz\u0119, \u017Ce mia\u0142em mo\u017Cliwo\u015B\u0107 pracy w tej firmie, gdy\u017C tutaj I am very glad I had oppurtunity to work in this company as here my tasks varied a lot and it made me realize that I love frontend development more then backend!",
+                "freelancer": "Freelancer-praca na własną rękę",
+                "freeDates": "Październik 2008 - Luty 2010",
+                "freeResp1": "Programowanie stron internetowych od podstaw",
+                "freeResp2": "Wdrażanie nowych cech w już instniejące projekty. New features integration into existing projects",
+                "freeDescrption": "During this period of time I have worked on multiple various projects, doing various tasks starting with finding web hosting solutions and finishing with web site creation from scratch.\n\t\t\t\t\t<br /><br />\n\t\t\t\t\tStworzy\u0142em kilka blog\u00F3w bazuj\u0105cych na WordPress, CuteNews- systemach zarz\u0105dzaj\u0105cych tre\u015Bci\u0105.\n\t\t\t\t\t<br /><br />\n\t\t\t\t\tDla istniej\u0105cych stron internetowych wdra\u017Ca\u0142em nowe w\u0142a\u015Bciwo\u015Bci takie jak for a dyskusyjne, ksi\u0119gi go\u015Bci ( stworzy\u0142em te\u017C w\u0142asn\u0105, opart\u0105 na ksi\u0119dze go\u015Bci PHP, kt\u00F3ra u\u017Cywa plik\u00F3w p\u0142askich jako bazy), analiz\u0119 danych.",
+                "education": "Edukacja",
+                "eduName1": "Uniwersytet w Szawlach, Litwa",
+                "eduStudies1": "Studia inżynierskie o kierunku Technologia informacyjna",
+                "eduName2": "Gimnazjum ‘Didzvaris’, Litwa",
+                "eduStudies2": "Szkoła średnia",
+                "eduName3": "Szkoła ‘Jovaras’, Litwa",
+                "eduStudies3": "Szkoła podstawowa",
+                "skills": "Umiejętności"
             }
         };
     }

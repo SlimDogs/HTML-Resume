@@ -1,0 +1,57 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'start' ]
+2 info using npm@3.10.10
+3 info using node@v7.3.0
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle tautvydas_derzinskas_cv@1.0.0-b~prestart: tautvydas_derzinskas_cv@1.0.0-b
+6 verbose lifecycle tautvydas_derzinskas_cv@1.0.0-b~prestart: unsafe-perm in lifecycle true
+7 verbose lifecycle tautvydas_derzinskas_cv@1.0.0-b~prestart: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\Tautvydas\Desktop\Resume\node_modules\.bin;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter;C:\Program Files\Broadcom\Broadcom 802.11;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Git\cmd;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\nodejs\;C:\Users\Tautvydas\.dnx\bin;C:\Users\Tautvydas\AppData\Local\atom\bin;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Tautvydas\AppData\Local\Microsoft\WindowsApps;C:\Users\Tautvydas\AppData\Roaming\npm
+8 verbose lifecycle tautvydas_derzinskas_cv@1.0.0-b~prestart: CWD: C:\Users\Tautvydas\Desktop\Resume
+9 silly lifecycle tautvydas_derzinskas_cv@1.0.0-b~prestart: Args: [ '/d /s /c', 'npm install' ]
+10 silly lifecycle tautvydas_derzinskas_cv@1.0.0-b~prestart: Returned: code: 0  signal: null
+11 info lifecycle tautvydas_derzinskas_cv@1.0.0-b~start: tautvydas_derzinskas_cv@1.0.0-b
+12 verbose lifecycle tautvydas_derzinskas_cv@1.0.0-b~start: unsafe-perm in lifecycle true
+13 verbose lifecycle tautvydas_derzinskas_cv@1.0.0-b~start: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\Tautvydas\Desktop\Resume\node_modules\.bin;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter;C:\Program Files\Broadcom\Broadcom 802.11;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Git\cmd;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\nodejs\;C:\Users\Tautvydas\.dnx\bin;C:\Users\Tautvydas\AppData\Local\atom\bin;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Tautvydas\AppData\Local\Microsoft\WindowsApps;C:\Users\Tautvydas\AppData\Roaming\npm
+14 verbose lifecycle tautvydas_derzinskas_cv@1.0.0-b~start: CWD: C:\Users\Tautvydas\Desktop\Resume
+15 silly lifecycle tautvydas_derzinskas_cv@1.0.0-b~start: Args: [ '/d /s /c', 'tsc gulpfile.ts' ]
+16 silly lifecycle tautvydas_derzinskas_cv@1.0.0-b~start: Returned: code: 0  signal: null
+17 info lifecycle tautvydas_derzinskas_cv@1.0.0-b~poststart: tautvydas_derzinskas_cv@1.0.0-b
+18 verbose lifecycle tautvydas_derzinskas_cv@1.0.0-b~poststart: unsafe-perm in lifecycle true
+19 verbose lifecycle tautvydas_derzinskas_cv@1.0.0-b~poststart: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\Tautvydas\Desktop\Resume\node_modules\.bin;C:\Program Files\Broadcom\Broadcom 802.11 Network Adapter;C:\Program Files\Broadcom\Broadcom 802.11;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Hewlett-Packard\SimplePass\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Git\cmd;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\nodejs\;C:\Users\Tautvydas\.dnx\bin;C:\Users\Tautvydas\AppData\Local\atom\bin;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\Tautvydas\AppData\Local\Microsoft\WindowsApps;C:\Users\Tautvydas\AppData\Roaming\npm
+20 verbose lifecycle tautvydas_derzinskas_cv@1.0.0-b~poststart: CWD: C:\Users\Tautvydas\Desktop\Resume
+21 silly lifecycle tautvydas_derzinskas_cv@1.0.0-b~poststart: Args: [ '/d /s /c', 'gulp' ]
+22 silly lifecycle tautvydas_derzinskas_cv@1.0.0-b~poststart: Returned: code: 3221225786  signal: null
+23 info lifecycle tautvydas_derzinskas_cv@1.0.0-b~poststart: Failed to exec poststart script
+24 verbose stack Error: tautvydas_derzinskas_cv@1.0.0-b poststart: `gulp`
+24 verbose stack Exit status 3221225786
+24 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:255:16)
+24 verbose stack     at emitTwo (events.js:106:13)
+24 verbose stack     at EventEmitter.emit (events.js:191:7)
+24 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:40:14)
+24 verbose stack     at emitTwo (events.js:106:13)
+24 verbose stack     at ChildProcess.emit (events.js:191:7)
+24 verbose stack     at maybeClose (internal/child_process.js:885:16)
+24 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+25 verbose pkgid tautvydas_derzinskas_cv@1.0.0-b
+26 verbose cwd C:\Users\Tautvydas\Desktop\Resume
+27 error Windows_NT 10.0.14393
+28 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
+29 error node v7.3.0
+30 error npm  v3.10.10
+31 error code ELIFECYCLE
+32 error tautvydas_derzinskas_cv@1.0.0-b poststart: `gulp`
+32 error Exit status 3221225786
+33 error Failed at the tautvydas_derzinskas_cv@1.0.0-b poststart script 'gulp'.
+33 error Make sure you have the latest version of node.js and npm installed.
+33 error If you do, this is most likely a problem with the tautvydas_derzinskas_cv package,
+33 error not with npm itself.
+33 error Tell the author that this fails on your system:
+33 error     gulp
+33 error You can get information on how to open an issue for this project with:
+33 error     npm bugs tautvydas_derzinskas_cv
+33 error Or if that isn't available, you can get their info via:
+33 error     npm owner ls tautvydas_derzinskas_cv
+33 error There is likely additional logging output above.
+34 verbose exit [ 1, true ]

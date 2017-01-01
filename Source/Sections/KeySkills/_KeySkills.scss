@@ -58,3 +58,16 @@
 		}
 	}
 }
+
+@media print {
+	#KeySkills {
+		.skill-box {
+			display: inline-block;
+
+			h5 {
+				display: inline-block;
+				margin-right: 1rem;
+			}
+		}
+	}
+}

@@ -41,3 +41,12 @@
 
 	}
 }
+
+@media print {
+	#Employment {
+		.employment-box {
+			margin-top: 0rem;
+			margin-bottom: 0rem;
+		}
+	}
+}

@@ -1,6 +1,17 @@
 class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 	public translations = {
 		"en": {
+			"pleseEnableJavascript": `Hey there,
+				<br>
+				Thanks for checking out my CV!
+				<br>
+				I am specializing as Front-End developer and as you probably know - JavaScript is the most esential part of the Front-End development!
+				<br>
+				I have used JavaScript in this resume to enhance recruiters and hiring managers experiences and to make their lifes easier.
+				<br>
+				Please spend a second to enable "JavaScript" support for this page in order to see it's contents!
+				<br>
+				Thank you.`,
 			"pageTitle": "Tautvydas Derzinskas > Curriculum Vitae",
 			"english": "English",
 			"lithuanian": "Lithuanian",
@@ -9,9 +20,11 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"cv": "Curriculum Vitae",
 			"profile": "Profile",
 			"profileDesc": `I build responsive, scalable web sites and single page web applications using a variety of technologies that work on smartphones, tablets and desktop computers.
-							<br><br>
-							Starting with UI development, I became proficient in pure JavaScript as well as JavaScript frameworks like AngularJs. When I work my main goals are to create beautiful and fast performing frontend. Recent web applications I worked on was huge in size, so I have learned how important is to have well performing and fast frontend!`,
-			"available": "I am currently looking for a permament new position!",
+					<br><br>
+					Starting with UI development, I became proficient in pure JavaScript as well as JavaScript frameworks like AngularJs. I am open minded developer who loves to experiment and reaches for the very best results when completing my tasks. When I work my main goal is to create beautiful and fast performing applications.
+					<br><br>
+					I have experience working on both small and very large scale apps and I am very aware of how important is have the smoothly performing "face" of the application!`,
+			"available": "I am currently looking for a permament new position.",
 			"unavailable": "I am currently not looking for a new position.",
 			"contacts": "Contacts",
 			"address": "Address:",
@@ -49,7 +62,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"gvcDates": "Nov 2012 – Mar 2013",
 			"gvcResp1": "Ecommerce page and email campaign development",
 			"gvcResp2": "Ebay stores and listing development",
-			"gvcDescription": `In this small ecommerce based company I stayed for a short period of time and as a single developer in the whole company. GVC Digital specializes in reselling digital, electronical items. It owns two ecommerce platforms (DigiSpot, GoodsStall) and a numerous eBay and Amazon stores.
+			"gvcDescription": `GVC Digital specializes in reselling digital, electronical items. It owns two ecommerce platforms (DigiSpot, GoodsStall) and a numerous eBay and Amazon stores. In this small ecommerce based company I stayed for a short period of time and as a single developer in the whole company.
 					<br><br>
 					My main responsibilites were to keep all the product data up to date. To make this happend I have created a C# application which grabs all the information provided by wholesellers, converts it to specific database import compatible file format and performs the data update.
 					<br><br>
@@ -73,17 +86,28 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"skills": "Key Skills"
 		},
 		"lt": {
+			"pleseEnableJavascript": `Labas,
+				<br>
+				Malonu, kad norite susipažinti su mano gyvenimo aprašymu!
+				<br>
+				Aš esu web inžinierius, kuris savo darbuose dažnai naudoja "JavaScript" programavimo kalbą. Šis gyvenimo aprašymas - ne išimtis.
+				<br>
+				Jeigu norite pamatyti visą turinį, privalote įjingtu "JavaScript" palaikymą...
+				<br>
+				Dėkoju, už supratimą!`,
 			"pageTitle": "Tautvydas Deržinskas > Gyvenimo aprašymas",
 			"english": "Angliškai",
 			"lithuanian": "Lietuviškai",
 			"polish": "Lenkiškai",
 			"authorName": "Tautvydas Deržinskas",
 			"cv": "Gyvenimo aprašymas",
-			"profile": "Santrumpa",
-			"profileDesc": `I build responsive, scalable web sites and web applications using a variety of technologies that work on smartphones, tablets and desktop computers.
-							<br><br>
-							Starting with UI development, I became proficient in pure JavaScript as well as JavaScript frameworks like AngularJs. When I work my main goals always are to create beautiful and well performing frontend. Recent web applications I worked on was huge in size, so I have learned how important is to have well performing and fast frontend!`,
-			"available": "Šiuo metu ieškau naujo darbo!",
+			"profile": "Aprašymas",
+			"profileDesc": `Naudodamas įvairias technologijas, aš kūriu web programinę įrangą, gebančią prisitaikyti prie skirtingų dydžių ekranų raiškos ir veikiančią tiek mobiliuose įrenginiuose, tiek stacionariuose kompiuteriuose.
+						<br><br>
+						Esu pasitikintis savimi visuose frontend kūrimo aspektuose, pradedant vartotojo sąsajos kūrimu, baigiant vartotojo scenarijų kodavimu pasinaudojant JavaScript programavimo kalba.
+						<br><br>
+						Kuriant aplikacijas mano pagrininiai tikslai yra padaryti jas patogias ir greitai veikiančias. Kadangi esu dirbęs tiek prie mažų projektų, tiek prie milžiniškų - supratau, kad sklandžiai ir greitai veikianti programinė yranga turėtų būti kiekvieno programuotojo siekiamybė!`,
+			"available": "Šiuo metu ieškau naujo darbo.",
 			"unavailable": "Šiuo metu naujo darbo neieškau.",
 			"contacts": "Kontaktai",
 			"address": "Adresas:",
@@ -97,44 +121,35 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"orbusResp2": "SharePoint aplikacijų kūrimas",
 			"orbusResp3": "Naujų programuotojų treniravimas",
 			"orbusResp4": "Programavimo operacijų kontrolė",
-			"orbusDescription": `My main responsibility was frontend development for newest "Orbus Software" product called "Office Architect" (not official name as product is not released yet). It is a massive single page application which main purpose is Enterprise management.
+			"orbusDescription": `"Orbus software" yra nedidelė kompanija kuri specializuojasi į programinės įrangos kūrimą, dedikuota didelių kompanijų bei korporacijų valdymui. Padalinys kuriame dirbu dirba su internetinių naršyklių pagrindu veikiančia aplikacija kuri dar yra integruota su tokiais "Microsoft" produktais kaip "SharePoint" ir "Visio". Ši aplikacija iš dalies primena turiniu valdymo sistemą, administratoriai turi teisę kurti įvairiausias formas, visualizacijas, duomenų atvaizdavimo puslapius ir t.t. Mano rolė šioje komandoje - frontend Inžinierius.
 					<br><br>
-					It was a very enjoyable project to work on because it's foundation was AngularJs framework and application had a lot of features. Some of the features were very UI heavy. Working with such features enabled me to get known with all Angular benefits and flaws.
-					One of the better examples of UI heavy feature was "Matrix" view. Users could create a matrix which axis contained hundred of thousands items and my task was to display these axis and all the intersections between them in one page having a seemless scrolling experience. I had to use lazy loading and virtual dom rendering approach to do this.
+					Pasinaudojant Scrum metodais projekto įgyvendinimo valdymui, kasdieną turėjome veiklos pristatymus, pastovias planavimo bei panašaus pobūdžio sesijas. Mūsų "sprintų" dydis buvo dvi savaitės. Kiekvieno "sprinto" pabaigoje turėjome demonstracinio pobūdžio susirinkimus, kurių metu buvo pristatomos visos naujovės atsiradusios sprinto metu. Kas keturis "sprintus" turėjome "regresijos sprintą" kuriuo metu taisymę klaidas, bei reikalui esant diegiame naujoas programavimo technologijas. Būtent tokių sprintų metu man pavyko įdiegtį daugybę technologijų, tokių kaip "TypeScript". Kadangi projekto aplikacija buvo parašyta bazuojantis ties "Angular" karkasu, įdiegus "TypeScript" technologija mums atsivėre visos galimybės ateityje gauti "Angular" atnaujinimus, mat naujuose šios sistemos versijuose programavimas yra skatinimas būtent "TypeScript" kalba.
+					<br></br>
+					Kai nedirbdavau ties pagrindiniu projektu, daugiausiai laiko praleisdavau prie "SharePoint" aplikacijų kūrimo. "SharePoint" aplikacijos - tai tam tikros mūsų pagrindinio projekto aplikacijos dalys, kurias galima patogiai ir sklandžiai įdiegti į "SharePoint" puslapius. Kuriant šias aplikacijas turėjau išmokti atitinkamas "SharePoint" duomenų valdymo sąsajas (API), bei perprasti duomenų perdavimo, tarp skirtingų domenu, įmantrybes.
 					<br><br>
-					I have personally worked practically on every aspect of UI - from setting up the routing logic to tiny bits like custom form dropdown elements. I have written hundreds of AgularJs factories, services, directives and their controllers... I am familliar with all the problems which occurs when developing using AngularJs and the ways how to overcome them. The importance of not using watchers and two way binding even though using it would make developers life so much easier (sadly in cost of perormance).
-					<br><br>
-					As our main product was very tied with Microsoft products such as Visio, SharePoint I had oppurtunity to do some work related to them. To be specific I was responsibile of SharePoint application development. SharePoint applications - it's parts of "Office Architect" which can be integrated into SharePoint pages. I learned a lot about SharePoint and cross domain communication while working on these apps. I used such techniques as jSONp for cross domain data transfering and PostMessage API for communication between apps which were located in different iframes / tabs. A very unique and valuable experience!
-					<br><br>
-					As the main frontend developer I had to take responsibility and care about the frontend devOps. Our development operations were such as SASS compilation, Babel/TypeScript compilation, file bundling and minification, unit test running and many others. Initially we used Grunt as a devOps task runner, but after some time I had oppurtunity to replace it with Gulp which is much more flexible.
-					<br><br>
-					Besides all the development work I have done I did a lot of mentoring too. I was responsible for new developers integration into our development process.`,
+					Taipogi daug laiko praleisdavau mokindamas naujus bei mažiau patyrusius programinės įrangos inžinierius.`,
 			"techUsed": "Naudotos technologijos",
 			"webDev": "Web Inžinierius",
 			"wersportsDates": "2013 Kovas – 2014 Kovas",
 			"wersportsResp1": "Internetinės parduotuvės kūrimas",
 			"wersportsResp2": "Ebay parduotuvės ir skelbimų kūrimas ir vystimas",
 			"wersportsResp3": "SEO įgyvendinimas",
-			"wersportsDescription": `At that time a small ecommerce based family business in which I took part as a main frontend developer.
+			"wersportsDescription": `"We R Sports" tai šeimos įkurtas, internetinę prekybą pagrįstas verslas. Kompanija prekiauja sporto įranga ir atributika internetu.
 					<br><br>
-					While working in co-operation with backend developer my main responsibility was development of We R Sports ecommerce page. Even though it was not a single page application I have used quite a lot of JavaScript to implement it as there were a lot of features which required some heavier coding. I have used various jQuery plugins and vanilla javascript to implement such features as slideshows, 360 product previews and many others. As our backend was based on Symfony (PHP framework) which used TWIG as it's default templating system I had to adapt and learn it to support my backend collegue as much as possible.
+					Dirbdamas poroje su "backend" programuotoju, daugiausiai laiko praleisdavau prie pagrindinės "We R Sports" internetinės parduotuvės kūrimo ir vystimo. Nusprendėme nesinaudoti jau egzsituojančiais internetinių parduotuvių sprendimais, tad svetainė nuo pagrindų buvo parašyta mūsų pačių. Nors tai nebuvo vieno puslapio aplikaciją, tačiau kurdamas vartotojo sąsąją panaudojau ganėtinai didelį "JavaScript" kiekį. Taip gavosi, nes vadovai norėjo daugybės sudėtingų funkcijų, tokių kaip: "slideshow", 360 laipsnių produktų apžvalgos galimybės ir t.t. Kadangi mano kolega nusprendė projekto "backend" grįsti "Symfony 2" karkasu (PHP), man teko prisitaikyti ir išmokti "TWIG" (sistema, skirta puslapių apipavidalinimui kurti "Symfony" karkase). Vystant šį puslapį teko naudoti keletą "jQuery" išplėtinių, dirbti su trečiosios šalies domenų sąsajomis (API).
 					<br><br>
-					As we finished with the main web site my task was to transfer it to an eBay store. Ebay provides posibility to use custom html / javascript code to enhance sellers stores and we decided to use this feature and transfer a copy of the whole We R Sports eccommerce web site there. At that time I did not had much experience with JavaScript frameworks such as Angular I went with a decision to create own custom core which would drive the whole single page application. This core was made using plain JavaScript and jQuery. We were the first ones who introduced constantly updating data to the eBay listings, which enabled us to use unusual, our own features in eBay store and listings. All our enhanced eBay listings had various unusual for eBay UI heavy features such as product reviews, recommended/similar products lists and so on - I was behind all ui work.
+					Pabaigus pagrindinę internetinę parduotuvę mano atsakomybė buvo paverti ją į vieno puslapio aplikaciją, kurią vėliau galėtume panaudoti kaip "eBay" integruotą parduotuvę. Tam įgyvendinti, sukūriau savo paties "JavaScript" karkas1 veikiantį nuorodos "hash" vertės kitimo principu. Kurdamas šį karkasą išmokau visus vieno puslapio aplikacijos principus, bei susidūriau su visais iššukiais savo kailiu! Kadangi "eBay" pardtuovė pirkėjus lydėjo į "eBay" skelbimus - turėjau užduoti atnajinti visus skelbimus, jiems pritaikant pagrindinės internetinės parduotuvės išvaizdą. Kadangi kompanija prekiauja šimtais produktų, kiekvienam skelbimui atnaujinti panaudojau "eBay API". Kuriant šią aplikaciją teko išmokti technikų, leidžiančių susidoroti su problemomis, perduodant duomenis tarp skirtingų domenų.
 					<br><br>
-					While not working with main ecommerce platform and eBay store I was responsible of implementing Schema.org schemas in companies public projects to improve SEO. Also I was implementing email templates for We R Sports marketing campaigns and news letters.`,
+					Be visako į mano pareigas dar įėjo naujienlaiškių kūrimas, bei SEO implementacijos ("Schema.org" žymių diegimas). Taip pat teko dirbti su "Google Adwords", "Google Webmaster Tools".`,
 			"developer": "Programuotojas",
 			"gvcDates": "2012 Lapkritis – 2013 Kovas",
 			"gvcResp1": "Internetinės parduotuvės kūrimas",
 			"gvcResp2": "Ebay parduotuvės bei skelbimų kūrimas ir vystimas",
-			"gvcDescription": `In this small re-selling ecommerce based company I stayed for a short period of time and as a single developer in the whole company I was responsible for every IT related thing.
+			"gvcDescription": `"GVC Digital" nedidelė kompanija kuri specializuojasi į elektroninių prekių perpardavimą internetu. Kompanija turi keletą internetinių parduotuvių, bei gausybę parduotuvių populiariausiuose pardavimo kanaluose tokiuose kaip eBay, Amazon ir t.t. Tuo metu aš buvau vienintelis programuotojas dirbantis kompanijoje.
 					<br><br>
-					I was maintaining and developing two ecommerce platforms (DigiSpot.co.uk, GoodsStal.co.uk). As both platforms has ten of thousands products on sale the biggest responsibility and trouble was to make sure all the data (prices, stock) was always up to date as the company was just re-selling the items while actually not having them in own warehouses. I have implemented a small application which daily collected all the data from product providers and converted it to tabbed documents which later could be imported into our ecommerce platforms to refresh all the data.
+					Mano pagrindinė pareiga buvo užtikrinimas, kad visos pardavimų platformus turėtų naujausiuos produktų duomenis. Kadangi "GVC Digital" užsiminėjo perpardavimais ir realių prekių savo sandėliuose neturėjo - buvo labai svarbu pastoviai atnaujinti produktu kiekius, kad pirkėjai netyčiomis neįsigytų produktų, kurių prekių šaltiniai jau nebeturėjo... Pasinaudodamas C# programavimo kalba sukūriau programėlę kuri automatiškai rinko duoemis iš prekių tekėjų, jus konvertavo į atitinkamus failų formatus kuriuos vėliau lengvai buvo galima inportuoti į savo duomenu bazes.
 					<br><br>
-					Every once a while I was also updating ebay listings in multiple stores owned by the company. Ths involved me into using eBays restful API to update the listings automatically and html template creation from scratch.
-					<br><br>
-					I was also the one man makerting operation: creating email news letters.
-					<br><br>
-					I am very glad I had oppurtunity to work in this company as here my tasks varied a lot and it made me realize that I love frontend development more then backend!`,
+					Tarp kitų pareigų buvo "eBay" parduotuvių, skelbimų maketavimas ir vystimas, savaitės naujienlaiškių kūrimas.`,
 			"freelancer": "Laisvai samdomas",
 			"freeDates": "2008 Spalis – 2010 Vasaris",
 			"freeResp1": "Svetainės kūrimas nuo nulio",
@@ -154,6 +169,17 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"skills": "Įgūdžiai"
 		},
 		"pl": {
+			"pleseEnableJavascript": `Hey there,
+				<br>
+				Thanks for checking out my CV!
+				<br>
+				I am specializing as Front-End developer and as you probably know - JavaScript is the most esential part of the Front-End development!
+				<br>
+				I have used JavaScript in this resume to enhance recruiters and hiring managers experiences and to make their lifes easier.
+				<br>
+				Please spend a second to enable "JavaScript" support for this page in order to see it's contents!
+				<br>
+				Thank you.`,
 			"pageTitle": "Tautvydas Derzinskas > Curriculum Vitae",
 			"english": "Angielski",
 			"lithuanian": "Litewski",
@@ -178,53 +204,44 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"orbusResp2": "Tworzenie aplikacji SharePoint",
 			"orbusResp3": "Szkolenie nowych programistów",
 			"orbusResp4": "Zarządzanie operacjami programowania w warstwie front-end.",
-			"orbusDescription": `Moim głównym zadaniem było programowanie warstwy front-end dla nowego produktu o nazwie 'Office Arcitect' (Nazwa nieoficjalna, ponieważ produkt nie został jeszcze wypuszczony na rynek). Jest to ogromna jednostronowa aplikacja przeznaczona do zarządzania przedsiębiorstw.
-					<br /><br />
-					Był to naprawdę przyjemny projekt, ponieważ jego podstawą był AngularJs, a aplikcja miała wiele cech. Niektóre z cech wymagały wiele pracy na UI. To pozwoliło mi zapoznać się z wszystkimi wadami I zaletami Angular. It was a very enjoyable project to work on because it's foundation was AngularJs framework and application had a lot of features. Some of the features were very UI heavy. Working with such features enabled me to get known with all Angular benefits and flaws.
-					One of the better examples of UI heavy feature was "Matrix" view. Users could create a matrix which axis contained hundred of thousands items and my task was to display these axis and all the intersections between them in one page having a seemless scrolling experience. I had to use lazy loading and virtual dom rendering approach to do this.
-					<br /><br />
-					I have personally worked practically on every aspect of UI - from setting up the routing logic to tiny bits like custom form dropdown elements. I have written hundreds of AgularJs factories, services, directives and their controllers... I am familliar with all the problems which occurs when developing using AngularJs and the ways how to overcome them. The importance of not using watchers and two way binding even though using it would make developers life so much easier (sadly in cost of perormance).
-					<br /><br />
-					As our main product was very tied with Microsoft products such as Visio, SharePoint I had oppurtunity to do some work related to them. To be specific I was responsibile of SharePoint application development. SharePoint applications - it's parts of "Office Architect" which can be integrated into SharePoint pages. I learned a lot about SharePoint and cross domain communication while working on these apps. I used such techniques as jSONp for cross domain data transfering and PostMessage API for communication between apps which were located in different iframes / tabs. A very unique and valuable experience!
-					<br /><br />
-					As the main frontend developer I had to take responsibility and care about the frontend devOps. Our development operations were such as SASS compilation, Babel/TypeScript compilation, file bundling and minification, unit test running and many others. Initially we used Grunt as a devOps task runner, but after some time I had oppurtunity to replace it with Gulp which is much more flexible.
-					<br /><br />
-					Besides all the development work I have done I did a lot of mentoring too. I was responsible for new developers integration into our development process.`,
+			"orbusDescription": `Orbus is a small software company that provides enterprise architecture management software. My department is developing a brand new browser based solution with SharePoint and Visio integration. This software is similar to a content management system, giving administrators the opportunity to create custom forms, visualizations and data views for their staff. My role in the team is as a frontend developer.<br><br>
+
+					While working in agile Scrum based environment we are having two weeks long sprints with daily stand ups, weekly backlog estimations and new features releases in the end of the sprints. Every four sprints we have a regression sprints for bug fixing and new tech integration. Thanks to regression sprints I was able to direct the whole project towards Angular 2 version by introducing TypeScript into our stack.<br></br>
+
+					I am also responsible for SharePoint plugins development which are almost entirely based on frontend code ("SharePoint hosted apps"). We are using SharePoint plugins as a way to insert bits of our main application into SharePoint pages. This involves working with SharePoint Restful APIs, developing cross domain solutions.<br><br>
+
+					When I'm not developing I provide training and support for more juniour developers and take care of our frontend development operations.`,
 			"techUsed": "Skills developed / Technologies used",
 			"webDev": "Web Developer",
 			"wersportsDates": "Marzec 2013 - Marzec 2014",
 			"wersportsResp1": "Ecommerce and email campaigns development",
 			"wersportsResp2": "Ebay store and listings development",
 			"wersportsResp3": "Realizacja SEO",
-			"wersportsDescription": `At that time a small ecommerce based family business in which I took part as a main frontend developer.
-					<br /><br />
-					While working in co-operation with backend developer my main responsibility was development of We R Sports ecommerce page. Even though it was not a single page application I have used quite a lot of JavaScript to implement it as there were a lot of features which required some heavier coding. I have used various jQuery plugins and vanilla javascript to implement such features as slideshows, 360 product previews and many others. As our backend was based on Symfony (PHP framework) which used TWIG as it's default templating system I had to adapt and learn it to support my backend collegue as much as possible.
-					<br /><br />
-					As we finished with the main web site my task was to transfer it to an eBay store. Ebay provides posibility to use custom html / javascript code to enhance sellers stores and we decided to use this feature and transfer a copy of the whole We R Sports eccommerce web site there. At that time I did not had much experience with JavaScript frameworks such as Angular I went with a decision to create own custom core which would drive the whole single page application. This core was made using plain JavaScript and jQuery. We were the first ones who introduced constantly updating data to the eBay listings, which enabled us to use unusual, our own features in eBay store and listings. All our enhanced eBay listings had various unusual for eBay UI heavy features such as product reviews, recommended/similar products lists and so on - I was behind all ui work.
-					<br /><br />
-					While not working with main ecommerce platform and eBay store I was responsible of implementing Schema.org schemas in companies public projects to improve SEO. Also I was implementing email templates for We R Sports marketing campaigns and news letters.`,
+			"wersportsDescription": `A family business which is selling sport related items online. Besides the main ecommerce website they have multiple stores in such selling channels like eBay, Amazon, Play.com
+					<br><br>
+					While working in co-operation with backend developer my main responsibility was development of We R Sports ecommerce page. It was a 100% custom website with our own backend and fresh new frontend. I did a lot of JavaScript programming to implement it as there were lots of features which coldn't be implemented in other way. I have used various jQuery plugins and plain JavaScript to implement such features as slideshows, 360 product previews and many others. As our backend was based on Symfony (PHP framework) which used TWIG as it's default templating system I had to adapt and learn it to support my backend collegue.
+					<br><br>
+					After finishing with the main ecommerce platform my responsibility was to convert it to a single page application and replace our default eBay store with it. I have done this by constructing my own custom JavaScript framework based on url "hash" change event. I worked with different kinds restful APIs such as eBay API, Amazon API, PaymentSence Api, Royal Mail Api and many others. Working on this single application project made me to develop a solid base on a crossdomain data transfer techniques.
+					<br><br>
+					While not working with main ecommerce platform and eBay store I was responsible for newsletters creation and for implementing best SEO practices (such as Schema.org markups) in main ecommerce platform. It also inolved me into learning some things which are not development related, such as usage of Google AdWords and Google WebMaster tools.`,
 			"developer": "Developer",
 			"gvcDates": "Listopad 2012 - Marzec 2013",
 			"gvcResp1": "Tworzenie strony sklepu internetowego",
 			"gvcResp2": "Sklepy Ebay i Ebay stores and listing development",
-			"gvcDescription": `In this small re-selling ecommerce based company I stayed for a short period of time and as a single developer in the whole company I was responsible for every IT related thing.
-					<br /><br />
-					I was maintaining and developing two ecommerce platforms (DigiSpot.co.uk, GoodsStal.co.uk). As both platforms has ten of thousands products on sale the biggest responsibility and trouble was to make sure all the data (prices, stock) was always up to date as the company was just re-selling the items while actually not having them in own warehouses. I have implemented a small application which daily collected all the data from product providers and converted it to tabbed documents which later could be imported into our ecommerce platforms to refresh all the data.
-					<br /><br />
-					Every once a while I was also updating ebay listings in multiple stores owned by the company. Ths involved me into using eBays restful API to update the listings automatically and html template creation from scratch.
-					<br /><br />
-					I was also the one man marketing operation: creating email news letters.
-					<br /><br />
-					Bardzo się cieszę, że miałem możliwość pracy w tej firmie, gdyż tutaj I am very glad I had oppurtunity to work in this company as here my tasks varied a lot and it made me realize that I love frontend development more then backend!`,
+			"gvcDescription": `In this small ecommerce based company I stayed for a short period of time and as a single developer in the whole company. GVC Digital specializes in reselling digital, electronical items. It owns two ecommerce platforms (DigiSpot, GoodsStall) and a numerous eBay and Amazon stores.
+					<br><br>
+					My main responsibilites were to keep all the product data up to date. To make this happend I have created a C# application which grabs all the information provided by wholesellers, converts it to specific database import compatible file format and performs the data update.
+					<br><br>
+					Other responsibilites included template creation for eBay stores and listings, weekly newsletters creation. I did a lot of html and JavaScript coding while performing them.`,
 			"freelancer": "Freelancer-praca na własną rękę",
 			"freeDates": "Październik 2008 - Luty 2010",
 			"freeResp1": "Programowanie stron internetowych od podstaw",
 			"freeResp2": "Wdrażanie nowych cech w już instniejące projekty.",
-			"freeDescrption": `During this period of time I have worked on multiple various projects, doing various tasks starting with finding web hosting solutions and finishing with web site creation from scratch.
-					<br /><br />
-					Stworzyłem kilka blogów bazujących na WordPress, CuteNews- systemach zarządzających treścią.
-					<br /><br />
-					Dla istniejących stron internetowych wdrażałem nowe właściwości takie jak for a dyskusyjne, księgi gości ( stworzyłem też własną, opartą na księdze gości PHP, która używa plików płaskich jako bazy), analizę danych.`,
+			"freeDescrption": `While studying and not being able to have a permament job I spend my weekends and holidays working on a freelance projects.
+					<br><br>
+					I worked on very different kinds of projects and costumer request tasks: varying from finding the web hosting solutions to developing a websites from stratch. While mostly I was using "ready to go" content management solutions such as WordPress, CuteNews and PhpNuke I also did a great amount of custom templating and plugin creation. While online"guest book" feature was trending I developed a PHP based guest book solution which was later installed and successfully used in multiple costumer websites.
+					<br><br>
+					It is worth to mention that I was developing phpBB (open source forums platform solution) plugins.`,
 			"education": "Edukacja",
 			"eduName1": "Uniwersytet w Szawlach, Litwa",
 			"eduStudies1": "Studia inżynierskie o kierunku Technologia informacyjna",

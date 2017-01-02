@@ -1,6 +1,6 @@
 {
   "name": "tautvydas_derzinskas_cv",
-  "version": "1.0.0b",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "prestart": "npm install",

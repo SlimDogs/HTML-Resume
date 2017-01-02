@@ -106,7 +106,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 						<br><br>
 						Esu pasitikintis savimi visuose "frontend" kūrimo aspektuose, pradedant vartotojo sąsajos kūrimu, baigiant panaudojimo scenarijų kodavimu pasinaudojant "JavaScript" programavimo kalba.
 						<br><br>
-						Kuriant aplikacijas mano pagrininiai tikslai yra padaryti jas patogias ir greitai veikiančias. Kadangi esu dirbęs tiek prie mažų projektų, tiek prie milžiniškų - supratau, kad sklandžiai ir greitai veikianti programinė įranga turėtų būti kiekvieno programuotojo siekiamybė!`,
+						Kuriant aplikacijas, mano pagrininiai tikslai yra padaryti jas patogias ir greitai veikiančias. Kadangi esu dirbęs tiek prie mažų projektų, tiek prie milžiniškų - supratau, kad sklandžiai ir greitai veikianti programinė įranga turėtų būti kiekvieno programuotojo siekiamybė!`,
 			"available": "Šiuo metu ieškau naujo darbo.",
 			"unavailable": "Šiuo metu naujo darbo neieškau.",
 			"contacts": "Kontaktai",

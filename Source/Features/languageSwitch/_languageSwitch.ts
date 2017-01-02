@@ -5,7 +5,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 				<br>
 				Thanks for checking out my CV!
 				<br>
-				I am specializing as Front-End developer and as you probably know - JavaScript is the most esential part of the Front-End development!
+				I am specializing as Frontend developer and as you probably know - JavaScript is the most esential part of the Frontend development!
 				<br>
 				I have used JavaScript in this resume to enhance recruiters and hiring managers experiences and to make their lifes easier.
 				<br>
@@ -173,7 +173,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 				<br>
 				Thanks for checking out my CV!
 				<br>
-				I am specializing as Front-End developer and as you probably know - JavaScript is the most esential part of the Front-End development!
+				I am specializing as Frontend developer and as you probably know - JavaScript is the most esential part of the Frontend development!
 				<br>
 				I have used JavaScript in this resume to enhance recruiters and hiring managers experiences and to make their lifes easier.
 				<br>
@@ -189,7 +189,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"profile": "Profil",
 			"profileDesc": `Buduję elastyczne(tzw. responsive), rozbudowane i możliwe do rozbudowania strony internetowe i aplikacje sieciowe używając różnorodnych technologii, które działają na smartfonach, tabletach oraz komputerach stacjonarnych.
 							<br><br>
-							Rozpocząwszy programowanie z UI, stałem się biegły zarówno w czystym JavaScript, jak również w strukturach JavaScript, takich jak AngularJs. Kiedy pracuję, zawsze dążę do tego, by stworzyć piękną, dobrze prezentującą się wastwę front-end. Ostatni projekt nad którym pracowałem był złożony i dużych rozmiarów, co nauczyło mnie, jak ważny jest sprawnie działający i szybki front-end!`,
+							Rozpocząwszy programowanie z UI, stałem się biegły zarówno w czystym JavaScript, jak również w strukturach JavaScript, takich jak AngularJs. Kiedy pracuję, zawsze dążę do tego, by stworzyć piękną, dobrze prezentującą się wastwę front-end. Ostatni projekt nad którym pracowałem był złożony i dużych rozmiarów, co nauczyło mnie, jak ważny jest sprawnie działający i szybki frontend!`,
 			"available": "Obecnie poszukuję pracy na pełen etat.",
 			"unavailable": "Obecnie nie szukam nowej pracy.",
 			"contacts": "Kontakty",
@@ -203,47 +203,47 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"orbusResp1": "Tworzenie aplikacji zarządzania przedsiębiorstw.",
 			"orbusResp2": "Tworzenie aplikacji SharePoint",
 			"orbusResp3": "Szkolenie nowych programistów",
-			"orbusResp4": "Zarządzanie operacjami programowania w warstwie front-end.",
-			"orbusDescription": `Orbus is a small software company that provides enterprise architecture management software. My department is developing a brand new browser based solution with SharePoint and Visio integration. This software is similar to a content management system, giving administrators the opportunity to create custom forms, visualizations and data views for their staff. My role in the team is as a frontend developer.<br><br>
-
-					While working in agile Scrum based environment we are having two weeks long sprints with daily stand ups, weekly backlog estimations and new features releases in the end of the sprints. Every four sprints we have a regression sprints for bug fixing and new tech integration. Thanks to regression sprints I was able to direct the whole project towards Angular 2 version by introducing TypeScript into our stack.<br></br>
-
-					I am also responsible for SharePoint plugins development which are almost entirely based on frontend code ("SharePoint hosted apps"). We are using SharePoint plugins as a way to insert bits of our main application into SharePoint pages. This involves working with SharePoint Restful APIs, developing cross domain solutions.<br><br>
-
-					When I'm not developing I provide training and support for more juniour developers and take care of our frontend development operations.`,
-			"techUsed": "Skills developed / Technologies used",
-			"webDev": "Web Developer",
+			"orbusResp4": "Zarządzanie operacjami programowania w warstwie frontend.",
+			"orbusDescription": `Orbus jest niewielką firmą programistyczną, która dostarcza oprogramowania do zarządzania przedsiębiorstw. Mój dział opracowywał, oparte na przeglądarce, rozwiązania,  wykorzystując SharePoint oraz Visio. Oprogramowanie to przypomina system zarządzania treścią, gdyż daje administratorom możliwość tworzenia własnych form, wizualizacji i poglądu danych dla pracowników. Moją rolą w zespole było programowanie warstwy frontend.
+			<br><br>
+			Praca odbywała się w systemie Scrum z trwającymi dwa tygodnie iteracjami i codziennymi zbiórkami oraz cotygodniowym omawianiu zaległości i postępów. Po każdych czterech sprintach cofaliśmy się do poprzednich w celu wyeliminowania błędów, a także integracji nowych technologii. Dzięki metodzie regresji iteracji byłem w stanie nakierować cały projekt na Angular 2 poprzez wprowadzenie TypeScript do naszej technologii.
+			<br></br>
+			Pracując w Orbus, byłem też odpowiedzialny za programowanie wtyczek (modułów dodatkowych) SharePoint, które niemal w całości opierają się na kodzie frontend (SharePoint hosted apps). Owe moduły były stosowane do dodawania skrawków z naszej głównej aplikacji w strony SharePoint.  To wymagało pracy z SharePoint Restful APIs i tworzenie rozwiązań w zakresie domen krzyżowych, tzw. cross domains.
+			<br><br>
+			Kiedy nie programowałem, zajmowałem się szkoleniem młodszych programistów, jak też pilnowałem naszych działań w obszarze frontend.`,
+			"techUsed": "Rozwój umiejętności / Użyte technologie",
+			"webDev": "Programista stron internetowych",
 			"wersportsDates": "Marzec 2013 - Marzec 2014",
-			"wersportsResp1": "Ecommerce and email campaigns development",
-			"wersportsResp2": "Ebay store and listings development",
+			"wersportsResp1": "Praca przy sprzedaży elektronicznej oraz kampania email",
+			"wersportsResp2": "Sklep internetowy Ebay oraz tworzenie ogłoszeń",
 			"wersportsResp3": "Realizacja SEO",
-			"wersportsDescription": `A family business which is selling sport related items online. Besides the main ecommerce website they have multiple stores in such selling channels like eBay, Amazon, Play.com
-					<br><br>
-					While working in co-operation with backend developer my main responsibility was development of We R Sports ecommerce page. It was a 100% custom website with our own backend and fresh new frontend. I did a lot of JavaScript programming to implement it as there were lots of features which couldn't be implemented in other way. I have used various jQuery plugins and plain JavaScript to implement such features as slideshows, 360 product previews and many others. As our backend was based on Symfony (PHP framework) which used TWIG as it's default templating system I had to adapt and learn it to support my backend collegue.
-					<br><br>
-					After finishing with the main ecommerce platform my responsibility was to convert it to a single page application and replace our default eBay store with it. I have done this by constructing my own custom JavaScript framework based on url "hash" change event. I worked with different kinds restful APIs such as eBay API, Amazon API, PaymentSence Api, Royal Mail Api and many others. Working on this single application project made me to develop a solid base on a crossdomain data transfer techniques.
-					<br><br>
-					While not working with main ecommerce platform and eBay store I was responsible for newsletters creation and for implementing best SEO practices (such as Schema.org markups) in main ecommerce platform. It also inolved me into learning some things which are not development related, such as usage of Google AdWords and Google WebMaster tools.`,
-			"developer": "Developer",
+			"wersportsDescription": `We R Sports to rodzinny biznes zajmujący się sprzedażą internetową sprzętu sportowego różnego typu. Poza własną stroną ze sprzedażą on-line, posiadają też wiele sklepów w miejscach takich jak eBay, Amazon czy Play.com.
+				<br><br>
+				Współpracujac z programistą  warstwy frontend, moim głównym zadaniem był rozwój sklepu internetowego We R Sports. Była to w pełni przez nas stworzona strona internetowa z własnym back-endem i świeżym frontendem. Dużo czasu spędziłem pracując z JavaScript, gdyż istniało wiele cech, które nie mogły być wdrożone w inny sposób. Używałem różnych wtyczek jQuery oraz zwykłego JavaScript, aby wprowadzić efekty typu pokaz slajdów, 360° widok produktu i wiele innych. Jako że back-end opierał się na Symfony (platforma programistyczna PHP), która używała TWIG jako domyślnego szablonu systemowego, musiałem nauczyć się tego, by móc wspierać kolegę z backendu.
+				<br><br>
+				Po skończeniu pracy z głównym sklepem internetowym, otrzymałem zadanie przekształcenia go w jednostronową aplikację, a następnie zastąpienia sklepu eBay ową aplikacją. Dokonałem tego konstruując własną platformę programistyczną JavaScript opartą na url „hash” change event. Pracowałem z wieloma restful APIs takimi jak eBay API, Amazon API, PaymentSence Api,, czy Royal Mail Api. Praca nad tym projektem rozwinęła moje umiejętności w zakresie technik transmisji danych związanych z crossdomain.
+				<br><br>
+				Poza pracą ze sklepami on-line, odpowiadałem za tworzenie biuletynu oraz wdrażanie najlepszych praktyk SEO (takich jak znaczniki Schema.org ) do głównej strony internetowej. To wymagało ode mnie nauki niezwiązanej z programowaniem- używania Google AdWords I Google WebMaster tools.`,
+			"developer": "Programista",
 			"gvcDates": "Listopad 2012 - Marzec 2013",
 			"gvcResp1": "Tworzenie strony sklepu internetowego",
-			"gvcResp2": "Sklepy Ebay i Ebay stores and listing development",
-			"gvcDescription": `In this small ecommerce based company I stayed for a short period of time and as a single developer in the whole company. GVC Digital specializes in reselling digital, electronical items. It owns two ecommerce platforms (DigiSpot, GoodsStall) and a numerous eBay and Amazon stores.
-					<br><br>
-					My main responsibilites were to keep all the product data up to date. To make this happend I have created a C# application which grabs all the information provided by wholesellers, converts it to specific database import compatible file format and performs the data update.
-					<br><br>
-					Other responsibilites included template creation for eBay stores and listings, weekly newsletters creation. I did a lot of html and JavaScript coding while performing them.`,
+			"gvcResp2": "Sklepy Ebay i tworzenie ogłoszeń",
+			"gvcDescription": `W tej niedużej firmie pracowałem krótko jako jedyny programista kompanii. GVC Digital specjalizuje się w odsprzedaży elektronicznego i cyfrowego sprzętu. Posiada dwie platformy sprzedażowe (DigiSpot i GoodsStall) oraz liczne sklepy internetowe na eBay i Amazon.
+				<br><br>
+				Moim zadaniem było aktualizowanie danych na stronie. Aby było to możliwe, stworzyłem aplikację C#, która zbiera wszystkie informacje od sprzedawców, przekształca je w określony format pliku, przesyłany potem do bazy danych.
+				<br><br>
+				Do moich obowiązków należało też tworzenie szablonów ogłoszeń dla sklepów eBay oraz cotygodniowego biuletynu. Podczas pracy nad tymi zadaniami, stworzyłem wiele kodów html i JavaScript.`,
 			"freelancer": "Freelancer-praca na własną rękę",
 			"freeDates": "Październik 2008 - Luty 2010",
 			"freeResp1": "Programowanie stron internetowych od podstaw",
 			"freeResp2": "Wdrażanie nowych cech w już instniejące projekty.",
-			"freeDescrption": `While studying and not being able to have a permanent job I spend my weekends and holidays working on a freelance projects.
-					<br><br>
-					I worked on very different kinds of projects and costumer request tasks: varying from finding the web hosting solutions to developing a websites from stratch. While mostly I was using "ready to go" content management solutions such as WordPress, CuteNews and PhpNuke I also did a great amount of custom templating and plugin creation. While online"guest book" feature was trending I developed a PHP based guest book solution which was later installed and successfully used in multiple costumer websites.
-					<br><br>
-					It is worth to mention that I was developing phpBB (open source forums platform solution) plugins.`,
+			"freeDescrption": `W czasie studiów nie mogłem sobie pozwolić na stałą pracę, ale chętnie podejmowałem się pojedynczych projektów oraz pracowałem nad własnymi przedsięwzięciami.
+				<br><br>
+				Pracowałem nad wieloma projektami, w zależności od oczekiwań klientów - od poszukiwania rozwiązań serwerowych po tworzenie stron internetowych od podstaw. Korzystając głównie z„gotowych do użycia” rozwiązań takich jak WordPress, CuteNews i PhpNuke, stworzyłem także własne szablony i moduły dodatkowe. W czasie dużej popularności internetowych „księgi gości” opracowałem, oparte na php, rozwiązania, które zostały później użyte do stron internetowych wielu klientów.
+				<br><br>
+				Warto też wspomnieć, że programowałem moduły phpBB (pozwalające użytkownikom prowadzić dyskusje na forum).`,
 			"education": "Edukacja",
-			"eduName1": "Uniwersytet w Szawlach, Litwa",
+			"eduName1": "Uniwersytet Szawelski, Litwa",
 			"eduStudies1": "Studia inżynierskie o kierunku Technologia informacyjna",
 			"eduName2": "Gimnazjum ‘Didzvaris’, Litwa",
 			"eduStudies2": "Szkoła średnia",

@@ -468,6 +468,17 @@ var AvailabilityStatus = (function () {
     return AvailabilityStatus;
 }());
 
+var JavaScriptDetect = (function () {
+    function JavaScriptDetect(Parameters) {
+        this.Parameters = Parameters;
+    }
+    JavaScriptDetect.prototype.initialize = function () {
+        $("body").removeClass("NO-JAVASCRIPT");
+        this.Parameters.JavaScript = true;
+    };
+    return JavaScriptDetect;
+}());
+
 var InternetDetect = (function () {
     function InternetDetect(Parameters) {
         this.Parameters = Parameters;
@@ -504,17 +515,6 @@ var InternetDetect = (function () {
         this.subscriptions.push(callback);
     };
     return InternetDetect;
-}());
-
-var JavaScriptDetect = (function () {
-    function JavaScriptDetect(Parameters) {
-        this.Parameters = Parameters;
-    }
-    JavaScriptDetect.prototype.initialize = function () {
-        $("body").removeClass("NO-JAVASCRIPT");
-        this.Parameters.JavaScript = true;
-    };
-    return JavaScriptDetect;
 }());
 
 var LanguageSwitch = (function () {
@@ -596,7 +596,7 @@ var LanguageSwitch = (function () {
                 "orbusResp2": "SharePoint aplikacijų kūrimas",
                 "orbusResp3": "Naujų programuotojų treniravimas",
                 "orbusResp4": "Programavimo proceso operacijų kontrolė",
-                "orbusDescription": "\"Orbus software\" yra nedidel\u0117 kompanija, kurios specializacija - programin\u0117s \u012Frangos, skirtos dideli\u0173 kompanij\u0173 bei korporacij\u0173 valdymui, k\u016Brimas. Padalinys kuriame dirbu yra atsakingas u\u017E internetini\u0173 nar\u0161ykli\u0173 pagrindu veikian\u010Di\u0105 aplikacij\u0105, kuri yra integruota su \"Microsoft\" produktais, tokiais kaip \"SharePoint\" ir \"Visio\". \u0160i aplikacija i\u0161 dalies primena turinio valdymo sistem\u0105 - administratoriai turi teis\u0119 kurti \u012Fvairias formas, vizualizacijas, duomen\u0173 atvaizdavimo puslapius ir t.t. Mano pareigos \u0161ioje komandoje - \"frontend\" in\u017Einierius.\n\t\t\t\t\t<br><br>\n\t\t\t\t\tPasinaudojant \"Scrum\" metodais projekto \u012Fgyvendinimo valdymui, kiekvien\u0105 dien\u0105 tur\u0117jome veiklos pristatymo susirinkimus, pastovias planavimo bei pana\u0161aus pob\u016Bd\u017Eio sesijas. M\u016Bs\u0173 \"sprint\u0173\" dydis buvo dvi savait\u0117s. Kiekvieno \"sprinto\" pabaigoje tur\u0117jome demonstracinio pob\u016Bd\u017Eio susirinkimus, kuri\u0173 metu buvo pristatomos visos naujov\u0117s, atsiradusios sprinto metu. Kas du m\u0117nesius (4 sprintus), vykdydavome \"regresijos sprint\u0105\", kurio metu tais\u0117me klaidas, bei reikalui esant, diegiame naujas programavimo technologijas. B\u016Btent toki\u0173 sprint\u0173 metu man pavyko \u012Fdiegti daugyb\u0119 technologij\u0173, toki\u0173 kaip \"TypeScript\", \"Sass\" ir t.t. Kadangi projekto aplikacija buvo para\u0161yta \"Angular\" karkaso pagrindu, \u012Fdiegus \"TypeScript\" mums atsiv\u0117re visos galimyb\u0117s ateityje gauti \"Angular\" atnaujinimus, mat naujose \u0161ios sistemos versijose programavimas yra skatinimas b\u016Btent \"TypeScript\" kalba.\n\t\t\t\t\t<br></br>\n\t\t\t\t\tKai nedirbdavau ties pagrindiniu projektu, daugiausiai laiko praleisdavau kurdamas \"SharePoint\" aplikacijas. \"SharePoint\" aplikacijos - tai tam tikros m\u016Bs\u0173 pagrindin\u0117s aplikacijos dalys, kurias galima patogiai ir skland\u017Eiai \u012Fdiegti \u012F \"SharePoint\" puslapius. Kuriant \u0161ias aplikacijas, \u012Fgyjau \u017Einias apie atitinkamas \"SharePoint\" duomen\u0173 valdymo s\u0105sajas (API), bei perpratau duomen\u0173 perdavimo, tarp skirting\u0173 domen\u0173, \u012Fmantrybes.\n\t\t\t\t\t<br><br>\n\t\t\t\t\tBe visa ko daug laiko praleisdavau mokindamas naujus, bei ma\u017Eiau patyrusius, programin\u0117s \u012Frangos in\u017Einierius.",
+                "orbusDescription": "\"Orbus software\" yra kompanija, kurios specializacija - programin\u0117s \u012Frangos, skirtos dideli\u0173 kompanij\u0173 bei korporacij\u0173 valdymui, k\u016Brimas. Padalinys kuriame dirbu yra atsakingas u\u017E internetini\u0173 nar\u0161ykli\u0173 pagrindu veikian\u010Di\u0105 aplikacij\u0105, kuri yra integruota su \"Microsoft\" produktais, tokiais kaip \"SharePoint\" ir \"Visio\". \u0160i aplikacija i\u0161 dalies primena turinio valdymo sistem\u0105 - administratoriai turi teis\u0119 kurti \u012Fvairias formas, vizualizacijas, duomen\u0173 atvaizdavimo puslapius ir t.t. Mano pareigos \u0161ioje komandoje - \"frontend\" in\u017Einierius.\n\t\t\t\t\t<br><br>\n\t\t\t\t\tPasinaudojant \"Scrum\" metodais projekto \u012Fgyvendinimo valdymui, kiekvien\u0105 dien\u0105 tur\u0117jome veiklos pristatymo susirinkimus, pastovias planavimo bei pana\u0161aus pob\u016Bd\u017Eio sesijas. M\u016Bs\u0173 \"sprint\u0173\" dydis buvo dvi savait\u0117s. Kiekvieno \"sprinto\" pabaigoje tur\u0117jome demonstracinio pob\u016Bd\u017Eio susirinkimus, kuri\u0173 metu buvo pristatomos visos naujov\u0117s, atsiradusios sprinto metu. Kas du m\u0117nesius (4 sprintus), vykdydavome \"regresijos sprint\u0105\", kurio metu tais\u0117me klaidas, bei reikalui esant, diegiame naujas programavimo technologijas. B\u016Btent toki\u0173 sprint\u0173 metu man pavyko \u012Fdiegti daugyb\u0119 technologij\u0173, toki\u0173 kaip \"TypeScript\", \"Sass\" ir t.t. Kadangi projekto aplikacija buvo para\u0161yta \"Angular\" karkaso pagrindu, \u012Fdiegus \"TypeScript\" mums atsiv\u0117re visos galimyb\u0117s ateityje gauti \"Angular\" atnaujinimus, mat naujose \u0161ios sistemos versijose programavimas yra skatinimas b\u016Btent \"TypeScript\" kalba.\n\t\t\t\t\t<br></br>\n\t\t\t\t\tKai nedirbdavau ties pagrindiniu projektu, daugiausiai laiko praleisdavau kurdamas \"SharePoint\" aplikacijas. \"SharePoint\" aplikacijos - tai tam tikros m\u016Bs\u0173 pagrindin\u0117s aplikacijos dalys, kurias galima patogiai ir skland\u017Eiai \u012Fdiegti \u012F \"SharePoint\" puslapius. Kuriant \u0161ias aplikacijas, \u012Fgyjau \u017Einias apie atitinkamas \"SharePoint\" duomen\u0173 valdymo s\u0105sajas (API), bei perpratau duomen\u0173 perdavimo, tarp skirting\u0173 domen\u0173, \u012Fmantrybes.\n\t\t\t\t\t<br><br>\n\t\t\t\t\tBe visa ko daug laiko praleisdavau mokindamas naujus, bei ma\u017Eiau patyrusius, programin\u0117s \u012Frangos in\u017Einierius.",
                 "techUsed": "Naudotos technologijos",
                 "webDev": "Web Inžinierius",
                 "wersportsDates": "2013 Kovas – 2014 Kovas",

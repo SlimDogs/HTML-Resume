@@ -468,6 +468,17 @@ var AvailabilityStatus = (function () {
     return AvailabilityStatus;
 }());
 
+var JavaScriptDetect = (function () {
+    function JavaScriptDetect(Parameters) {
+        this.Parameters = Parameters;
+    }
+    JavaScriptDetect.prototype.initialize = function () {
+        $("body").removeClass("NO-JAVASCRIPT");
+        this.Parameters.JavaScript = true;
+    };
+    return JavaScriptDetect;
+}());
+
 var InternetDetect = (function () {
     function InternetDetect(Parameters) {
         this.Parameters = Parameters;
@@ -592,7 +603,7 @@ var LanguageSwitch = (function () {
                 "wersportsResp1": "Internetinės parduotuvės kūrimas",
                 "wersportsResp2": "Ebay parduotuvės ir skelbimų kūrimas ir vystimas",
                 "wersportsResp3": "SEO įgyvendinimas",
-                "wersportsDescription": "\"We R Sports\" tai vienos \u0161eimos \u012Fkurtas, internetin\u0119 prekyb\u0105 pagr\u012Fstas, verslas. Kompanija internetu prekiauja sporto \u012Franga ir atributika.\n\t\t\t\t\t<br><br>\n\t\t\t\t\tDirbdamas poroje su \"backend\" programuotoju, daugiausiai laiko praleisdavau prie pagrindin\u0117s \"We R Sports\" internetin\u0117s parduotuv\u0117s k\u016Brimo ir vystimo. Nusprend\u0117me nesinaudoti jau egzsituojan\u010Diais internetini\u0173 parduotuvi\u0173 sprendimais, tad svetain\u0117 i\u0161 pagrind\u0173 buvo sukoduota m\u016Bs\u0173 pa\u010Di\u0173. Nors tai nebuvo vieno puslapio aplikacija, ta\u010Diau, kurdamas vartotojo s\u0105s\u0105j\u0105, panaudojau gan\u0117tinai didel\u012F \"JavaScript\" kiek\u012F. Internetinei parduotuvei reik\u0117jo daugyb\u0117s sud\u0117ting\u0173 funkcij\u0173, toki\u0173 kaip: \"slideshow\", 360 laipsni\u0173 produkt\u0173 ap\u017Evalgos galimyb\u0117s ir t.t. Kadangi mano kolega nusprend\u0117 projekto \"backend\" gr\u012Fsti \"Symfony 2\" karkasu (PHP), man teko \u012Fsisavinti \"TWIG\" (sistema, skirta vartotojo s\u0105sajos apra\u0161ymui \"Symfony\" karkase). Vystant \u0161\u012F puslap\u012F, teko naudoti tiek \u0161var\u0173 \"JavaScript\" kod\u0105, tiek \"jQuery\" i\u0161pl\u0117tinius, bei dirbti su tre\u010Diosios \u0161alies domen\u0173 s\u0105sajomis (API).\n\t\t\t\t\t<br><br>\n\t\t\t\t\tSuk\u016Brus pagrindin\u0119 internetin\u0119 parduotuv\u0119, mano atsakomyb\u0117 buvo paversti j\u0105 \u012F vieno puslapio aplikacij\u0105, kuri\u0105 v\u0117liau gal\u0117tume naudoti kaip \"eBay\" integruot\u0105 parduotuv\u0119. Kad tai \u012Fgyvendin\u010Diau, suk\u016Briau savo paties \"JavaScript\" karkas\u0105, veikiant\u012F nuorodos \"hash\" vert\u0117s kitimo principu. Kurdamas \u0161\u012F karkas\u0105, sutvirtinau \u017Einia apie visus pagrindinius vieno puslapio aplikacijos principus. Kadangi \"eBay\" parduotuv\u0117 pirk\u0117jus lyd\u0117jo \u012F \"eBay\" skelbimus - tur\u0117jau u\u017Eduot\u012F - atnaujinti visus skelbimus, jiems pritaikant pagrindin\u0117s internetin\u0117s parduotuv\u0117s i\u0161vaizd\u0105. Kadangi kompanija prekiauja \u0161imtais produkt\u0173, kiekvienam skelbimui atnaujinti panaudojau \"eBay API\". Kuriant \u0161i\u0105 aplikacij\u0105 teko i\u0161mokti technik\u0173, leid\u017Eian\u010Di\u0173 susidoroti su problemomis, perduodant duomenis tarp skirting\u0173 domen\u0173.\n\t\t\t\t\t<br><br>\n\t\t\t\t\tTaipogi \u012F mano pareigas \u012F\u0117jo naujienlai\u0161ki\u0173 k\u016Brimas, bei SEO implementacijos (\"Schema.org\" \u017Eymi\u0173 diegimas). Taip pat teko dirbti su \"Google Adwords\", \"Google Webmaster Tools\".",
+                "wersportsDescription": "\"We R Sports\" tai \u0161eimos \u012Fkurtas, internetin\u0119 prekyb\u0105 pagr\u012Fstas, verslas. Kompanija internetu prekiauja sporto \u012Franga ir atributika.\n\t\t\t\t\t<br><br>\n\t\t\t\t\tDirbdamas poroje su \"backend\" programuotoju, daugiausiai laiko praleisdavau prie pagrindin\u0117s \"We R Sports\" internetin\u0117s parduotuv\u0117s k\u016Brimo ir vystimo. Nusprend\u0117me nesinaudoti jau egzsituojan\u010Diais internetini\u0173 parduotuvi\u0173 sprendimais, tad svetain\u0117 i\u0161 pagrind\u0173 buvo sukoduota m\u016Bs\u0173 pa\u010Di\u0173. Nors tai nebuvo vieno puslapio aplikacija, ta\u010Diau, kurdamas vartotojo s\u0105s\u0105j\u0105, panaudojau gan\u0117tinai didel\u012F \"JavaScript\" kiek\u012F. Internetinei parduotuvei reik\u0117jo daugyb\u0117s sud\u0117ting\u0173 funkcij\u0173, toki\u0173 kaip: \"slideshow\", 360 laipsni\u0173 produkt\u0173 ap\u017Evalgos galimyb\u0117s ir t.t. Kadangi mano kolega nusprend\u0117 projekto \"backend\" gr\u012Fsti \"Symfony 2\" karkasu (PHP), man teko \u012Fsisavinti \"TWIG\" (sistema, skirta vartotojo s\u0105sajos apra\u0161ymui \"Symfony\" karkase). Vystant \u0161\u012F puslap\u012F, teko naudoti tiek \u0161var\u0173 \"JavaScript\" kod\u0105, tiek \"jQuery\" i\u0161pl\u0117tinius, bei dirbti su tre\u010Diosios \u0161alies domen\u0173 s\u0105sajomis (API).\n\t\t\t\t\t<br><br>\n\t\t\t\t\tSuk\u016Brus pagrindin\u0119 internetin\u0119 parduotuv\u0119, mano atsakomyb\u0117 buvo paversti j\u0105 \u012F vieno puslapio aplikacij\u0105, kuri\u0105 v\u0117liau gal\u0117tume naudoti kaip \"eBay\" integruot\u0105 parduotuv\u0119. Kad tai \u012Fgyvendin\u010Diau, suk\u016Briau savo paties \"JavaScript\" karkas\u0105, veikiant\u012F nuorodos \"hash\" vert\u0117s kitimo principu. Kurdamas \u0161\u012F karkas\u0105, sutvirtinau \u017Einia apie visus pagrindinius vieno puslapio aplikacijos principus. Kadangi \"eBay\" parduotuv\u0117 pirk\u0117jus lyd\u0117jo \u012F \"eBay\" skelbimus - tur\u0117jau u\u017Eduot\u012F - atnaujinti visus skelbimus, jiems pritaikant pagrindin\u0117s internetin\u0117s parduotuv\u0117s i\u0161vaizd\u0105. Kadangi kompanija prekiauja \u0161imtais produkt\u0173, kiekvienam skelbimui atnaujinti panaudojau \"eBay API\". Kuriant \u0161i\u0105 aplikacij\u0105 teko i\u0161mokti technik\u0173, leid\u017Eian\u010Di\u0173 susidoroti su problemomis, perduodant duomenis tarp skirting\u0173 domen\u0173.\n\t\t\t\t\t<br><br>\n\t\t\t\t\tTaipogi \u012F mano pareigas \u012F\u0117jo naujienlai\u0161ki\u0173 k\u016Brimas, bei SEO implementacijos (\"Schema.org\" \u017Eymi\u0173 diegimas). Taip pat teko dirbti su \"Google Adwords\", \"Google Webmaster Tools\".",
                 "developer": "Programuotojas",
                 "gvcDates": "2012 Lapkritis – 2013 Kovas",
                 "gvcResp1": "Internetinės parduotuvės kūrimas",
@@ -653,7 +664,7 @@ var LanguageSwitch = (function () {
                 "freeDates": "Październik 2008 - Luty 2010",
                 "freeResp1": "Programowanie stron internetowych od podstaw",
                 "freeResp2": "Wdrażanie nowych cech w już instniejące projekty.",
-                "freeDescrption": "While studying and not being able to have a permanent job I spend my weekends and holidays working on a freelance projects.\n\t\t\t\t<br><br>\n\t\t\t\tI worked on very different kinds of projects and costumer request tasks: varying from finding the web hosting solutions to developing a websites from stratch. While mostly using \"ready to go\" content management solutions such as WordPress, CuteNews and PhpNuke I also did a great amount of custom templating and plugin creation. At the time when \"guest book\" feature was trending I developed a PHP based guest book solution which was later installed and successfully used in multiple costumer websites.\n\t\t\t\t<br><br>\n\t\t\t\tAlso worth to mention that I was developing PHPbb (discussion forums platform system) plugins.",
+                "freeDescrption": "W czasie studi\u00F3w nie mog\u0142em sobie pozwoli\u0107 na sta\u0142\u0105 prac\u0119, ale ch\u0119tnie podejmowa\u0142em si\u0119 pojedynczych projekt\u00F3w oraz pracowa\u0142em nad w\u0142asnymi przedsi\u0119wzi\u0119ciami.\n\t\t\t\t<br><br>\n\t\t\t\tPracowa\u0142em nad wieloma projektami, w zale\u017Cno\u015Bci od oczekiwa\u0144 klient\u00F3w - od poszukiwania rozwi\u0105za\u0144 serwerowych po tworzenie stron internetowych od podstaw. Korzystaj\u0105c g\u0142\u00F3wnie z\u201Egotowych do u\u017Cycia\u201D rozwi\u0105za\u0144 takich jak WordPress, CuteNews i PhpNuke, stworzy\u0142em tak\u017Ce w\u0142asne szablony i modu\u0142y dodatkowe. W czasie du\u017Cej popularno\u015Bci internetowych \u201Eksi\u0119gi go\u015Bci\u201D opracowa\u0142em, oparte na php, rozwi\u0105zania, kt\u00F3re zosta\u0142y p\u00F3\u017Aniej u\u017Cyte do stron internetowych wielu klient\u00F3w.\n\t\t\t\t<br><br>\n\t\t\t\tWarto te\u017C wspomnie\u0107, \u017Ce programowa\u0142em modu\u0142y phpBB (pozwalaj\u0105ce u\u017Cytkownikom prowadzi\u0107 dyskusje na forum).",
                 "education": "Edukacja",
                 "eduName1": "Uniwersytet Szawelski, Litwa",
                 "eduStudies1": "Studia inżynierskie o kierunku Technologia informacyjna",
@@ -700,17 +711,6 @@ var LanguageSwitch = (function () {
         }
     };
     return LanguageSwitch;
-}());
-
-var JavaScriptDetect = (function () {
-    function JavaScriptDetect(Parameters) {
-        this.Parameters = Parameters;
-    }
-    JavaScriptDetect.prototype.initialize = function () {
-        $("body").removeClass("NO-JAVASCRIPT");
-        this.Parameters.JavaScript = true;
-    };
-    return JavaScriptDetect;
 }());
 
 var QuickNavigation = (function () {

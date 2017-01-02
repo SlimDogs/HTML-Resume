@@ -134,7 +134,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"wersportsResp1": "Internetinės parduotuvės kūrimas",
 			"wersportsResp2": "Ebay parduotuvės ir skelbimų kūrimas ir vystimas",
 			"wersportsResp3": "SEO įgyvendinimas",
-			"wersportsDescription": `"We R Sports" tai vienos šeimos įkurtas, internetinę prekybą pagrįstas, verslas. Kompanija internetu prekiauja sporto įranga ir atributika.
+			"wersportsDescription": `"We R Sports" tai šeimos įkurtas, internetinę prekybą pagrįstas, verslas. Kompanija internetu prekiauja sporto įranga ir atributika.
 					<br><br>
 					Dirbdamas poroje su "backend" programuotoju, daugiausiai laiko praleisdavau prie pagrindinės "We R Sports" internetinės parduotuvės kūrimo ir vystimo. Nusprendėme nesinaudoti jau egzsituojančiais internetinių parduotuvių sprendimais, tad svetainė iš pagrindų buvo sukoduota mūsų pačių. Nors tai nebuvo vieno puslapio aplikacija, tačiau, kurdamas vartotojo sąsąją, panaudojau ganėtinai didelį "JavaScript" kiekį. Internetinei parduotuvei reikėjo daugybės sudėtingų funkcijų, tokių kaip: "slideshow", 360 laipsnių produktų apžvalgos galimybės ir t.t. Kadangi mano kolega nusprendė projekto "backend" grįsti "Symfony 2" karkasu (PHP), man teko įsisavinti "TWIG" (sistema, skirta vartotojo sąsajos aprašymui "Symfony" karkase). Vystant šį puslapį, teko naudoti tiek švarų "JavaScript" kodą, tiek "jQuery" išplėtinius, bei dirbti su trečiosios šalies domenų sąsajomis (API).
 					<br><br>
@@ -237,11 +237,11 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"freeDates": "Październik 2008 - Luty 2010",
 			"freeResp1": "Programowanie stron internetowych od podstaw",
 			"freeResp2": "Wdrażanie nowych cech w już instniejące projekty.",
-			"freeDescrption": `While studying and not being able to have a permanent job I spend my weekends and holidays working on a freelance projects.
+			"freeDescrption": `W czasie studiów nie mogłem sobie pozwolić na stałą pracę, ale chętnie podejmowałem się pojedynczych projektów oraz pracowałem nad własnymi przedsięwzięciami.
 				<br><br>
-				I worked on very different kinds of projects and costumer request tasks: varying from finding the web hosting solutions to developing a websites from stratch. While mostly using "ready to go" content management solutions such as WordPress, CuteNews and PhpNuke I also did a great amount of custom templating and plugin creation. At the time when "guest book" feature was trending I developed a PHP based guest book solution which was later installed and successfully used in multiple costumer websites.
+				Pracowałem nad wieloma projektami, w zależności od oczekiwań klientów - od poszukiwania rozwiązań serwerowych po tworzenie stron internetowych od podstaw. Korzystając głównie z„gotowych do użycia” rozwiązań takich jak WordPress, CuteNews i PhpNuke, stworzyłem także własne szablony i moduły dodatkowe. W czasie dużej popularności internetowych „księgi gości” opracowałem, oparte na php, rozwiązania, które zostały później użyte do stron internetowych wielu klientów.
 				<br><br>
-				Also worth to mention that I was developing PHPbb (discussion forums platform system) plugins.`,
+				Warto też wspomnieć, że programowałem moduły phpBB (pozwalające użytkownikom prowadzić dyskusje na forum).`,
 			"education": "Edukacja",
 			"eduName1": "Uniwersytet Szawelski, Litwa",
 			"eduStudies1": "Studia inżynierskie o kierunku Technologia informacyjna",

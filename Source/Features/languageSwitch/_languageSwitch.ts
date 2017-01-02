@@ -38,7 +38,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"orbusResp2": "SharePoint applications development",
 			"orbusResp3": "Training new developers",
 			"orbusResp4": "Managing frontend development operations",
-			"orbusDescription": `Orbus is a small software company that provides enterprise architecture management software. My department is developing a brand new browser based solution with SharePoint and Visio integration. This software is similar to a content management system, giving administrators the opportunity to create custom forms, visualizations and data views for their staff. My role in the team is as a frontend developer.<br><br>
+			"orbusDescription": `Orbus is a software company that provides enterprise architecture management software. My department is developing a brand new browser based solution with SharePoint and Visio integration. This software is similar to a content management system, giving administrators the opportunity to create custom forms, visualizations and data views for their staff. My role in the team is as a frontend developer.<br><br>
 
 					While working in agile Scrum based environment we are having two weeks long sprints with daily stand ups, weekly backlog estimations and new features releases in the end of the sprints. Every four sprints we have a regression sprints for bug fixing and new tech integration. Thanks to regression sprints I was able to direct the whole project towards Angular 2 version by introducing TypeScript into our stack.<br></br>
 
@@ -204,7 +204,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"orbusResp2": "Tworzenie aplikacji SharePoint",
 			"orbusResp3": "Szkolenie nowych programistów",
 			"orbusResp4": "Zarządzanie operacjami programowania w warstwie frontend.",
-			"orbusDescription": `Orbus jest niewielką firmą programistyczną, która dostarcza oprogramowania do zarządzania przedsiębiorstw. Mój dział opracowywał, oparte na przeglądarce, rozwiązania,  wykorzystując SharePoint oraz Visio. Oprogramowanie to przypomina system zarządzania treścią, gdyż daje administratorom możliwość tworzenia własnych form, wizualizacji i poglądu danych dla pracowników. Moją rolą w zespole było programowanie warstwy frontend.
+			"orbusDescription": `Orbus jest firmą programistyczną, która dostarcza oprogramowania do zarządzania przedsiębiorstw. Mój dział opracowywał, oparte na przeglądarce, rozwiązania,  wykorzystując SharePoint oraz Visio. Oprogramowanie to przypomina system zarządzania treścią, gdyż daje administratorom możliwość tworzenia własnych form, wizualizacji i poglądu danych dla pracowników. Moją rolą w zespole było programowanie warstwy frontend.
 			<br><br>
 			Praca odbywała się w systemie Scrum z trwającymi dwa tygodnie iteracjami i codziennymi zbiórkami oraz cotygodniowym omawianiu zaległości i postępów. Po każdych czterech sprintach cofaliśmy się do poprzednich w celu wyeliminowania błędów, a także integracji nowych technologii. Dzięki metodzie regresji iteracji byłem w stanie nakierować cały projekt na Angular 2 poprzez wprowadzenie TypeScript do naszej technologii.
 			<br></br>

@@ -24,7 +24,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 					Starting with UI development, I became proficient in pure JavaScript as well as JavaScript frameworks like AngularJs. I am open minded developer who loves to experiment and reaches for the very best results when completing my tasks. When I work my main goal is to create beautiful and fast performing applications.
 					<br><br>
 					I have experience working on both small and very large scale apps and I am very aware of how important is have the smoothly performing "face" of the application!`,
-			"available": "I am currently looking for a permament new position.",
+			"available": "I am currently looking for a permanent new position.",
 			"unavailable": "I am currently not looking for a new position.",
 			"contacts": "Contacts",
 			"address": "Address:",
@@ -53,7 +53,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"wersportsResp3": "SEO implementation",
 			"wersportsDescription": `A family business which is selling sport related items online. Besides the main ecommerce website they have multiple stores in such selling channels like eBay, Amazon, Play.com
 					<br><br>
-					While working in co-operation with backend developer my main responsibility was development of We R Sports ecommerce page. It was a 100% custom website with our own backend and fresh new frontend. I did a lot of JavaScript programming to implement it as there were lots of features which coldn't be implemented in other way. I have used various jQuery plugins and plain JavaScript to implement such features as slideshows, 360 product previews and many others. As our backend was based on Symfony (PHP framework) which used TWIG as it's default templating system I had to adapt and learn it to support my backend collegue.
+					While working in co-operation with backend developer my main responsibility was development of We R Sports ecommerce page. It was a 100% custom website with our own backend and fresh new frontend. I did a lot of JavaScript programming to implement it as there were lots of features which couldn't be implemented in other way. I have used various jQuery plugins and plain JavaScript to implement such features as slideshows, 360 product previews and many others. As our backend was based on Symfony (PHP framework) which used TWIG as it's default templating system I had to adapt and learn it to support my backend collegue.
 					<br><br>
 					After finishing with the main ecommerce platform my responsibility was to convert it to a single page application and replace our default eBay store with it. I have done this by constructing my own custom JavaScript framework based on url "hash" change event. I worked with different kinds restful APIs such as eBay API, Amazon API, PaymentSence Api, Royal Mail Api and many others. Working on this single application project made me to develop a solid base on a crossdomain data transfer techniques.
 					<br><br>
@@ -71,7 +71,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"freeDates": "Oct 2008 – Feb 2010",
 			"freeResp1": "Websites development from scratch",
 			"freeResp2": "New features integration into existing projects",
-			"freeDescrption": `While studying and not being able to have a permament job I spend my weekends and holidays working on a freelance projects.
+			"freeDescrption": `While studying and not being able to have a permanent job I spend my weekends and holidays working on a freelance projects.
 					<br><br>
 					I worked on very different kinds of projects and costumer request tasks: varying from finding the web hosting solutions to developing a websites from stratch. While mostly I was using "ready to go" content management solutions such as WordPress, CuteNews and PhpNuke I also did a great amount of custom templating and plugin creation. While online"guest book" feature was trending I developed a PHP based guest book solution which was later installed and successfully used in multiple costumer websites.
 					<br><br>
@@ -104,9 +104,9 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"profile": "Aprašymas",
 			"profileDesc": `Naudodamas įvairias technologijas, aš kūriu web programinę įrangą, gebančią prisitaikyti prie skirtingų dydžių ekranų raiškos ir veikiančią tiek mobiliuose įrenginiuose, tiek stacionariuose kompiuteriuose.
 						<br><br>
-						Esu pasitikintis savimi visuose frontend kūrimo aspektuose, pradedant vartotojo sąsajos kūrimu, baigiant vartotojo scenarijų kodavimu pasinaudojant JavaScript programavimo kalba.
+						Esu pasitikintis savimi visuose "frontend" kūrimo aspektuose, pradedant vartotojo sąsajos kūrimu, baigiant panaudojimo scenarijų kodavimu pasinaudojant "JavaScript" programavimo kalba.
 						<br><br>
-						Kuriant aplikacijas mano pagrininiai tikslai yra padaryti jas patogias ir greitai veikiančias. Kadangi esu dirbęs tiek prie mažų projektų, tiek prie milžiniškų - supratau, kad sklandžiai ir greitai veikianti programinė yranga turėtų būti kiekvieno programuotojo siekiamybė!`,
+						Kuriant aplikacijas mano pagrininiai tikslai yra padaryti jas patogias ir greitai veikiančias. Kadangi esu dirbęs tiek prie mažų projektų, tiek prie milžiniškų - supratau, kad sklandžiai ir greitai veikianti programinė įranga turėtų būti kiekvieno programuotojo siekiamybė!`,
 			"available": "Šiuo metu ieškau naujo darbo.",
 			"unavailable": "Šiuo metu naujo darbo neieškau.",
 			"contacts": "Kontaktai",
@@ -120,43 +120,43 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"orbusResp1": "Įmoniu valdymo programinės įrangos kūrimas",
 			"orbusResp2": "SharePoint aplikacijų kūrimas",
 			"orbusResp3": "Naujų programuotojų treniravimas",
-			"orbusResp4": "Programavimo operacijų kontrolė",
-			"orbusDescription": `"Orbus software" yra nedidelė kompanija kuri specializuojasi į programinės įrangos kūrimą, dedikuota didelių kompanijų bei korporacijų valdymui. Padalinys kuriame dirbu dirba su internetinių naršyklių pagrindu veikiančia aplikacija kuri dar yra integruota su tokiais "Microsoft" produktais kaip "SharePoint" ir "Visio". Ši aplikacija iš dalies primena turiniu valdymo sistemą, administratoriai turi teisę kurti įvairiausias formas, visualizacijas, duomenų atvaizdavimo puslapius ir t.t. Mano rolė šioje komandoje - frontend Inžinierius.
+			"orbusResp4": "Programavimo proceso operacijų kontrolė",
+			"orbusDescription": `"Orbus software" yra nedidelė kompanija kuri specializuojasi į programinės įrangos kūrimą, dedikuota didelių kompanijų bei korporacijų valdymui. Padalinys kuriame dirbu yra atsakingas už internetinių naršyklių pagrindu veikiančią aplikaciją, kuri yra integruota su "Microsoft" produktais, tokiais kaip "SharePoint" ir "Visio". Ši aplikacija iš dalies primena turinio valdymo sistemą - administratoriai turi teisę kurti įvairias formas, visualizacijas, duomenų atvaizdavimo puslapius ir t.t. Mano rolė šioje komandoje - "frontend" inžinierius.
 					<br><br>
-					Pasinaudojant Scrum metodais projekto įgyvendinimo valdymui, kasdieną turėjome veiklos pristatymus, pastovias planavimo bei panašaus pobūdžio sesijas. Mūsų "sprintų" dydis buvo dvi savaitės. Kiekvieno "sprinto" pabaigoje turėjome demonstracinio pobūdžio susirinkimus, kurių metu buvo pristatomos visos naujovės atsiradusios sprinto metu. Kas keturis "sprintus" turėjome "regresijos sprintą" kuriuo metu taisymę klaidas, bei reikalui esant diegiame naujoas programavimo technologijas. Būtent tokių sprintų metu man pavyko įdiegtį daugybę technologijų, tokių kaip "TypeScript". Kadangi projekto aplikacija buvo parašyta bazuojantis ties "Angular" karkasu, įdiegus "TypeScript" technologija mums atsivėre visos galimybės ateityje gauti "Angular" atnaujinimus, mat naujuose šios sistemos versijuose programavimas yra skatinimas būtent "TypeScript" kalba.
+					Pasinaudojant Scrum metodais projekto įgyvendinimo valdymui, kiekvieną dieną turėjome veiklos pristatymo susirinkimus, pastovias planavimo bei panašaus pobūdžio sesijas. Mūsų "sprintų" dydis buvo dvi savaitės. Kiekvieno "sprinto" pabaigoje turėjome demonstracinio pobūdžio susirinkimus, kurių metu buvo pristatomos visos naujovės atsiradusios sprinto metu. Kas keturis "sprintus" turėjome "regresijos sprintą" kuriuo metu taisėme klaidas, bei reikalui esant diegiame naujas programavimo technologijas. Būtent tokių sprintų metu man pavyko įdiegtį daugybę technologijų, tokių kaip "TypeScript", "Sass" ir t.t. Kadangi projekto aplikacija buvo parašyta "Angular" karkaso pagrindu, įdiegus "TypeScript" mums atsivėre visos galimybės ateityje gauti "Angular" atnaujinimus, mat naujuose šios sistemos versijuose programavimas yra skatinimas būtent "TypeScript" kalba.
 					<br></br>
-					Kai nedirbdavau ties pagrindiniu projektu, daugiausiai laiko praleisdavau prie "SharePoint" aplikacijų kūrimo. "SharePoint" aplikacijos - tai tam tikros mūsų pagrindinio projekto aplikacijos dalys, kurias galima patogiai ir sklandžiai įdiegti į "SharePoint" puslapius. Kuriant šias aplikacijas turėjau išmokti atitinkamas "SharePoint" duomenų valdymo sąsajas (API), bei perprasti duomenų perdavimo, tarp skirtingų domenu, įmantrybes.
+					Kai nedirbdavau ties pagrindiniu projektu, daugiausiai laiko praleisdavau kurdamas "SharePoint" aplikacijas. "SharePoint" aplikacijos - tai tam tikros mūsų pagrindinės aplikacijos dalys, kurias galima patogiai ir sklandžiai įdiegti į "SharePoint" puslapius. Kuriant šias aplikacijas turėjau išmokti atitinkamas "SharePoint" duomenų valdymo sąsajas (API), bei perprasti duomenų perdavimo, tarp skirtingų domenu, įmantrybes.
 					<br><br>
-					Taipogi daug laiko praleisdavau mokindamas naujus bei mažiau patyrusius programinės įrangos inžinierius.`,
+					Be visa ko daug laiko praleisdavau mokindamas naujus, bei mažiau patyrusius, programinės įrangos inžinierius.`,
 			"techUsed": "Naudotos technologijos",
 			"webDev": "Web Inžinierius",
 			"wersportsDates": "2013 Kovas – 2014 Kovas",
 			"wersportsResp1": "Internetinės parduotuvės kūrimas",
 			"wersportsResp2": "Ebay parduotuvės ir skelbimų kūrimas ir vystimas",
 			"wersportsResp3": "SEO įgyvendinimas",
-			"wersportsDescription": `"We R Sports" tai šeimos įkurtas, internetinę prekybą pagrįstas verslas. Kompanija prekiauja sporto įranga ir atributika internetu.
+			"wersportsDescription": `"We R Sports" tai vienos šeimos įkurtas, internetinę prekybą pagrįstas, verslas. Kompanija internetu prekiauja sporto įranga ir atributika.
 					<br><br>
-					Dirbdamas poroje su "backend" programuotoju, daugiausiai laiko praleisdavau prie pagrindinės "We R Sports" internetinės parduotuvės kūrimo ir vystimo. Nusprendėme nesinaudoti jau egzsituojančiais internetinių parduotuvių sprendimais, tad svetainė nuo pagrindų buvo parašyta mūsų pačių. Nors tai nebuvo vieno puslapio aplikaciją, tačiau kurdamas vartotojo sąsąją panaudojau ganėtinai didelį "JavaScript" kiekį. Taip gavosi, nes vadovai norėjo daugybės sudėtingų funkcijų, tokių kaip: "slideshow", 360 laipsnių produktų apžvalgos galimybės ir t.t. Kadangi mano kolega nusprendė projekto "backend" grįsti "Symfony 2" karkasu (PHP), man teko prisitaikyti ir išmokti "TWIG" (sistema, skirta puslapių apipavidalinimui kurti "Symfony" karkase). Vystant šį puslapį teko naudoti keletą "jQuery" išplėtinių, dirbti su trečiosios šalies domenų sąsajomis (API).
+					Dirbdamas poroje su "backend" programuotoju, daugiausiai laiko praleisdavau prie pagrindinės "We R Sports" internetinės parduotuvės kūrimo ir vystimo. Nusprendėme nesinaudoti jau egzsituojančiais internetinių parduotuvių sprendimais, tad svetainė nuo pagrindų buvo parašyta mūsų pačių. Nors tai nebuvo vieno puslapio aplikaciją, tačiau kurdamas vartotojo sąsąją panaudojau ganėtinai didelį "JavaScript" kiekį. Taip gavosi, nes vadovai norėjo daugybės sudėtingų funkcijų, tokių kaip: "slideshow", 360 laipsnių produktų apžvalgos galimybės ir t.t. Kadangi mano kolega nusprendė projekto "backend" grįsti "Symfony 2" karkasu (PHP), man teko prisitaikyti ir išmokti "TWIG" (sistema, skirta vartotojo sąsajos aprašymui "Symfony" karkase). Vystant šį puslapį teko naudoti tiek švarų "JavaScript" kodą, tiek "jQuery" išplėtinius, bei dirbti su trečiosios šalies domenų sąsajomis (API).
 					<br><br>
-					Pabaigus pagrindinę internetinę parduotuvę mano atsakomybė buvo paverti ją į vieno puslapio aplikaciją, kurią vėliau galėtume panaudoti kaip "eBay" integruotą parduotuvę. Tam įgyvendinti, sukūriau savo paties "JavaScript" karkas1 veikiantį nuorodos "hash" vertės kitimo principu. Kurdamas šį karkasą išmokau visus vieno puslapio aplikacijos principus, bei susidūriau su visais iššukiais savo kailiu! Kadangi "eBay" pardtuovė pirkėjus lydėjo į "eBay" skelbimus - turėjau užduoti atnajinti visus skelbimus, jiems pritaikant pagrindinės internetinės parduotuvės išvaizdą. Kadangi kompanija prekiauja šimtais produktų, kiekvienam skelbimui atnaujinti panaudojau "eBay API". Kuriant šią aplikaciją teko išmokti technikų, leidžiančių susidoroti su problemomis, perduodant duomenis tarp skirtingų domenų.
+					Pabaigus pagrindinę internetinę parduotuvę mano atsakomybė buvo paversti ją į vieno puslapio aplikaciją, kurią vėliau galėtume naudoti kaip "eBay" integruotą parduotuvę. Tam įgyvendinti, sukūriau savo paties "JavaScript" karkasą, veikiantį nuorodos "hash" vertės kitimo principu. Kurdamas šį karkasą išmokau visus pagrindinius vieno puslapio aplikacijos principus, bei susidūriau su visais iššukiais savo kailiu! Kadangi "eBay" pardtuovė pirkėjus lydėjo į "eBay" skelbimus - turėjau užduoti atnajinti visus skelbimus, jiems pritaikant pagrindinės internetinės parduotuvės išvaizdą. Kadangi kompanija prekiauja šimtais produktų, kiekvienam skelbimui atnaujinti panaudojau "eBay API". Kuriant šią aplikaciją teko išmokti technikų, leidžiančių susidoroti su problemomis, perduodant duomenis tarp skirtingų domenų.
 					<br><br>
-					Be visako į mano pareigas dar įėjo naujienlaiškių kūrimas, bei SEO implementacijos ("Schema.org" žymių diegimas). Taip pat teko dirbti su "Google Adwords", "Google Webmaster Tools".`,
+					Be visa ko į mano pareigas dar įėjo naujienlaiškių kūrimas, bei SEO implementacijos ("Schema.org" žymių diegimas). Taip pat teko dirbti su "Google Adwords", "Google Webmaster Tools".`,
 			"developer": "Programuotojas",
 			"gvcDates": "2012 Lapkritis – 2013 Kovas",
 			"gvcResp1": "Internetinės parduotuvės kūrimas",
 			"gvcResp2": "Ebay parduotuvės bei skelbimų kūrimas ir vystimas",
 			"gvcDescription": `"GVC Digital" nedidelė kompanija kuri specializuojasi į elektroninių prekių perpardavimą internetu. Kompanija turi keletą internetinių parduotuvių, bei gausybę parduotuvių populiariausiuose pardavimo kanaluose tokiuose kaip eBay, Amazon ir t.t. Tuo metu aš buvau vienintelis programuotojas dirbantis kompanijoje.
 					<br><br>
-					Mano pagrindinė pareiga buvo užtikrinimas, kad visos pardavimų platformus turėtų naujausiuos produktų duomenis. Kadangi "GVC Digital" užsiminėjo perpardavimais ir realių prekių savo sandėliuose neturėjo - buvo labai svarbu pastoviai atnaujinti produktu kiekius, kad pirkėjai netyčiomis neįsigytų produktų, kurių prekių šaltiniai jau nebeturėjo... Pasinaudodamas C# programavimo kalba sukūriau programėlę kuri automatiškai rinko duoemis iš prekių tekėjų, jus konvertavo į atitinkamus failų formatus kuriuos vėliau lengvai buvo galima inportuoti į savo duomenu bazes.
+					Mano pagrindinė pareiga buvo užtikriti, kad visos pardavimų platformus turėtų naujausiuos produktų duomenis. Kadangi "GVC Digital" užsiminėjo perpardavimais ir realių prekių savo sandėliuose neturėjo - buvo labai svarbu pastoviai atnaujinti produktu informaciją (kiekius, kainas ir t.t.), kad pirkėjai netyčiomis neįsigytų produktų, kurių prekių šaltiniai jau nebeturėjo... Pasinaudodamas C# programavimo kalba sukūriau programėlę kuri automatiškai rinko duoemis iš prekių tiekėjų, juos konvertavo į atitinkamus failų formatus, kuriuos vėliau buvo galima inportuoti į duomenu bazes.
 					<br><br>
-					Tarp kitų pareigų buvo "eBay" parduotuvių, skelbimų maketavimas ir vystimas, savaitės naujienlaiškių kūrimas.`,
+					Tarp kitų pareigų buvo "eBay" parduotuvių, bei skelbimų maketavimas, naujienlaiškių kūrimas.`,
 			"freelancer": "Laisvai samdomas",
 			"freeDates": "2008 Spalis – 2010 Vasaris",
 			"freeResp1": "Svetainės kūrimas nuo nulio",
 			"freeResp2": "Papildomų funkcijų diegimas į egzistuojančius projektus",
-			"freeDescrption": `Šiuo laikotarpiu teko dirbti prie įvairiausių projektų, bei teigti įvairias paslaugas: nuo svetainių talpinimo paieškos iki pilno svetainės kūrimo nuo nulio.
+			"freeDescrption": `Šiuo laikotarpiu teko dirbti prie įvairiausių projektų, bei teikti įvairias paslaugas: nuo svetainių talpinimo paieškos iki pilno svetainės kūrimo.
 					<br><br>
-					Teko sukurti ne vieną blogą, naujienų puslapį: turiniui valdyti pritaikydavau įvairias sistemas, tokias kaip WordPress, CuteNews ar PHP Nuke.
+					Teko sukurti ne vieną blogą, naujienų puslapį: turiniui valdyti pritaikydavau įvairius egzistuojančius sprendimus, tokius kaip WordPress, CuteNews ar PHP Nuke.
 					<br><br>
 					Neretai tobulindavau jau egzistuojančius projektus: diegdavau diskusijų lentas, svečių knygas, vartotojų lankomumo skaitliukus.`,
 			"education": "Išsilavinimas",
@@ -219,7 +219,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"wersportsResp3": "Realizacja SEO",
 			"wersportsDescription": `A family business which is selling sport related items online. Besides the main ecommerce website they have multiple stores in such selling channels like eBay, Amazon, Play.com
 					<br><br>
-					While working in co-operation with backend developer my main responsibility was development of We R Sports ecommerce page. It was a 100% custom website with our own backend and fresh new frontend. I did a lot of JavaScript programming to implement it as there were lots of features which coldn't be implemented in other way. I have used various jQuery plugins and plain JavaScript to implement such features as slideshows, 360 product previews and many others. As our backend was based on Symfony (PHP framework) which used TWIG as it's default templating system I had to adapt and learn it to support my backend collegue.
+					While working in co-operation with backend developer my main responsibility was development of We R Sports ecommerce page. It was a 100% custom website with our own backend and fresh new frontend. I did a lot of JavaScript programming to implement it as there were lots of features which couldn't be implemented in other way. I have used various jQuery plugins and plain JavaScript to implement such features as slideshows, 360 product previews and many others. As our backend was based on Symfony (PHP framework) which used TWIG as it's default templating system I had to adapt and learn it to support my backend collegue.
 					<br><br>
 					After finishing with the main ecommerce platform my responsibility was to convert it to a single page application and replace our default eBay store with it. I have done this by constructing my own custom JavaScript framework based on url "hash" change event. I worked with different kinds restful APIs such as eBay API, Amazon API, PaymentSence Api, Royal Mail Api and many others. Working on this single application project made me to develop a solid base on a crossdomain data transfer techniques.
 					<br><br>
@@ -237,7 +237,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"freeDates": "Październik 2008 - Luty 2010",
 			"freeResp1": "Programowanie stron internetowych od podstaw",
 			"freeResp2": "Wdrażanie nowych cech w już instniejące projekty.",
-			"freeDescrption": `While studying and not being able to have a permament job I spend my weekends and holidays working on a freelance projects.
+			"freeDescrption": `While studying and not being able to have a permanent job I spend my weekends and holidays working on a freelance projects.
 					<br><br>
 					I worked on very different kinds of projects and costumer request tasks: varying from finding the web hosting solutions to developing a websites from stratch. While mostly I was using "ready to go" content management solutions such as WordPress, CuteNews and PhpNuke I also did a great amount of custom templating and plugin creation. While online"guest book" feature was trending I developed a PHP based guest book solution which was later installed and successfully used in multiple costumer websites.
 					<br><br>

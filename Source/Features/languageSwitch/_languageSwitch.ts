@@ -64,7 +64,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"gvcResp2": "Ebay stores and listing development",
 			"gvcDescription": `GVC Digital specializes in reselling digital, electronical items. It owns two ecommerce platforms (DigiSpot, GoodsStall) and a numerous eBay and Amazon stores. In this small ecommerce based company I stayed for a short period of time and as a single developer in the whole company.
 					<br><br>
-					My main responsibilites were to keep all the product data up to date. To make this happend I have created a C# application which grabs all the information provided by wholesellers, converts it to specific database import compatible file format and performs the data update.
+					My main responsibilites were to keep all the product data up to date. To do this I have created a C# application which grabs all the information provided by wholesellers, converts it to specific database import compatible file format and performs the data update.
 					<br><br>
 					Other responsibilites included template creation for eBay stores and listings, weekly newsletters creation. I did a lot of html and JavaScript coding while performing them.`,
 			"freelancer": "Freelancer",
@@ -237,11 +237,11 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"freeDates": "Październik 2008 - Luty 2010",
 			"freeResp1": "Programowanie stron internetowych od podstaw",
 			"freeResp2": "Wdrażanie nowych cech w już instniejące projekty.",
-			"freeDescrption": `W czasie studiów nie mogłem sobie pozwolić na stałą pracę, ale chętnie podejmowałem się pojedynczych projektów oraz pracowałem nad własnymi przedsięwzięciami.
+			"freeDescrption": `While studying and not being able to have a permanent job I spend my weekends and holidays working on a freelance projects.
 				<br><br>
-				Pracowałem nad wieloma projektami, w zależności od oczekiwań klientów - od poszukiwania rozwiązań serwerowych po tworzenie stron internetowych od podstaw. Korzystając głównie z„gotowych do użycia” rozwiązań takich jak WordPress, CuteNews i PhpNuke, stworzyłem także własne szablony i moduły dodatkowe. W czasie dużej popularności internetowych „księgi gości” opracowałem, oparte na php, rozwiązania, które zostały później użyte do stron internetowych wielu klientów.
+				I worked on very different kinds of projects and costumer request tasks: varying from finding the web hosting solutions to developing a websites from stratch. While mostly using "ready to go" content management solutions such as WordPress, CuteNews and PhpNuke I also did a great amount of custom templating and plugin creation. At the time when "guest book" feature was trending I developed a PHP based guest book solution which was later installed and successfully used in multiple costumer websites.
 				<br><br>
-				Warto też wspomnieć, że programowałem moduły phpBB (pozwalające użytkownikom prowadzić dyskusje na forum).`,
+				Also worth to mention that I was developing PHPbb (discussion forums platform system) plugins.`,
 			"education": "Edukacja",
 			"eduName1": "Uniwersytet Szawelski, Litwa",
 			"eduStudies1": "Studia inżynierskie o kierunku Technologia informacyjna",

@@ -189,7 +189,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"profile": "Profil",
 			"profileDesc": `Buduję elastyczne(tzw. responsive), rozbudowane i możliwe do rozbudowania strony internetowe i aplikacje sieciowe używając różnorodnych technologii, które działają na smartfonach, tabletach oraz komputerach stacjonarnych.
 							<br><br>
-							Rozpocząwszy programowanie z UI, stałem się biegły zarówno w czystym JavaScript, jak również w strukturach JavaScript, takich jak AngularJs. Kiedy pracuję, zawsze dążę do tego, by stworzyć piękną, dobrze prezentującą się wastwę front-end. Ostatni projekt nad którym pracowałem był złożony i dużych rozmiarów, co nauczyło mnie, jak ważny jest sprawnie działający i szybki frontend!`,
+							Rozpocząwszy programowanie z UI, stałem się biegły zarówno w czystym JavaScript, jak również w strukturach JavaScript, takich jak AngularJs. Kiedy pracuję, zawsze dążę do tego, by stworzyć piękną, dobrze prezentującą się wastwę frontend. Ostatni projekt nad którym pracowałem był złożony i dużych rozmiarów, co nauczyło mnie, jak ważny jest sprawnie działający i szybki frontend!`,
 			"available": "Obecnie poszukuję pracy na pełen etat.",
 			"unavailable": "Obecnie nie szukam nowej pracy.",
 			"contacts": "Kontakty",
@@ -219,11 +219,11 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"wersportsResp3": "Realizacja SEO",
 			"wersportsDescription": `We R Sports to rodzinny biznes zajmujący się sprzedażą internetową sprzętu sportowego różnego typu. Poza własną stroną ze sprzedażą on-line, posiadają też wiele sklepów w miejscach takich jak eBay, Amazon czy Play.com.
 				<br><br>
-				Współpracujac z programistą  warstwy frontend, moim głównym zadaniem był rozwój sklepu internetowego We R Sports. Była to w pełni przez nas stworzona strona internetowa z własnym back-endem i świeżym frontendem. Dużo czasu spędziłem pracując z JavaScript, gdyż istniało wiele cech, które nie mogły być wdrożone w inny sposób. Używałem różnych wtyczek jQuery oraz zwykłego JavaScript, aby wprowadzić efekty typu pokaz slajdów, 360° widok produktu i wiele innych. Jako że back-end opierał się na Symfony (platforma programistyczna PHP), która używała TWIG jako domyślnego szablonu systemowego, musiałem nauczyć się tego, by móc wspierać kolegę z backendu.
+				Współpracujac z programistą  warstwy frontend, moim głównym zadaniem był rozwój sklepu internetowego We R Sports. Była to w pełni przez nas stworzona strona internetowa z własnym backendem i świeżym frontendem. Dużo czasu spędziłem pracując z JavaScript, gdyż istniało wiele cech, które nie mogły być wdrożone w inny sposób. Używałem różnych wtyczek jQuery oraz zwykłego JavaScript, aby wprowadzić efekty typu pokaz slajdów, 360° widok produktu i wiele innych. Jako że backend opierał się na Symfony (platforma programistyczna PHP), która używała TWIG jako domyślnego szablonu systemowego, musiałem nauczyć się tego, by móc wspierać kolegę z backendu.
 				<br><br>
-				Po skończeniu pracy z głównym sklepem internetowym, otrzymałem zadanie przekształcenia go w jednostronową aplikację, a następnie zastąpienia sklepu eBay ową aplikacją. Dokonałem tego konstruując własną platformę programistyczną JavaScript opartą na url „hash” change event. Pracowałem z wieloma restful APIs takimi jak eBay API, Amazon API, PaymentSence Api,, czy Royal Mail Api. Praca nad tym projektem rozwinęła moje umiejętności w zakresie technik transmisji danych związanych z crossdomain.
+				Po skończeniu pracy z głównym sklepem internetowym, otrzymałem zadanie przekształcenia go w jednostronową aplikację, a następnie zastąpienia sklepu eBay ową aplikacją. Dokonałem tego konstruując własną platformę programistyczną JavaScript. Pracowałem z wieloma restful APIs takimi jak eBay API, Amazon API, PaymentSence Api,, czy Royal Mail Api. Praca nad tym projektem rozwinęła moje umiejętności w zakresie technik transmisji danych związanych z crossdomain.
 				<br><br>
-				Poza pracą ze sklepami on-line, odpowiadałem za tworzenie biuletynu oraz wdrażanie najlepszych praktyk SEO (takich jak znaczniki Schema.org ) do głównej strony internetowej. To wymagało ode mnie nauki niezwiązanej z programowaniem- używania Google AdWords I Google WebMaster tools.`,
+				Poza pracą ze sklepami on-line, odpowiadałem za tworzenie biuletynu oraz wdrażanie najlepszych praktyk SEO (takich jak znaczniki Schema.org) do głównej strony internetowej. To wymagało ode mnie nauki niezwiązanej z programowaniem- używania Google AdWords I Google WebMaster tools.`,
 			"developer": "Programista",
 			"gvcDates": "Listopad 2012 - Marzec 2013",
 			"gvcResp1": "Tworzenie strony sklepu internetowego",
@@ -232,7 +232,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 				<br><br>
 				Moim zadaniem było aktualizowanie danych na stronie. Aby było to możliwe, stworzyłem aplikację C#, która zbiera wszystkie informacje od sprzedawców, przekształca je w określony format pliku, przesyłany potem do bazy danych.
 				<br><br>
-				Do moich obowiązków należało też tworzenie szablonów ogłoszeń dla sklepów eBay oraz cotygodniowego biuletynu. Podczas pracy nad tymi zadaniami, stworzyłem wiele kodów html i JavaScript.`,
+				Do moich obowiązków należało też tworzenie szablonów ogłoszeń dla sklepów eBay oraz cotygodniowego biuletynu. Podczas pracy nad tymi zadaniami stworzyłem wiele kodów html i JavaScript.`,
 			"freelancer": "Freelancer-praca na własną rękę",
 			"freeDates": "Październik 2008 - Luty 2010",
 			"freeResp1": "Programowanie stron internetowych od podstaw",
@@ -301,6 +301,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			}
 
 			this.Parameters.Language = translation;
+			window.location.hash = translation;
 		}
 	}
 }

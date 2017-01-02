@@ -6,8 +6,10 @@ $version-information-base-color: #052832;
 	border: 1px lighten($version-information-base-color, 40%) dashed;
 	color: $version-information-base-color;
 
-	padding: 10px;
+	padding: 1rem;
 	text-align: center;
+
+	margin-bottom: 2rem;
 
 	.NOT-LATEST-VERSION & {
 		display: block;

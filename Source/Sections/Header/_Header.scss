@@ -12,6 +12,10 @@
 
 	@extend %header-image;
 
+	.NOT-LATEST-VERSION & {
+		margin-bottom: 12rem;
+	}
+
 	.avatar {
 		position: absolute;
 		left: 50%;

@@ -72,7 +72,8 @@ var Tasks;
                     .src([
                     featuresFolder + "/jsDetect/_*.html",
                     sectionsFolder + "/Header/_*.html",
-                    featuresFolder + "/languageSwitch/_*.html",
+                    sectionsFolder + "/Header/_*.html",
+                    featuresFolder + "/availabilityStatus/_*.html",
                     sectionsFolder + "/Summary/_*.html",
                     sectionsFolder + "/Employment/_*.html",
                     sectionsFolder + "/Education/_*.html",

@@ -34,9 +34,6 @@ namespace Resume_Application {
 		changeLanguage: (translation: string) => void;
 	}
 
-	export interface IQuickNavigation extends IBaseFeature {
-	}
-
 	export interface IAvailabilityStatus extends IBaseFeature {
 		updateAvailabilityStatus: () => void;
 	}

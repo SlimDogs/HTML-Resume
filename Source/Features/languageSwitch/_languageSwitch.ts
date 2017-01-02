@@ -1,17 +1,7 @@
 class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 	public translations = {
 		"en": {
-			"pleseEnableJavascript": `Hey there,
-				<br>
-				Thanks for checking out my CV!
-				<br>
-				I am specializing as Frontend developer and as you probably know - JavaScript is the most esential part of the Frontend development!
-				<br>
-				I have used JavaScript in this resume to enhance recruiters and hiring managers experiences and to make their lifes easier.
-				<br>
-				Please spend a second to enable "JavaScript" support for this page in order to see it's contents!
-				<br>
-				Thank you.`,
+			"newerVersionAvailable": `It appears that there is a more up to date version of this resume! If you want see it, please click <a href="http://www.tautvydas.info">here</a>.`,
 			"pageTitle": "Tautvydas Derzinskas > Curriculum Vitae",
 			"english": "English",
 			"lithuanian": "Lithuanian",
@@ -86,15 +76,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"skills": "Key Skills"
 		},
 		"lt": {
-			"pleseEnableJavascript": `Labas,
-				<br>
-				Malonu, kad norite susipažinti su mano gyvenimo aprašymu!
-				<br>
-				Aš esu web inžinierius, kuris savo darbuose dažnai naudoja "JavaScript" programavimo kalbą. Šis gyvenimo aprašymas - ne išimtis.
-				<br>
-				Jeigu norite pamatyti visą turinį, privalote įjingtu "JavaScript" palaikymą...
-				<br>
-				Dėkoju, už supratimą!`,
+			"newerVersionAvailable": `Egzistuoja atnaujinta šio gyvenimo aprašymo versija! Jeigu norite, naujausią CV versiją galite pasiekti paspaudę <a href="http://www.tautvydas.info">čia</a>.`,
 			"pageTitle": "Tautvydas Deržinskas > Gyvenimo aprašymas",
 			"english": "Angliškai",
 			"lithuanian": "Lietuviškai",
@@ -169,17 +151,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"skills": "Įgūdžiai"
 		},
 		"pl": {
-			"pleseEnableJavascript": `Hey there,
-				<br>
-				Thanks for checking out my CV!
-				<br>
-				I am specializing as Frontend developer and as you probably know - JavaScript is the most esential part of the Frontend development!
-				<br>
-				I have used JavaScript in this resume to enhance recruiters and hiring managers experiences and to make their lifes easier.
-				<br>
-				Please spend a second to enable "JavaScript" support for this page in order to see it's contents!
-				<br>
-				Thank you.`,
+			"newerVersionAvailable": `Okazuje się, że istnieje nowsza wersja tego CV ! Jeśli chcesz ją zobaczyć, proszę kliknij <a href="http://www.tautvydas.info">tutaj</a>.`,
 			"pageTitle": "Tautvydas Derzinskas > Curriculum Vitae",
 			"english": "Angielski",
 			"lithuanian": "Litewski",

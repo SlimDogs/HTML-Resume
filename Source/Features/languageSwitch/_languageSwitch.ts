@@ -27,14 +27,14 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"orbusResp1": "Enterprice management application development",
 			"orbusResp2": "SharePoint applications development",
 			"orbusResp3": "Training new developers",
-			"orbusResp4": "Managing frontend development operations",
-			"orbusDescription": `Orbus is a software company that provides enterprise architecture management software. My department is developing a brand new browser based solution with SharePoint and Visio integration. This software is similar to a content management system, giving administrators the opportunity to create custom forms, visualizations and data views for their staff. My role in the team is as a frontend developer.<br><br>
+			"orbusResp4": "Managing front-end development operations",
+			"orbusDescription": `Orbus is a software company that provides enterprise architecture management software. My department is developing a brand new browser based solution with SharePoint and Visio integration. This software is similar to a content management system, giving administrators the opportunity to create custom forms, visualizations and data views for their staff. My role in the team is as a front-end developer.<br><br>
 
 					While working in agile Scrum based environment we are having two weeks long sprints with daily stand ups, weekly backlog estimations and new features releases in the end of the sprints. Every four sprints we have a regression sprints for bug fixing and new tech integration. Thanks to regression sprints I was able to direct the whole project towards Angular 2 version by introducing TypeScript into our stack.<br></br>
 
-					I am also responsible for SharePoint plugins development which are almost entirely based on frontend code ("SharePoint hosted apps"). We are using SharePoint plugins as a way to insert bits of our main application into SharePoint pages. This involves working with SharePoint Restful APIs, developing cross domain solutions.<br><br>
+					I am also responsible for SharePoint plugins development which are almost entirely based on front-end code ("SharePoint hosted apps"). We are using SharePoint plugins as a way to insert bits of our main application into SharePoint pages. This involves working with SharePoint Restful APIs, developing cross domain solutions.<br><br>
 
-					When I'm not developing I provide training and support for more juniour developers and take care of our frontend development operations.`,
+					When I'm not developing I provide training and support for more juniour developers and take care of our front-end development operations.`,
 			"techUsed": "Skills developed / Technologies used",
 			"webDev": "Web Developer",
 			"wersportsDates": "Mar 2013 – Mar 2014",
@@ -43,7 +43,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"wersportsResp3": "SEO implementation",
 			"wersportsDescription": `A family business which is selling sport related items online. Besides the main ecommerce website they have multiple stores in such selling channels like eBay, Amazon, Play.com
 					<br><br>
-					While working in co-operation with backend developer my main responsibility was development of We R Sports ecommerce page. It was a 100% custom website with our own backend and fresh new frontend. I did a lot of JavaScript programming to implement it as there were lots of features which couldn't be implemented in other way. I have used various jQuery plugins and plain JavaScript to implement such features as slideshows, 360 product previews and many others. As our backend was based on Symfony (PHP framework) which used TWIG as it's default templating system I had to adapt and learn it to support my backend collegue.
+					While working in co-operation with back-end developer my main responsibility was development of We R Sports ecommerce page. It was a 100% custom website with our own back-end and fresh new front-end. I did a lot of JavaScript programming to implement it as there were lots of features which couldn't be implemented in other way. I have used various jQuery plugins and plain JavaScript to implement such features as slideshows, 360 product previews and many others. As our back-end was based on Symfony (PHP framework) which used TWIG as it's default templating system I had to adapt and learn it to support my back-end collegue.
 					<br><br>
 					After finishing with the main ecommerce platform my responsibility was to convert it to a single page application and replace our default eBay store with it. I have done this by constructing my own custom JavaScript framework based on url "hash" change event. I worked with different kinds restful APIs such as eBay API, Amazon API, PaymentSence Api, Royal Mail Api and many others. Working on this single application project made me to develop a solid base on a crossdomain data transfer techniques.
 					<br><br>
@@ -86,7 +86,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"profile": "Aprašymas",
 			"profileDesc": `Naudodamas įvairias technologijas, aš kūriu web programinę įrangą, gebančią prisitaikyti prie skirtingų dydžių ekranų raiškos ir veikiančią tiek mobiliuose įrenginiuose, tiek stacionariuose kompiuteriuose.
 						<br><br>
-						Esu pasitikintis savimi visuose "frontend" kūrimo aspektuose, pradedant vartotojo sąsajos kūrimu, baigiant panaudojimo scenarijų kodavimu pasinaudojant "JavaScript" programavimo kalba.
+						Esu pasitikintis savimi visuose "front-end" kūrimo aspektuose, pradedant vartotojo sąsajos kūrimu, baigiant panaudojimo scenarijų kodavimu pasinaudojant "JavaScript" programavimo kalba.
 						<br><br>
 						Kuriant aplikacijas, mano pagrininiai tikslai yra padaryti jas patogias ir greitai veikiančias. Kadangi esu dirbęs tiek prie mažų projektų, tiek prie milžiniškų - supratau, kad sklandžiai ir greitai veikianti programinė įranga turėtų būti kiekvieno programuotojo siekiamybė!`,
 			"available": "Šiuo metu ieškau naujo darbo.",
@@ -103,7 +103,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"orbusResp2": "SharePoint aplikacijų kūrimas",
 			"orbusResp3": "Naujų programuotojų treniravimas",
 			"orbusResp4": "Programavimo proceso operacijų kontrolė",
-			"orbusDescription": `"Orbus software" yra kompanija, kurios specializacija - programinės įrangos, skirtos didelių kompanijų bei korporacijų valdymui, kūrimas. Padalinys kuriame dirbu yra atsakingas už internetinių naršyklių pagrindu veikiančią aplikaciją, kuri yra integruota su "Microsoft" produktais, tokiais kaip "SharePoint" ir "Visio". Ši aplikacija iš dalies primena turinio valdymo sistemą - administratoriai turi teisę kurti įvairias formas, vizualizacijas, duomenų atvaizdavimo puslapius ir t.t. Mano pareigos šioje komandoje - "frontend" inžinierius.
+			"orbusDescription": `"Orbus software" yra kompanija, kurios specializacija - programinės įrangos, skirtos didelių kompanijų bei korporacijų valdymui, kūrimas. Padalinys kuriame dirbu yra atsakingas už internetinių naršyklių pagrindu veikiančią aplikaciją, kuri yra integruota su "Microsoft" produktais, tokiais kaip "SharePoint" ir "Visio". Ši aplikacija iš dalies primena turinio valdymo sistemą - administratoriai turi teisę kurti įvairias formas, vizualizacijas, duomenų atvaizdavimo puslapius ir t.t. Mano pareigos šioje komandoje - "front-end" inžinierius.
 					<br><br>
 					Pasinaudojant "Scrum" metodais projekto įgyvendinimo valdymui, kiekvieną dieną turėjome veiklos pristatymo susirinkimus, pastovias planavimo bei panašaus pobūdžio sesijas. Mūsų "sprintų" dydis buvo dvi savaitės. Kiekvieno "sprinto" pabaigoje turėjome demonstracinio pobūdžio susirinkimus, kurių metu buvo pristatomos visos naujovės, atsiradusios sprinto metu. Kas du mėnesius (4 sprintus), vykdydavome "regresijos sprintą", kurio metu taisėme klaidas, bei reikalui esant, diegiame naujas programavimo technologijas. Būtent tokių sprintų metu man pavyko įdiegti daugybę technologijų, tokių kaip "TypeScript", "Sass" ir t.t. Kadangi projekto aplikacija buvo parašyta "Angular" karkaso pagrindu, įdiegus "TypeScript" mums atsivėre visos galimybės ateityje gauti "Angular" atnaujinimus, mat naujose šios sistemos versijose programavimas yra skatinimas būtent "TypeScript" kalba.
 					<br></br>
@@ -118,7 +118,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"wersportsResp3": "SEO įgyvendinimas",
 			"wersportsDescription": `"We R Sports" tai šeimos įkurtas, internetinę prekybą pagrįstas, verslas. Kompanija internetu prekiauja sporto įranga ir atributika.
 					<br><br>
-					Dirbdamas poroje su "backend" programuotoju, daugiausiai laiko praleisdavau prie pagrindinės "We R Sports" internetinės parduotuvės kūrimo ir vystimo. Nusprendėme nesinaudoti jau egzsituojančiais internetinių parduotuvių sprendimais, tad svetainė iš pagrindų buvo sukoduota mūsų pačių. Nors tai nebuvo vieno puslapio aplikacija, tačiau, kurdamas vartotojo sąsąją, panaudojau ganėtinai didelį "JavaScript" kiekį. Internetinei parduotuvei reikėjo daugybės sudėtingų funkcijų, tokių kaip: "slideshow", 360 laipsnių produktų apžvalgos galimybės ir t.t. Kadangi mano kolega nusprendė projekto "backend" grįsti "Symfony 2" karkasu (PHP), man teko įsisavinti "TWIG" (sistema, skirta vartotojo sąsajos aprašymui "Symfony" karkase). Vystant šį puslapį, teko naudoti tiek švarų "JavaScript" kodą, tiek "jQuery" išplėtinius, bei dirbti su trečiosios šalies domenų sąsajomis (API).
+					Dirbdamas poroje su "back-end" programuotoju, daugiausiai laiko praleisdavau prie pagrindinės "We R Sports" internetinės parduotuvės kūrimo ir vystimo. Nusprendėme nesinaudoti jau egzsituojančiais internetinių parduotuvių sprendimais, tad svetainė iš pagrindų buvo sukoduota mūsų pačių. Nors tai nebuvo vieno puslapio aplikacija, tačiau, kurdamas vartotojo sąsąją, panaudojau ganėtinai didelį "JavaScript" kiekį. Internetinei parduotuvei reikėjo daugybės sudėtingų funkcijų, tokių kaip: "slideshow", 360 laipsnių produktų apžvalgos galimybės ir t.t. Kadangi mano kolega nusprendė projekto "back-end" grįsti "Symfony 2" karkasu (PHP), man teko įsisavinti "TWIG" (sistema, skirta vartotojo sąsajos aprašymui "Symfony" karkase). Vystant šį puslapį, teko naudoti tiek švarų "JavaScript" kodą, tiek "jQuery" išplėtinius, bei dirbti su trečiosios šalies domenų sąsajomis (API).
 					<br><br>
 					Sukūrus pagrindinę internetinę parduotuvę, mano atsakomybė buvo paversti ją į vieno puslapio aplikaciją, kurią vėliau galėtume naudoti kaip "eBay" integruotą parduotuvę. Kad tai įgyvendinčiau, sukūriau savo paties "JavaScript" karkasą, veikiantį nuorodos "hash" vertės kitimo principu. Kurdamas šį karkasą, sutvirtinau žinia apie visus pagrindinius vieno puslapio aplikacijos principus. Kadangi "eBay" parduotuvė pirkėjus lydėjo į "eBay" skelbimus - turėjau užduotį - atnaujinti visus skelbimus, jiems pritaikant pagrindinės internetinės parduotuvės išvaizdą. Kadangi kompanija prekiauja šimtais produktų, kiekvienam skelbimui atnaujinti panaudojau "eBay API". Kuriant šią aplikaciją teko išmokti technikų, leidžiančių susidoroti su problemomis, perduodant duomenis tarp skirtingų domenų.
 					<br><br>
@@ -161,7 +161,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"profile": "Profil",
 			"profileDesc": `Buduję elastyczne(tzw. responsive), rozbudowane i możliwe do rozbudowania strony internetowe i aplikacje sieciowe używając różnorodnych technologii, które działają na smartfonach, tabletach oraz komputerach stacjonarnych.
 							<br><br>
-							Rozpocząwszy programowanie z UI, stałem się biegły zarówno w czystym JavaScript, jak również w strukturach JavaScript, takich jak AngularJs. Kiedy pracuję, zawsze dążę do tego, by stworzyć piękną, dobrze prezentującą się wastwę frontend. Ostatni projekt nad którym pracowałem był złożony i dużych rozmiarów, co nauczyło mnie, jak ważny jest sprawnie działający i szybki frontend!`,
+							Rozpocząwszy programowanie z UI, stałem się biegły zarówno w czystym JavaScript, jak również w strukturach JavaScript, takich jak AngularJs. Kiedy pracuję, zawsze dążę do tego, by stworzyć piękną, dobrze prezentującą się wastwę front-end. Ostatni projekt nad którym pracowałem był złożony i dużych rozmiarów, co nauczyło mnie, jak ważny jest sprawnie działający i szybki front-end!`,
 			"available": "Obecnie poszukuję pracy na pełen etat.",
 			"unavailable": "Obecnie nie szukam nowej pracy.",
 			"contacts": "Kontakty",
@@ -175,14 +175,14 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"orbusResp1": "Tworzenie aplikacji zarządzania przedsiębiorstw.",
 			"orbusResp2": "Tworzenie aplikacji SharePoint",
 			"orbusResp3": "Szkolenie nowych programistów",
-			"orbusResp4": "Zarządzanie operacjami programowania w warstwie frontend.",
-			"orbusDescription": `Orbus jest firmą programistyczną, która dostarcza oprogramowania do zarządzania przedsiębiorstw. Mój dział opracowywał, oparte na przeglądarce, rozwiązania,  wykorzystując SharePoint oraz Visio. Oprogramowanie to przypomina system zarządzania treścią, gdyż daje administratorom możliwość tworzenia własnych form, wizualizacji i poglądu danych dla pracowników. Moją rolą w zespole było programowanie warstwy frontend.
+			"orbusResp4": "Zarządzanie operacjami programowania w warstwie front-end.",
+			"orbusDescription": `Orbus jest firmą programistyczną, która dostarcza oprogramowania do zarządzania przedsiębiorstw. Mój dział opracowywał, oparte na przeglądarce, rozwiązania,  wykorzystując SharePoint oraz Visio. Oprogramowanie to przypomina system zarządzania treścią, gdyż daje administratorom możliwość tworzenia własnych form, wizualizacji i poglądu danych dla pracowników. Moją rolą w zespole było programowanie warstwy front-end.
 			<br><br>
 			Praca odbywała się w systemie Scrum z trwającymi dwa tygodnie iteracjami i codziennymi zbiórkami oraz cotygodniowym omawianiu zaległości i postępów. Po każdych czterech sprintach cofaliśmy się do poprzednich w celu wyeliminowania błędów, a także integracji nowych technologii. Dzięki metodzie regresji iteracji byłem w stanie nakierować cały projekt na Angular 2 poprzez wprowadzenie TypeScript do naszej technologii.
 			<br></br>
-			Pracując w Orbus, byłem też odpowiedzialny za programowanie wtyczek (modułów dodatkowych) SharePoint, które niemal w całości opierają się na kodzie frontend (SharePoint hosted apps). Owe moduły były stosowane do dodawania skrawków z naszej głównej aplikacji w strony SharePoint.  To wymagało pracy z SharePoint Restful APIs i tworzenie rozwiązań w zakresie domen krzyżowych, tzw. cross domains.
+			Pracując w Orbus, byłem też odpowiedzialny za programowanie wtyczek (modułów dodatkowych) SharePoint, które niemal w całości opierają się na kodzie front-end (SharePoint hosted apps). Owe moduły były stosowane do dodawania skrawków z naszej głównej aplikacji w strony SharePoint.  To wymagało pracy z SharePoint Restful APIs i tworzenie rozwiązań w zakresie domen krzyżowych, tzw. cross domains.
 			<br><br>
-			Kiedy nie programowałem, zajmowałem się szkoleniem młodszych programistów, jak też pilnowałem naszych działań w obszarze frontend.`,
+			Kiedy nie programowałem, zajmowałem się szkoleniem młodszych programistów, jak też pilnowałem naszych działań w obszarze front-end.`,
 			"techUsed": "Rozwój umiejętności / Użyte technologie",
 			"webDev": "Programista stron internetowych",
 			"wersportsDates": "Marzec 2013 - Marzec 2014",
@@ -191,7 +191,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"wersportsResp3": "Realizacja SEO",
 			"wersportsDescription": `We R Sports to rodzinny biznes zajmujący się sprzedażą internetową sprzętu sportowego różnego typu. Poza własną stroną ze sprzedażą on-line, posiadają też wiele sklepów w miejscach takich jak eBay, Amazon czy Play.com.
 				<br><br>
-				Współpracujac z programistą  warstwy frontend, moim głównym zadaniem był rozwój sklepu internetowego We R Sports. Była to w pełni przez nas stworzona strona internetowa z własnym backendem i świeżym frontendem. Dużo czasu spędziłem pracując z JavaScript, gdyż istniało wiele cech, które nie mogły być wdrożone w inny sposób. Używałem różnych wtyczek jQuery oraz zwykłego JavaScript, aby wprowadzić efekty typu pokaz slajdów, 360° widok produktu i wiele innych. Jako że backend opierał się na Symfony (platforma programistyczna PHP), która używała TWIG jako domyślnego szablonu systemowego, musiałem nauczyć się tego, by móc wspierać kolegę z backendu.
+				Współpracujac z programistą  warstwy front-end, moim głównym zadaniem był rozwój sklepu internetowego We R Sports. Była to w pełni przez nas stworzona strona internetowa z własnym back-endem i świeżym front-endem. Dużo czasu spędziłem pracując z JavaScript, gdyż istniało wiele cech, które nie mogły być wdrożone w inny sposób. Używałem różnych wtyczek jQuery oraz zwykłego JavaScript, aby wprowadzić efekty typu pokaz slajdów, 360° widok produktu i wiele innych. Jako że back-end opierał się na Symfony (platforma programistyczna PHP), która używała TWIG jako domyślnego szablonu systemowego, musiałem nauczyć się tego, by móc wspierać kolegę z back-endu.
 				<br><br>
 				Po skończeniu pracy z głównym sklepem internetowym, otrzymałem zadanie przekształcenia go w jednostronową aplikację, a następnie zastąpienia sklepu eBay ową aplikacją. Dokonałem tego konstruując własną platformę programistyczną JavaScript. Pracowałem z wieloma restful APIs takimi jak eBay API, Amazon API, PaymentSence Api,, czy Royal Mail Api. Praca nad tym projektem rozwinęła moje umiejętności w zakresie technik transmisji danych związanych z crossdomain.
 				<br><br>

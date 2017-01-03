@@ -1,4 +1,4 @@
-#Header {
+header {
 	$avatar-size: 100px;
 
 	background-color: $nightBlack;
@@ -54,7 +54,7 @@
 }
 
 @media print {
-	#Header {
+	header {
 		padding: 2rem 0 !important;
 		margin-bottom: 0 !important;
 	}
@@ -62,7 +62,7 @@
 
 /* Larger than mobile */
 @media (min-width: 400px) {
-	#Header {
+	header {
 		$avatar-size: 125px;
 
 		padding: 10rem 0;
@@ -78,7 +78,7 @@
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
-	#Header {
+	header {
 		$avatar-size: 150px;
 		background-size: 100% auto;
 		padding: 12rem 0;
@@ -94,7 +94,7 @@
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-	#Header {
+	header {
 		$avatar-size: 175px;
 		padding: 16rem 0;
 
@@ -110,7 +110,7 @@
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
-	#Header {
+	header {
 		$avatar-size: 200px;
 
 		padding: 18rem 0;
@@ -126,7 +126,7 @@
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {
-	#Header {
+	header {
 		$avatar-size: 225px;
 
 		padding: 20rem 0;

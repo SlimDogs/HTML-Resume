@@ -45,4 +45,9 @@ namespace Resume_Application {
 			"Availability": boolean;
 		};
 	}
+
+	// Analytics interface
+	export interface IAnalytics {
+		injectAnalytics: () => void;
+	}
 }

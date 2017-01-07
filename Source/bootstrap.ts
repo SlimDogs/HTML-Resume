@@ -3,6 +3,7 @@ class Bootstrap implements Resume_Application.IBootstrap {
 	private InternetDetectFeature: Resume_Application.IInternetDetect;
 	private LanguageSwitchFeature: Resume_Application.ILanguageSwitch;
 	private AvailabilityStatusFeature: Resume_Application.IAvailabilityStatus;
+	private AnalyticsFeature: Resume_Application.IAnalytics;
 
 	public Parameters = {
 		"ResumeRootUrl": "http://www.tautvydas.info",
@@ -19,6 +20,7 @@ class Bootstrap implements Resume_Application.IBootstrap {
 		this.InternetDetectFeature = new InternetDetect(this.Parameters);
 		this.LanguageSwitchFeature = new LanguageSwitch(this.Parameters);
 		this.AvailabilityStatusFeature = new AvailabilityStatus(this.Parameters, this.InternetDetectFeature);
+		this.AnalyticsFeature = new Analytics(this.Parameters, this.InternetDetectFeature);
 
 		// Starting initialization
 		this.initialize();

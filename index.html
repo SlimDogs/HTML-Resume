@@ -470,6 +470,44 @@ var Analytics = (function () {
     return Analytics;
 }());
 
+var InternetDetect = (function () {
+    function InternetDetect(Parameters) {
+        this.Parameters = Parameters;
+        this.subscriptions = [];
+    }
+    InternetDetect.prototype.initialize = function () {
+        var _this = this;
+        if (navigator && navigator.onLine || !navigator) {
+            var i = new Image();
+            i.onload = function () {
+                $("body").removeClass("NO-INTERNET");
+                _this.Parameters.Internet = true;
+                _this.parseSubscriptions();
+            };
+            i.onerror = function () {
+                _this.Parameters.Internet = false;
+                setTimeout(function () {
+                    _this.initialize();
+                }, 1000);
+            };
+            var date = new Date(), dateMs = date.getTime();
+            i.src = this.Parameters.ResumeRootUrl + "/online.gif?d=" + dateMs;
+        }
+        else {
+            this.Parameters.Internet = false;
+        }
+    };
+    InternetDetect.prototype.parseSubscriptions = function () {
+        for (var i = 0, b = this.subscriptions.length; i < b; i++) {
+            this.subscriptions[i]();
+        }
+    };
+    InternetDetect.prototype.subcsribe = function (callback) {
+        this.subscriptions.push(callback);
+    };
+    return InternetDetect;
+}());
+
 var AvailabilityStatus = (function () {
     function AvailabilityStatus(Parameters, InternetDetectFeature) {
         this.Parameters = Parameters;
@@ -507,44 +545,6 @@ var AvailabilityStatus = (function () {
         }
     };
     return AvailabilityStatus;
-}());
-
-var InternetDetect = (function () {
-    function InternetDetect(Parameters) {
-        this.Parameters = Parameters;
-        this.subscriptions = [];
-    }
-    InternetDetect.prototype.initialize = function () {
-        var _this = this;
-        if (navigator && navigator.onLine || !navigator) {
-            var i = new Image();
-            i.onload = function () {
-                $("body").removeClass("NO-INTERNET");
-                _this.Parameters.Internet = true;
-                _this.parseSubscriptions();
-            };
-            i.onerror = function () {
-                _this.Parameters.Internet = false;
-                setTimeout(function () {
-                    _this.initialize();
-                }, 1000);
-            };
-            var date = new Date(), dateMs = date.getTime();
-            i.src = this.Parameters.ResumeRootUrl + "/online.gif?d=" + dateMs;
-        }
-        else {
-            this.Parameters.Internet = false;
-        }
-    };
-    InternetDetect.prototype.parseSubscriptions = function () {
-        for (var i = 0, b = this.subscriptions.length; i < b; i++) {
-            this.subscriptions[i]();
-        }
-    };
-    InternetDetect.prototype.subcsribe = function (callback) {
-        this.subscriptions.push(callback);
-    };
-    return InternetDetect;
 }());
 
 var JavaScriptDetect = (function () {
@@ -761,7 +761,7 @@ var Bootstrap = (function () {
             "JavaScript": false,
             "Internet": false,
             "Language": null,
-            "Version": 1,
+            "Version": 2,
             "Availability": null
         };
         this.JavascriptDetectFeature = new JavaScriptDetect(this.Parameters);

@@ -1,7 +1,7 @@
 class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 	public translations = {
 		"en": {
-			"newerVersionAvailable": `It appears that there is a more up to date version of this resume! If you want see it, please click <a href="http://www.tautvydas.info">here</a>.`,
+			"newerVersionAvailable": `It appears that there is a more up to date version of this resume! If you want to see it, please click <a href="http://www.tautvydas.info">here</a>.`,
 			"pageTitle": "Tautvydas Derzinskas > Curriculum Vitae",
 			"english": "English",
 			"lithuanian": "Lithuanian",
@@ -23,7 +23,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"web": "Personal web:",
 			"employment": "Employment history",
 			"senior": "Senior Web Developer",
-			"orbusDates": "Aug 2014 - Jan 2017",
+			"orbusDates": "Apr 2014 - Jan 2017",
 			"orbusResp1": "Enterprice management application development",
 			"orbusResp2": "SharePoint applications development",
 			"orbusResp3": "Training new developers",
@@ -98,7 +98,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"web": "Asmeninė svetainė:",
 			"employment": "Darbinė veikla",
 			"senior": "Vyresnysis Web Inžinierius",
-			"orbusDates": "2014 Rugpjūtis - 2017 Sausis",
+			"orbusDates": "2014 Balandis - 2017 Sausis",
 			"orbusResp1": "Įmoniu valdymo programinės įrangos kūrimas",
 			"orbusResp2": "SharePoint aplikacijų kūrimas",
 			"orbusResp3": "Naujų programuotojų treniravimas",
@@ -171,7 +171,7 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"web": "Własna strona internetowa:",
 			"employment": "Historia zatrudnienia",
 			"senior": "Starszy programista",
-			"orbusDates": "Sierpień 2014 - Styczeń 2017",
+			"orbusDates": "Kwiecień 2014 - Styczeń 2017",
 			"orbusResp1": "Tworzenie aplikacji zarządzania przedsiębiorstw.",
 			"orbusResp2": "Tworzenie aplikacji SharePoint",
 			"orbusResp3": "Szkolenie nowych programistów",

@@ -1,0 +1,10 @@
+CACHE MANIFEST
+# 2017-01-20:v2
+
+# Explicitly cached 'master entries'.
+CACHE:
+index.html
+
+# Resources that require the user to be online.
+NETWORK:
+CV.json

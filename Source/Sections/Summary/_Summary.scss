@@ -57,8 +57,6 @@
 	}
 
 	.phone-column {
-		.AVAILABILITY-NOT-AVAILABLE & {
-			filter: blur(0px);
-		}
+		filter: none !important;
 	}
 }

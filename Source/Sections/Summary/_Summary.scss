@@ -55,4 +55,10 @@
 		display: block;
 		page-break-before: always;
 	}
+
+	.phone-column {
+		.AVAILABILITY-NOT-AVAILABLE & {
+			filter: blur(0px);
+		}
+	}
 }

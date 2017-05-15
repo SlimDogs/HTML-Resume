@@ -22,7 +22,13 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"email": "Email:",
 			"web": "Personal web:",
 			"employment": "Employment history",
-			"senior": "Senior Web Developer",
+			"senior": "Senior Front-end Developer",
+			"quidcoDates": "Jan 2017 - Currently",
+			"quidcoResp1": "Development of public facing website",
+			"quidcoResp2": "Development of administration system",
+			"quidcoDescription": `Quidco is one of the leading UK and Germany cashback providers. This company is developing a big number projects which are mostly related to cashback providing services.
+				<br><br>
+				My work load is spread between development of public facing website - <a href="http://www.shoop.fr" target="_blank">http://www.shoop.fr</a> (french branch) and development of the administration system allowing to control and maintain all the websites of our network.`,
 			"orbusDates": "Apr 2014 - Jan 2017",
 			"orbusResp1": "Enterprice management application development",
 			"orbusResp2": "SharePoint applications development",
@@ -98,6 +104,12 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"web": "Asmeninė svetainė:",
 			"employment": "Darbinė veikla",
 			"senior": "Vyresnysis Web Inžinierius",
+			"quidcoDates": "2017 Sausis - Dabar",
+			"quidcoResp1": "Viešo web puslapio kūrimas",
+			"quidcoResp2": "Administracinės sistemos kūrimas",
+			"quidcoDescription": `"Quidco" yra viena iš pirmaujančių kompanijų pinigų susigrąžinimo sferoje. Kompanija plėtoja ir yra atsakinga už daugybę projektų, kurie skirti įvairių valstybių rinkoms.
+				<br><br>
+				Didžiają laiko dalį leidžiu kurdamas ir plėtodamas du projektus: Prancūzijos rinkai skirtą internetinę svetainę - <a href="http://www.shoop.fr" target="_blank">http://www.shoop.fr</a>, bei tinklo puslapių administravimo sistemą.`,
 			"orbusDates": "2014 Balandis - 2017 Sausis",
 			"orbusResp1": "Įmoniu valdymo programinės įrangos kūrimas",
 			"orbusResp2": "SharePoint aplikacijų kūrimas",
@@ -171,6 +183,12 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 			"web": "Własna strona internetowa:",
 			"employment": "Historia zatrudnienia",
 			"senior": "Starszy programista",
+			"quidcoDates": "Styczeń 2017 - Obecnie",
+			"quidcoResp1": "Rozwój publicznej strony internetowej",
+			"quidcoResp2": "Tworzenie systemu administracji",
+			"quidcoDescription": `Quidco jest jednym z wiodących dostawców usługi zwrotu gotówkowego na terenie Wielkiej Brytanii i Niemiec. Firma ta tworzy wiele projektów odnoszących się głównie do serwisu zwrotu gotówkowego, czyli tak zwanego "cashback".
+				<br><br>
+				Moja praca koncentruje się na rozwoju publicznej <a href="http://www.shoop.fr" target="_blank">strony internetowej</a> oraz tworzeniu systemu administracji, który pozwala kontrolować wszystkie strony internetowe systemu.`,
 			"orbusDates": "Kwiecień 2014 - Styczeń 2017",
 			"orbusResp1": "Tworzenie aplikacji zarządzania przedsiębiorstw.",
 			"orbusResp2": "Tworzenie aplikacji SharePoint",

@@ -10,7 +10,7 @@ class Bootstrap implements Resume_Application.IBootstrap {
 		"JavaScript": false,
 		"Internet": false,
 		"Language": null,
-		"Version": 2,
+		"Version": 3,
 		"Availability": null
 	};
 

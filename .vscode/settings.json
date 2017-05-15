@@ -16,5 +16,6 @@
         "**/*.css" : {
             "when": "$(basename).scss"
         }
-    }
+    },
+    "vsicons.presets.angular": false
 }

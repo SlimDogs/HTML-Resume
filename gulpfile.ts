@@ -173,6 +173,9 @@ namespace Tasks {
 				"TASK: GENERATE INDEX",
 				"WATCHER"
 			]);
+			this.gulp.task("build", [
+				"TASK: GENERATE INDEX"
+			]);
 		}
 
 	}

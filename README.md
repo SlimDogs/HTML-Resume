@@ -1,3 +1,5 @@
+![Latest CI build status](https://travis-ci.org/SlimDogs/slimdogs.github.io.svg?branch=master "Latest CI build status")
+
 # Advanced HTML resume v.1.0.0
 
 Features:

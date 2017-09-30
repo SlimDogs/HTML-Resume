@@ -2,6 +2,8 @@
 
 # Advanced HTML resume v.1.0.0
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/SlimDogs/slimdogs.github.io.svg)](https://greenkeeper.io/)
+
 Features:
 - Responsive
 - Single page / easy to share (performing "save as" will save only one html file)

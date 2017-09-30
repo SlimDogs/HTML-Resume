@@ -1,4 +1,4 @@
-![Latest CI build status](https://travis-ci.org/SlimDogs/slimdogs.github.io.svg?branch=master "Latest CI build status")
+![Latest CI build status](https://travis-ci.org/SlimDogs/slimdogs.github.io.svg?branch=master "Latest CI build status") [![Greenkeeper badge](https://badges.greenkeeper.io/SlimDogs/slimdogs.github.io.svg)](https://greenkeeper.io/)
 
 # Advanced HTML resume v.1.0.0
 

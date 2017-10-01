@@ -45,9 +45,7 @@ namespace Tasks {
 			this.gulp.task("LINT: TypeScript", () => {
 				return this.gulp
 					.src(["Source/**/*.ts"])
-					.pipe(this.tslint({
-						formatter: "verbose"
-					}))
+					.pipe(this.tslint({ formatter: "verbose" }))
 					.pipe(this.tslint.report());
 			});
 		}
@@ -58,12 +56,8 @@ namespace Tasks {
 			let tsProject = this.ts.createProject("tsconfig.json");
 			this.gulp.task("TASK: TypeScript", ["LINT: TypeScript"], () => {
 				return this.gulp.src(
-					[
-						"Source/**/*.ts"
-					],
-					{
-						base: "."
-					}
+					["Source/**/*.ts"],
+					{ base: "." }
 				)
 					.pipe(tsProject())
 					.pipe(this.gulp.dest("."));
@@ -149,9 +143,7 @@ namespace Tasks {
 		public createSassCompileTask() {
 			this.gulp.task("TASK: SASS", () => {
 				return this.gulp
-					.src([
-						"Source/index.scss"
-					])
+					.src(["Source/index.scss"])
 					.pipe(this.sass({ outputStyle: "compressed" }))
 					.pipe(this.gulp.dest("Temp"));
 			});
@@ -183,12 +175,12 @@ namespace Tasks {
 }
 
 // Loading npm deps
-let gulp = require("gulp"),
-	ts = require("gulp-typescript"),
-	tslint = require("gulp-tslint"),
-	concat = require("gulp-concat"),
-	sass = require("gulp-sass"),
-	fileSystem = require("fs");
+const gulp = require("gulp");
+const ts = require("gulp-typescript");
+const tslint = require("gulp-tslint");
+const concat = require("gulp-concat");
+const sass = require("gulp-sass");
+const fileSystem = require("fs");
 
 const TaskUtility = new Tasks.TaskUtility(
 	gulp,

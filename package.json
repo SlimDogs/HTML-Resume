@@ -22,7 +22,7 @@
     "typescript": "2.5.3"
   },
   "dependencies": {
-    "@types/jquery": "3.2.13",
+    "@types/jquery": "3.2.14",
     "@types/node": "8.0.34"
   }
 }

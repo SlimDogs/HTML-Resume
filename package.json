@@ -23,6 +23,6 @@
   },
   "dependencies": {
     "@types/jquery": "3.2.14",
-    "@types/node": "8.0.34"
+    "@types/node": "8.0.35"
   }
 }

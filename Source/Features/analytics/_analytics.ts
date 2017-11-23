@@ -1,10 +1,12 @@
 declare let ga: any;
 
-class Analytics implements Resume_Application.IAnalytics {
+class Analytics {
 	constructor(
 		private Parameters: Resume_Application.IParameters,
-		private InternetDetectFeature: Resume_Application.IInternetDetect
-	) {
+		private InternetDetectFeature: InternetDetect
+	) {}
+
+	public initialize() {
 		// Subscribing to Async internet status detection event
 		if (!this.Parameters.Internet) {
 			this.InternetDetectFeature.subcsribe(

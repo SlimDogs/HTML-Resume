@@ -1,4 +1,4 @@
-class LanguageSwitch implements Resume_Application.ILanguageSwitch {
+class LanguageSwitch {
 	public translations = {
 		"en": {
 			"newerVersionAvailable": `It appears that there is a more up to date version of this resume! If you want to see it, please click <a href="http://www.tautvydas.info">here</a>.`,
@@ -270,8 +270,8 @@ class LanguageSwitch implements Resume_Application.ILanguageSwitch {
 
 		let self = this;
 		$("#language-selector").on("change", function() {
-			let selectedTranslation = $(this).val();
-			self.changeLanguage(selectedTranslation);
+			const selectedTranslation = $(this).val();
+			self.changeLanguage(<string>selectedTranslation);
 		});
 
 	}

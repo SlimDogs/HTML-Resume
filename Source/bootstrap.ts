@@ -1,16 +1,16 @@
 class Bootstrap implements Resume_Application.IBootstrap {
-	private JavascriptDetectFeature: Resume_Application.IJavaScriptDetect;
-	private InternetDetectFeature: Resume_Application.IInternetDetect;
-	private LanguageSwitchFeature: Resume_Application.ILanguageSwitch;
-	private AvailabilityStatusFeature: Resume_Application.IAvailabilityStatus;
-	private AnalyticsFeature: Resume_Application.IAnalytics;
+	private JavascriptDetectFeature: JavaScriptDetect;
+	private InternetDetectFeature: InternetDetect;
+	private LanguageSwitchFeature: LanguageSwitch;
+	private AvailabilityStatusFeature: AvailabilityStatus;
+	private AnalyticsFeature: Analytics;
 
 	public Parameters = {
 		"ResumeRootUrl": "http://www.tautvydas.info",
 		"JavaScript": false,
 		"Internet": false,
 		"Language": null,
-		"Version": 3,
+		"Version": 4,
 		"Availability": null
 	};
 
@@ -44,6 +44,10 @@ class Bootstrap implements Resume_Application.IBootstrap {
 			+ provides language swtich possibility
 		*/
 		this.LanguageSwitchFeature.initialize();
+
+		this.AvailabilityStatusFeature.initialize();
+
+		this.AnalyticsFeature.initialize();
 	}
 }
 

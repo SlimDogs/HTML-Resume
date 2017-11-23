@@ -1,4 +1,4 @@
-class InternetDetect implements Resume_Application.IInternetDetect {
+class InternetDetect {
 	private subscriptions: Array<() => void> = [];
 
 	constructor(

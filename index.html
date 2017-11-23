@@ -84,9 +84,10 @@
 							Address:
 						</div>
 						<div class="one-half column" itemprop="address">
-							16-17 Hanger Lane,<br />
-							London,<br />
-							W5 3HH
+							9 Colley House,<br />
+							Whitehall Road,<br />
+							Uxbridge,<br />
+							UB8 2NZ
 						</div>
 					</div>
 					<div class="row">
@@ -102,7 +103,7 @@
 							Email:
 						</div>
 						<div class="one-half column">
-							<a href="mailto:tautvydasuk@gmail.com" itemprop="email">tautvydasuk@gmail.com</a>
+							<a href="mailto:tautvydasuk+onlineCV@gmail.com" itemprop="email">tautvydasuk@gmail.com</a>
 						</div>
 					</div>
 					<div class="row">
@@ -509,13 +510,15 @@ var Analytics = (function () {
     function Analytics(Parameters, InternetDetectFeature) {
         this.Parameters = Parameters;
         this.InternetDetectFeature = InternetDetectFeature;
+    }
+    Analytics.prototype.initialize = function () {
         if (!this.Parameters.Internet) {
             this.InternetDetectFeature.subcsribe(this.injectAnalytics.bind(this));
         }
         else {
             this.injectAnalytics();
         }
-    }
+    };
     Analytics.prototype.injectAnalytics = function () {
         if (this.Parameters.Internet) {
             var currdate_1 = new Date();
@@ -535,45 +538,6 @@ var Analytics = (function () {
         }
     };
     return Analytics;
-}());
-
-var AvailabilityStatus = (function () {
-    function AvailabilityStatus(Parameters, InternetDetectFeature) {
-        this.Parameters = Parameters;
-        this.InternetDetectFeature = InternetDetectFeature;
-        this.InternetDetectFeature.subcsribe(this.updateAvailabilityStatus.bind(this));
-    }
-    AvailabilityStatus.prototype.initialize = function () {
-        if (this.Parameters.Internet != null) {
-            this.updateAvailabilityStatus();
-        }
-    };
-    AvailabilityStatus.prototype.updateAvailabilityStatus = function () {
-        var _this = this;
-        if (this.Parameters.Internet) {
-            $.ajax({
-                type: "GET",
-                dataType: "json",
-                url: this.Parameters.ResumeRootUrl + "/CV.json",
-                success: function (response) {
-                    if (response.Resume.Version === _this.Parameters.Version) {
-                        $("body").removeClass("AVAILABILITY-NOT-CLEAR");
-                        _this.Parameters.Availability = response.Resume.Availability;
-                        if (response.Resume.Availability) {
-                            $("body").addClass("AVAILABILITY-AVAILABLE");
-                        }
-                        else {
-                            $("body").addClass("AVAILABILITY-NOT-AVAILABLE");
-                        }
-                    }
-                    else {
-                        $("body").addClass("NOT-LATEST-VERSION");
-                    }
-                }
-            });
-        }
-    };
-    return AvailabilityStatus;
 }());
 
 var InternetDetect = (function () {
@@ -614,15 +578,43 @@ var InternetDetect = (function () {
     return InternetDetect;
 }());
 
-var JavaScriptDetect = (function () {
-    function JavaScriptDetect(Parameters) {
+var AvailabilityStatus = (function () {
+    function AvailabilityStatus(Parameters, InternetDetectFeature) {
         this.Parameters = Parameters;
+        this.InternetDetectFeature = InternetDetectFeature;
+        this.InternetDetectFeature.subcsribe(this.updateAvailabilityStatus.bind(this));
     }
-    JavaScriptDetect.prototype.initialize = function () {
-        $("body").removeClass("NO-JAVASCRIPT");
-        this.Parameters.JavaScript = true;
+    AvailabilityStatus.prototype.initialize = function () {
+        if (this.Parameters.Internet != null) {
+            this.updateAvailabilityStatus();
+        }
     };
-    return JavaScriptDetect;
+    AvailabilityStatus.prototype.updateAvailabilityStatus = function () {
+        var _this = this;
+        if (this.Parameters.Internet) {
+            $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: this.Parameters.ResumeRootUrl + "/CV.json",
+                success: function (response) {
+                    if (response.Resume.Version === _this.Parameters.Version) {
+                        $("body").removeClass("AVAILABILITY-NOT-CLEAR");
+                        _this.Parameters.Availability = response.Resume.Availability;
+                        if (response.Resume.Availability) {
+                            $("body").addClass("AVAILABILITY-AVAILABLE");
+                        }
+                        else {
+                            $("body").addClass("AVAILABILITY-NOT-AVAILABLE");
+                        }
+                    }
+                    else {
+                        $("body").addClass("NOT-LATEST-VERSION");
+                    }
+                }
+            });
+        }
+    };
+    return AvailabilityStatus;
 }());
 
 var LanguageSwitch = (function () {
@@ -833,6 +825,17 @@ var LanguageSwitch = (function () {
     return LanguageSwitch;
 }());
 
+var JavaScriptDetect = (function () {
+    function JavaScriptDetect(Parameters) {
+        this.Parameters = Parameters;
+    }
+    JavaScriptDetect.prototype.initialize = function () {
+        $("body").removeClass("NO-JAVASCRIPT");
+        this.Parameters.JavaScript = true;
+    };
+    return JavaScriptDetect;
+}());
+
 var Bootstrap = (function () {
     function Bootstrap() {
         this.Parameters = {
@@ -840,7 +843,7 @@ var Bootstrap = (function () {
             "JavaScript": false,
             "Internet": false,
             "Language": null,
-            "Version": 3,
+            "Version": 4,
             "Availability": null
         };
         this.JavascriptDetectFeature = new JavaScriptDetect(this.Parameters);
@@ -854,6 +857,8 @@ var Bootstrap = (function () {
         this.JavascriptDetectFeature.initialize();
         this.InternetDetectFeature.initialize();
         this.LanguageSwitchFeature.initialize();
+        this.AvailabilityStatusFeature.initialize();
+        this.AnalyticsFeature.initialize();
     };
     return Bootstrap;
 }());

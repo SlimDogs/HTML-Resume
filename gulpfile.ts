@@ -73,8 +73,6 @@ namespace Tasks {
 				librariesFolder = "Source/Libraries/";
 
 			this.gulp.task("TASK: BUNDLE FEATURES", ["TASK: TypeScript", "TASK: SASS", "TASK: BUNDLE HTML"], () => {
-
-
 				return this.gulp
 					.src([
 						`${librariesFolder}**/*.js`,
@@ -112,18 +110,34 @@ namespace Tasks {
 				};
 				// Reading index file
 				this.fileSystem.readFile("Source/_index.html", "utf8", (error, htmlContent) => {
+					if (error) {
+						console.log(error);
+						return;
+					}
 					replacements.html = htmlContent;
 
 					// Reading css Javascript
 					this.fileSystem.readFile("Temp/index.css", "utf8", (error, cssContent) => {
+						if (error) {
+							console.log(error);
+							return;
+						}
 						replacements.css = cssContent;
 
 						// Reading css Javascript
 						this.fileSystem.readFile("Temp/_html.html", "utf8", (error, htmlBodyContent) => {
+							if (error) {
+								console.log(error);
+								return;
+							}
 							replacements.htmlBody = htmlBodyContent;
 
 							// Reading Raw Javascript
 							this.fileSystem.readFile("Temp/app.js", "utf8", (error, jsContent) => {
+								if (error) {
+									console.log(error);
+									return;
+								}
 								replacements.js = jsContent;
 								replacements.html = replacements.html.replace("/*<css>*/", replacements.css);
 								replacements.html = replacements.html.replace("/*<js>*/", replacements.js);

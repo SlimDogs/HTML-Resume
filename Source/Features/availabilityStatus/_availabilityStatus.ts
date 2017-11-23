@@ -1,7 +1,7 @@
-class AvailabilityStatus implements Resume_Application.IAvailabilityStatus {
+class AvailabilityStatus {
 	constructor(
 		private Parameters: Resume_Application.IParameters,
-		private InternetDetectFeature: Resume_Application.IInternetDetect
+		private InternetDetectFeature: InternetDetect
 	) {
 		// Subscribing to Async internet status detection event
 		this.InternetDetectFeature.subcsribe(

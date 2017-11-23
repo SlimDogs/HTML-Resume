@@ -1,7 +1,9 @@
 {
   "name": "tautvydas_derzinskas_cv",
-  "version": "1.0.0",
-  "private": true,
+  "version": "1.0.1",
+  "private": false,
+  "author": "Tautvydas Derzinskas",
+  "repository": "https://github.com/SlimDogs/www-tautvydas-info.git",
   "scripts": {
     "prestart": "npm install",
     "start": "tsc gulpfile.ts",
@@ -10,9 +12,9 @@
     "dev": "tsc gulpfile.ts",
     "postdev": "gulp quick",
     "build": "tsc gulpfile.ts && gulp build"
-
   },
   "devDependencies": {
+    "cz-conventional-changelog": "2.1.0",
     "gulp": "3.9.1",
     "gulp-sass": "3.1.0",
     "gulp-tslint": "8.1.2",
@@ -24,5 +26,10 @@
   "dependencies": {
     "@types/jquery": "3.2.16",
     "@types/node": "8.0.53"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

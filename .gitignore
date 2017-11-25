@@ -1,6 +1,4 @@
 node_modules
-Temp
-Source/Features/**/*.js
-Source/*.js
-_backup
+/.tmp
 **/*.js
+/.vscode

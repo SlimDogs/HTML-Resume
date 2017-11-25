@@ -3,3 +3,4 @@ Temp
 Source/Features/**/*.js
 Source/*.js
 _backup
+**/*.js

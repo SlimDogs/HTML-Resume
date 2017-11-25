@@ -44,7 +44,7 @@ namespace Tasks {
 			*/
 			this.gulp.task("LINT: TypeScript", () => {
 				return this.gulp
-					.src(["Source/**/*.ts"])
+					.src(["src/**/*.ts"])
 					.pipe(this.tslint({ formatter: "verbose" }))
 					.pipe(this.tslint.report());
 			});
@@ -56,7 +56,7 @@ namespace Tasks {
 			let tsProject = this.ts.createProject("tsconfig.json");
 			this.gulp.task("TASK: TypeScript", ["LINT: TypeScript"], () => {
 				return this.gulp.src(
-					["Source/**/*.ts"],
+					["src/**/*.ts"],
 					{ base: "." }
 				)
 					.pipe(tsProject())
@@ -68,18 +68,17 @@ namespace Tasks {
 			/*
 				Sync concating of app logic
 			*/
-			let featuresFolder = "Source/Features/",
-				sectionsFolder = "Source/Sections/",
-				librariesFolder = "Source/Libraries/";
+			let featuresFolder = "src/Features/",
+				sectionsFolder = "src/Sections/";
 
 			this.gulp.task("TASK: BUNDLE FEATURES", ["TASK: TypeScript", "TASK: SASS", "TASK: BUNDLE HTML"], () => {
 				return this.gulp
 					.src([
-						`${librariesFolder}**/*.js`,
+						`./node_modules/jquery/dist/jquery.min.js`,
 						`${featuresFolder}**/_*.js`,
-						`Source/bootstrap.js`
+						`src/bootstrap.js`
 					])
-					.pipe(this.concat("Temp/app.js"))
+					.pipe(this.concat(".tmp/app.js"))
 					.pipe(this.gulp.dest("."));
 			});
 
@@ -95,7 +94,7 @@ namespace Tasks {
 						`${sectionsFolder}/Education/_*.html`,
 						`${sectionsFolder}/KeySkills/_*.html`
 					])
-					.pipe(this.concat("Temp/_html.html"))
+					.pipe(this.concat(".tmp/_html.html"))
 					.pipe(this.gulp.dest("."));
 			});
 		}
@@ -109,7 +108,7 @@ namespace Tasks {
 					htmlBody: null
 				};
 				// Reading index file
-				this.fileSystem.readFile("Source/_index.html", "utf8", (error, htmlContent) => {
+				this.fileSystem.readFile("src/_index.html", "utf8", (error, htmlContent) => {
 					if (error) {
 						console.log(error);
 						return;
@@ -117,7 +116,7 @@ namespace Tasks {
 					replacements.html = htmlContent;
 
 					// Reading css Javascript
-					this.fileSystem.readFile("Temp/index.css", "utf8", (error, cssContent) => {
+					this.fileSystem.readFile(".tmp/index.css", "utf8", (error, cssContent) => {
 						if (error) {
 							console.log(error);
 							return;
@@ -125,7 +124,7 @@ namespace Tasks {
 						replacements.css = cssContent;
 
 						// Reading css Javascript
-						this.fileSystem.readFile("Temp/_html.html", "utf8", (error, htmlBodyContent) => {
+						this.fileSystem.readFile(".tmp/_html.html", "utf8", (error, htmlBodyContent) => {
 							if (error) {
 								console.log(error);
 								return;
@@ -133,7 +132,7 @@ namespace Tasks {
 							replacements.htmlBody = htmlBodyContent;
 
 							// Reading Raw Javascript
-							this.fileSystem.readFile("Temp/app.js", "utf8", (error, jsContent) => {
+							this.fileSystem.readFile(".tmp/app.js", "utf8", (error, jsContent) => {
 								if (error) {
 									console.log(error);
 									return;
@@ -144,7 +143,7 @@ namespace Tasks {
 								replacements.html = replacements.html.replace("<!--html-->", replacements.htmlBody);
 
 								// Creating file
-								this.fileSystem.writeFile("index.html", replacements.html, () => {
+								this.fileSystem.writeFile("dist/index.html", replacements.html, () => {
 									done();
 								});
 							});
@@ -157,16 +156,16 @@ namespace Tasks {
 		public createSassCompileTask() {
 			this.gulp.task("TASK: SASS", () => {
 				return this.gulp
-					.src(["Source/index.scss"])
+					.src(["src/index.scss"])
 					.pipe(this.sass({ outputStyle: "compressed" }))
-					.pipe(this.gulp.dest("Temp"));
+					.pipe(this.gulp.dest(".tmp"));
 			});
 		}
 		public setupWatcher() {
 			this.gulp.task("WATCHER", () => {
 				// Typescript files
 				this.gulp.watch(
-					["Source/**/*.ts", "Source/**/_*.html", "Source/**/*.scss"],
+					["src/**/*.ts", "src/**/_*.html", "src/**/*.scss"],
 					{ cwd: "." },
 					() => {
 						this.gulp.run("TASK: GENERATE INDEX");

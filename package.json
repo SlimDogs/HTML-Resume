@@ -24,6 +24,8 @@
     "typescript": "2.6.1"
   },
   "dependencies": {
+    "skeleton": "0.1.2",
+    "jquery": "3.2.1",
     "@types/jquery": "3.2.16",
     "@types/node": "8.0.53"
   },

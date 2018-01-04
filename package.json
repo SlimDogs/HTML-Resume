@@ -27,7 +27,7 @@
     "skeleton": "0.1.2",
     "jquery": "3.2.1",
     "@types/jquery": "3.2.17",
-    "@types/node": "8.5.2"
+    "@types/node": "8.5.3"
   },
   "config": {
     "commitizen": {

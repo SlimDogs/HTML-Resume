@@ -6,7 +6,7 @@ class Bootstrap implements Resume_Application.IBootstrap {
 	private AnalyticsFeature: Analytics;
 
 	public Parameters = {
-		"ResumeRootUrl": "http://www.tautvydas.info",
+		"ResumeRootUrl": "https://tautvydas.info",
 		"JavaScript": false,
 		"Internet": false,
 		"Language": null,

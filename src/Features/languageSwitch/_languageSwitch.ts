@@ -1,7 +1,7 @@
 class LanguageSwitch {
 	public translations = {
 		"en": {
-			"newerVersionAvailable": `It appears that there is a more up to date version of this resume! If you want to see it, please click <a href="http://www.tautvydas.info">here</a>.`,
+			"newerVersionAvailable": `It appears that there is a more up to date version of this resume! If you want to see it, please click <a href="https://tautvydas.info">here</a>.`,
 			"pageTitle": "Tautvydas Derzinskas > Curriculum Vitae",
 			"english": "English",
 			"lithuanian": "Lithuanian",
@@ -82,7 +82,7 @@ class LanguageSwitch {
 			"skills": "Key Skills"
 		},
 		"lt": {
-			"newerVersionAvailable": `Egzistuoja atnaujinta šio gyvenimo aprašymo versija! Jeigu norite, naujausią CV versiją galite pasiekti paspaudę <a href="http://www.tautvydas.info">čia</a>.`,
+			"newerVersionAvailable": `Egzistuoja atnaujinta šio gyvenimo aprašymo versija! Jeigu norite, naujausią CV versiją galite pasiekti paspaudę <a href="https://tautvydas.info">čia</a>.`,
 			"pageTitle": "Tautvydas Deržinskas > Gyvenimo aprašymas",
 			"english": "Angliškai",
 			"lithuanian": "Lietuviškai",
@@ -163,7 +163,7 @@ class LanguageSwitch {
 			"skills": "Įgūdžiai"
 		},
 		"pl": {
-			"newerVersionAvailable": `Okazuje się, że istnieje nowsza wersja tego CV ! Jeśli chcesz ją zobaczyć, proszę kliknij <a href="http://www.tautvydas.info">tutaj</a>.`,
+			"newerVersionAvailable": `Okazuje się, że istnieje nowsza wersja tego CV ! Jeśli chcesz ją zobaczyć, proszę kliknij <a href="https://tautvydas.info">tutaj</a>.`,
 			"pageTitle": "Tautvydas Derzinskas > Curriculum Vitae",
 			"english": "Angielski",
 			"lithuanian": "Litewski",

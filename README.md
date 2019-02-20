@@ -29,4 +29,4 @@ My online CV with some special futures. In near future I am planing to release s
 - Analytics
 
 ## Demo
-Live demo [here](http://www.Tautvydas.info).
+Live demo [here](https://Tautvydas.info).

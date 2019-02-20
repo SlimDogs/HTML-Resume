@@ -1,0 +1,10 @@
+CACHE MANIFEST
+# 2017-05-16:v4
+
+# Explicitly cached 'master entries'.
+CACHE:
+index.html
+
+# Resources that require the user to be online.
+NETWORK:
+*

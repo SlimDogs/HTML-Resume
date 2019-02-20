@@ -18,31 +18,31 @@ class AvailabilityStatus {
 	public updateAvailabilityStatus() {
 		if (this.Parameters.Internet) {
 			// If we have internet connection we try to get availability status from the github!
-			$.ajax({
-				type: "GET",
-				dataType: "json",
-				url: `${this.Parameters.ResumeRootUrl}/CV.json`,
-				success: (response: Resume_Application.IResponseCV) => {
-					if (response.Resume.Version === this.Parameters.Version) {
-						$("body").removeClass("AVAILABILITY-NOT-CLEAR");
-						this.Parameters.Availability = response.Resume.Availability;
+			const xhr = new XMLHttpRequest();
+			xhr.addEventListener("load", () => {
+				const response: Resume_Application.IResponseCV = JSON.parse(xhr.response);
 
-						if (response.Resume.Availability) {
-							$("body").addClass("AVAILABILITY-AVAILABLE");
-						}
-						else {
-							$("body").addClass("AVAILABILITY-NOT-AVAILABLE");
-						}
+				if (response.Resume.Version === this.Parameters.Version) {
+					document.body.classList.remove("AVAILABILITY-NOT-CLEAR");
+					this.Parameters.Availability = response.Resume.Availability;
+
+					if (response.Resume.Availability) {
+						document.body.classList.add("AVAILABILITY-AVAILABLE");
 					}
 					else {
-						/*
-							With this class on the body informational message above page content is displayed
-							which informs viewer about newer CV version.
-						*/
-						$("body").addClass("NOT-LATEST-VERSION");
+						document.body.classList.add("AVAILABILITY-NOT-AVAILABLE");
 					}
 				}
-			});
+				else {
+					/*
+						With this class on the body informational message above page content is displayed
+						which informs viewer about newer CV version.
+					*/
+					document.body.classList.add("NOT-LATEST-VERSION");
+				}
+			}, false);
+			xhr.open("GET", `${this.Parameters.ResumeRootUrl}/CV.json`);
+			xhr.send();
 		}
 	}
 }

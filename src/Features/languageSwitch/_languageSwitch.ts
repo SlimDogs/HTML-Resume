@@ -244,8 +244,9 @@ class LanguageSwitch {
 	};
 
 	constructor(
-		private Parameters: Resume_Application.IParameters
-	) {}
+		private Parameters: Resume_Application.IParameters,
+		private Analytics: Analytics,
+	) { }
 
 	/*
 		Detecting language
@@ -266,12 +267,14 @@ class LanguageSwitch {
 		}
 
 		this.changeLanguage(this.Parameters.Language); // Setting the language
-		$(`#language-selector option[value="${this.Parameters.Language}"]`).attr("selected", "selected");
+		document.querySelector(`#language-selector option[value="${this.Parameters.Language}"]`)
+			.setAttribute("selected", "selected");
 
-		let self = this;
-		$("#language-selector").on("change", function() {
-			const selectedTranslation = $(this).val();
+		const self = this;
+		document.querySelector("#language-selector").addEventListener("change", function () {
+			const selectedTranslation = this.value;
 			self.changeLanguage(<string>selectedTranslation);
+			self.Analytics.trackPageView(selectedTranslation);
 		});
 
 	}
@@ -287,7 +290,7 @@ class LanguageSwitch {
 	public changeLanguage(translation: string) {
 		if (this.translations[translation]) {
 			for (let key in this.translations[translation]) {
-				$(`[data-lang="${key}"]`).html(this.translations[translation][key]);
+				document.querySelector(`[data-lang="${key}"]`).innerHTML = this.translations[translation][key];
 			}
 
 			this.Parameters.Language = translation;

@@ -4,7 +4,7 @@ class Analytics {
 	constructor(
 		private Parameters: Resume_Application.IParameters,
 		private InternetDetectFeature: InternetDetect
-	) {}
+	) { }
 
 	public initialize() {
 		// Subscribing to Async internet status detection event
@@ -28,9 +28,9 @@ class Analytics {
 			/* tslint:disable:no-unused-expression */
 			// This code is from Google, so let's not modify it too much, just add gaNewElem and gaElems:
 
-			(function(i, s, o, g, r, a: any, m: any) {
+			(function (i, s, o, g, r, a: any, m: any) {
 				i["GoogleAnalyticsObject"] = r;
-				i[r] = i[r] || function() {
+				i[r] = i[r] || function () {
 					(i[r].q = i[r].q || []).push(arguments)
 				}, i[r].l = 1 * currdate;
 				a = s.createElement(o),
@@ -47,5 +47,9 @@ class Analytics {
 			ga("create", "UA-89922170-1", "auto");
 			ga("send", "pageview");
 		}
+	}
+
+	public trackPageView(pageName: string) {
+		ga("send", "pageview", `/index.html?v=${this.Parameters.Version}&p=${pageName}`);
 	}
 }

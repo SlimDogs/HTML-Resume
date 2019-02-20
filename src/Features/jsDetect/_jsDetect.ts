@@ -4,7 +4,7 @@ class JavaScriptDetect {
 	) {}
 
 	public initialize() {
-		$("body").removeClass("NO-JAVASCRIPT");
+		document.body.classList.remove("NO-JAVASCRIPT");
 		this.Parameters.JavaScript = true;
 	}
 }

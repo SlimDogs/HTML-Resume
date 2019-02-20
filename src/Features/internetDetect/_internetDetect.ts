@@ -10,7 +10,7 @@ class InternetDetect {
 			// Performing proper internet connection test with getting some life test image
 			let i = new Image();
 			i.onload = () => {
-				$("body").removeClass("NO-INTERNET");
+				document.body.classList.remove("NO-INTERNET");
 
 				this.Parameters.Internet = true;
 				this.parseSubscriptions();

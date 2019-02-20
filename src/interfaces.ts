@@ -1,5 +1,3 @@
-/// <reference types="jquery" />
-
 namespace Resume_Application {
 	export interface IParameters {
 		"ResumeRootUrl": string;

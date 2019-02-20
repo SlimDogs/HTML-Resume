@@ -10,7 +10,7 @@ class Bootstrap implements Resume_Application.IBootstrap {
 		"JavaScript": false,
 		"Internet": false,
 		"Language": null,
-		"Version": 4,
+		"Version": 5,
 		"Availability": null
 	};
 
@@ -18,9 +18,9 @@ class Bootstrap implements Resume_Application.IBootstrap {
 		// Creating instances for each future
 		this.JavascriptDetectFeature = new JavaScriptDetect(this.Parameters);
 		this.InternetDetectFeature = new InternetDetect(this.Parameters);
-		this.LanguageSwitchFeature = new LanguageSwitch(this.Parameters);
 		this.AvailabilityStatusFeature = new AvailabilityStatus(this.Parameters, this.InternetDetectFeature);
 		this.AnalyticsFeature = new Analytics(this.Parameters, this.InternetDetectFeature);
+		this.LanguageSwitchFeature = new LanguageSwitch(this.Parameters, this.AnalyticsFeature);
 
 		// Starting initialization
 		this.initialize();

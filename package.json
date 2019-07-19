@@ -14,7 +14,7 @@
     "build": "tsc gulpfile.ts && gulp build"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "2.1.0",
+    "cz-conventional-changelog": "3.0.0",
     "gulp": "3.9.1",
     "gulp-sass": "3.2.0",
     "gulp-tslint": "8.1.3",

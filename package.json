@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "skeleton": "0.1.2",
-    "@types/node": "9.4.6"
+    "@types/node": "12.7.0"
   },
   "config": {
     "commitizen": {
